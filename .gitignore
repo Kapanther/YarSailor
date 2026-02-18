@@ -1,0 +1,20 @@
+# Connect IQ Build artifacts
+bin/
+*.prg
+*.debug.xml
+*.iq
+*.compiled
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.swp
+*.swo
+*~
