@@ -67,6 +67,10 @@ YarSailor supports a wide range of Garmin devices including:
 
 - **Back**: Exit the application
 
+### Battery Usage
+
+**Note**: This app uses continuous GPS tracking for real-time position updates, which may impact battery life. For extended sailing sessions, ensure your device is adequately charged or connected to a power source.
+
 ## Project Structure
 
 ```

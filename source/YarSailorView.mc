@@ -98,8 +98,8 @@ class YarSailorView extends Ui.View {
         }
         
         if (info has :heading && info.heading != null) {
-            // Convert radians to degrees
-            heading = Math.toDegrees(info.heading);
+            // Convert radians to degrees (heading * 180 / PI)
+            heading = info.heading * (180.0 / Math.PI);
             if (heading < 0) {
                 heading += 360;
             }
