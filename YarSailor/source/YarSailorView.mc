@@ -33,9 +33,9 @@ class YarSailorView extends WatchUi.View {
     function onShow() as Void {
         Position.enableLocationEvents(Position.LOCATION_CONTINUOUS, method(:onPosition));
         
-        // Start timer to update position every second
+        // Start timer to update position every 0.25 seconds
         _timer = new Timer.Timer();
-        _timer.start(method(:updatePosition), 1000, true);
+        _timer.start(method(:updatePosition), 250, true);
     }
 
     // Update the view
@@ -48,6 +48,12 @@ class YarSailorView extends WatchUi.View {
         
         var width = dc.getWidth();
         var height = dc.getHeight();
+        var centerX = width / 2;
+        var centerY = height / 2;
+        var radius = (width < height ? width : height) / 2 - 5;
+        
+        // Draw rotating compass ring
+        drawCompassRing(dc, centerX, centerY, radius);
         
         // Get current time
         var clockTime = System.getClockTime();
@@ -69,13 +75,16 @@ class YarSailorView extends WatchUi.View {
             }
             dc.drawText(width / 2, yPos, Graphics.FONT_NUMBER_HOT, headingText, Graphics.TEXT_JUSTIFY_CENTER);
             
-            // Draw speed in knots (very large, in lower half)
-            var speedText = "-- kts";
+            // Draw speed in knots (centered, with kts at bottom right)
             if (_speed != null) {
                 var knots = _speed * 1.94384; // Convert m/s to knots
-                speedText = knots.format("%.1f") + " kts";
+                var speedValue = knots.format("%.1f");
+                dc.drawText(width / 2, height / 2 + 15, Graphics.FONT_NUMBER_HOT, speedValue, Graphics.TEXT_JUSTIFY_CENTER);
+                dc.drawText(width / 2 + 40, height / 2 + 50, Graphics.FONT_XTINY, "kts", Graphics.TEXT_JUSTIFY_LEFT);
+            } else {
+                dc.drawText(width / 2, height / 2 + 15, Graphics.FONT_NUMBER_HOT, "--", Graphics.TEXT_JUSTIFY_CENTER);
+                dc.drawText(width / 2 + 40, height / 2 + 50, Graphics.FONT_XTINY, "kts", Graphics.TEXT_JUSTIFY_LEFT);
             }
-            dc.drawText(width / 2, height / 2 + 20, Graphics.FONT_NUMBER_HOT, speedText, Graphics.TEXT_JUSTIFY_CENTER);
             
             // Draw GPS coordinates at bottom in smaller text (moved up by 6 units)
             var latText = "Lat: " + _latitude.format("%.4f");
@@ -83,9 +92,48 @@ class YarSailorView extends WatchUi.View {
             
             dc.drawText(width / 2, height - 41, Graphics.FONT_XTINY, latText, Graphics.TEXT_JUSTIFY_CENTER);
             dc.drawText(width / 2, height - 26, Graphics.FONT_XTINY, lonText, Graphics.TEXT_JUSTIFY_CENTER);
+            
+            // Draw screen label
+            dc.drawText(width / 2, height - 12, Graphics.FONT_XTINY, "Nav Screen", Graphics.TEXT_JUSTIFY_CENTER);
         } else {
             dc.drawText(width / 2, height / 2, Graphics.FONT_SMALL, "Acquiring GPS...", Graphics.TEXT_JUSTIFY_CENTER);
         }
+    }
+    
+    // Draw compass ring with cardinal directions
+    function drawCompassRing(dc as Dc, centerX as Number, centerY as Number, radius as Number) as Void {
+        var currentHeading = _heading != null ? _heading : 0;
+        
+        // Cardinal directions (N=0, E=90, S=180, W=270)
+        var cardinals = [0, 90, 180, 270]; // N, E, S, W
+        var lineLength = 15;
+        
+        for (var i = 0; i < cardinals.size(); i++) {
+            // Calculate angle relative to current heading
+            // Subtract current heading so North points up when heading north
+            var angle = cardinals[i] - currentHeading;
+            var radians = Math.toRadians(angle);
+            
+            // Calculate outer and inner points for the line
+            var outerX = centerX + radius * Math.sin(radians);
+            var outerY = centerY - radius * Math.cos(radians);
+            var innerX = centerX + (radius - lineLength) * Math.sin(radians);
+            var innerY = centerY - (radius - lineLength) * Math.cos(radians);
+            
+            // North is red, others are white
+            if (i == 0) {
+                dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
+            } else {
+                dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+            }
+            
+            dc.setPenWidth(3);
+            dc.drawLine(outerX, outerY, innerX, innerY);
+        }
+        
+        // Reset color and pen width
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(1);
     }
 
     // Called when this View is removed from the screen. Save the

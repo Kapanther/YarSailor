@@ -2,184 +2,472 @@
 <debugInfo>
     <manifest filename="D:\ceethreedee\Garmin\YarSailor\YarSailor\YarSailor\manifest.xml"/>
     <pcToLineNum>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="1" lineNum="26" parent="globals" pc="268435460" symbol="getApp"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="1" lineNum="27" parent="globals" pc="268435470" symbol="getApp"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="2" lineNum="4" parent="globals/YarSailorDelegate" pc="268435486" symbol="&lt;init&gt;"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="3" lineNum="9" parent="globals/YarSailorView" pc="268435505" symbol="&lt;init&gt;"/>
-        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="4" lineNum="7" parent="globals/Rez" pc="268435524" symbol="&lt;init&gt;"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="5" lineNum="5" parent="globals/YarSailorApp" pc="268435548" symbol="&lt;init&gt;"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="6" lineNum="5" parent="globals/YarSailorMenuDelegate" pc="268435567" symbol="&lt;init&gt;"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="7" lineNum="10" parent="globals/YarSailorDelegate" pc="268435586" symbol="onMenu"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="7" lineNum="11" parent="globals/YarSailorDelegate" pc="268435588" symbol="onMenu"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="7" lineNum="12" parent="globals/YarSailorDelegate" pc="268435673" symbol="onMenu"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="8" lineNum="6" parent="globals/YarSailorDelegate" pc="268435676" symbol="initialize"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="8" lineNum="7" parent="globals/YarSailorDelegate" pc="268435678" symbol="initialize"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="9" lineNum="105" parent="globals/YarSailorView" pc="268435697" symbol="updatePosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="9" lineNum="106" parent="globals/YarSailorView" pc="268435701" symbol="updatePosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="9" lineNum="107" parent="globals/YarSailorView" pc="268435718" symbol="updatePosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="10" lineNum="33" parent="globals/YarSailorView" pc="268435733" symbol="onShow"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="10" lineNum="34" parent="globals/YarSailorView" pc="268435735" symbol="onShow"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="10" lineNum="37" parent="globals/YarSailorView" pc="268435772" symbol="onShow"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="10" lineNum="38" parent="globals/YarSailorView" pc="268435806" symbol="onShow"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="11" lineNum="111" parent="globals/YarSailorView" pc="268435848" symbol="onPosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="11" lineNum="112" parent="globals/YarSailorView" pc="268435852" symbol="onPosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="11" lineNum="113" parent="globals/YarSailorView" pc="268435865" symbol="onPosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="11" lineNum="114" parent="globals/YarSailorView" pc="268435875" symbol="onPosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="11" lineNum="115" parent="globals/YarSailorView" pc="268435900" symbol="onPosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="11" lineNum="119" parent="globals/YarSailorView" pc="268435928" symbol="onPosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="11" lineNum="120" parent="globals/YarSailorView" pc="268435941" symbol="onPosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="11" lineNum="121" parent="globals/YarSailorView" pc="268435972" symbol="onPosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="11" lineNum="122" parent="globals/YarSailorView" pc="268435989" symbol="onPosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="11" lineNum="127" parent="globals/YarSailorView" pc="268436014" symbol="onPosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="11" lineNum="128" parent="globals/YarSailorView" pc="268436027" symbol="onPosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="11" lineNum="131" parent="globals/YarSailorView" pc="268436046" symbol="onPosition"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="12" lineNum="26" parent="globals/YarSailorView" pc="268436063" symbol="onLayout"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="12" lineNum="27" parent="globals/YarSailorView" pc="268436065" symbol="onLayout"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="13" lineNum="16" parent="globals/YarSailorView" pc="268436107" symbol="initialize"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="13" lineNum="17" parent="globals/YarSailorView" pc="268436109" symbol="initialize"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="13" lineNum="18" parent="globals/YarSailorView" pc="268436127" symbol="initialize"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="13" lineNum="19" parent="globals/YarSailorView" pc="268436136" symbol="initialize"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="13" lineNum="20" parent="globals/YarSailorView" pc="268436145" symbol="initialize"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="13" lineNum="21" parent="globals/YarSailorView" pc="268436154" symbol="initialize"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="13" lineNum="22" parent="globals/YarSailorView" pc="268436163" symbol="initialize"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="14" lineNum="94" parent="globals/YarSailorView" pc="268436173" symbol="onHide"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="14" lineNum="95" parent="globals/YarSailorView" pc="268436175" symbol="onHide"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="14" lineNum="98" parent="globals/YarSailorView" pc="268436212" symbol="onHide"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="14" lineNum="99" parent="globals/YarSailorView" pc="268436225" symbol="onHide"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="14" lineNum="100" parent="globals/YarSailorView" pc="268436243" symbol="onHide"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="42" parent="globals/YarSailorView" pc="268436256" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="44" parent="globals/YarSailorView" pc="268436260" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="45" parent="globals/YarSailorView" pc="268436282" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="47" parent="globals/YarSailorView" pc="268436294" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="49" parent="globals/YarSailorView" pc="268436316" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="50" parent="globals/YarSailorView" pc="268436329" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="53" parent="globals/YarSailorView" pc="268436342" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="54" parent="globals/YarSailorView" pc="268436359" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="60" parent="globals/YarSailorView" pc="268436447" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="62" parent="globals/YarSailorView" pc="268436484" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="63" parent="globals/YarSailorView" pc="268436510" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="66" parent="globals/YarSailorView" pc="268436517" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="67" parent="globals/YarSailorView" pc="268436524" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="68" parent="globals/YarSailorView" pc="268436537" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="70" parent="globals/YarSailorView" pc="268436570" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="73" parent="globals/YarSailorView" pc="268436604" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="74" parent="globals/YarSailorView" pc="268436611" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="75" parent="globals/YarSailorView" pc="268436624" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="76" parent="globals/YarSailorView" pc="268436640" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="78" parent="globals/YarSailorView" pc="268436667" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="81" parent="globals/YarSailorView" pc="268436713" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="82" parent="globals/YarSailorView" pc="268436743" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="84" parent="globals/YarSailorView" pc="268436773" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="85" parent="globals/YarSailorView" pc="268436813" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="15" lineNum="87" parent="globals/YarSailorView" pc="268436856" symbol="onUpdate"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="16" lineNum="12" parent="globals/YarSailorApp" pc="268436900" symbol="onStart"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="17" lineNum="20" parent="globals/YarSailorApp" pc="268436903" symbol="getInitialView"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="17" lineNum="21" parent="globals/YarSailorApp" pc="268436905" symbol="getInitialView"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="18" lineNum="7" parent="globals/YarSailorApp" pc="268436980" symbol="initialize"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="18" lineNum="8" parent="globals/YarSailorApp" pc="268436982" symbol="initialize"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="19" lineNum="16" parent="globals/YarSailorApp" pc="268437001" symbol="onStop"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="20" lineNum="11" parent="globals/YarSailorMenuDelegate" pc="268437004" symbol="onMenuItem"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="20" lineNum="12" parent="globals/YarSailorMenuDelegate" pc="268437006" symbol="onMenuItem"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="20" lineNum="13" parent="globals/YarSailorMenuDelegate" pc="268437017" symbol="onMenuItem"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="20" lineNum="14" parent="globals/YarSailorMenuDelegate" pc="268437041" symbol="onMenuItem"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="20" lineNum="15" parent="globals/YarSailorMenuDelegate" pc="268437052" symbol="onMenuItem"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="21" lineNum="7" parent="globals/YarSailorMenuDelegate" pc="268437077" symbol="initialize"/>
-        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="21" lineNum="8" parent="globals/YarSailorMenuDelegate" pc="268437079" symbol="initialize"/>
-        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="22" lineNum="14" parent="globals/Rez/Layouts" pc="268437098" symbol="MainLayout"/>
-        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="22" lineNum="15" parent="globals/Rez/Layouts" pc="268437110" symbol="MainLayout"/>
-        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="22" lineNum="17" parent="globals/Rez/Layouts" pc="268437241" symbol="MainLayout"/>
-        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="22" lineNum="18" parent="globals/Rez/Layouts" pc="268437346" symbol="MainLayout"/>
-        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="22" lineNum="20" parent="globals/Rez/Layouts" pc="268437386" symbol="MainLayout"/>
-        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="23" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268437413" symbol="&lt;init&gt;"/>
-        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="24" lineNum="26" parent="globals/Rez/Menus/MainMenu" pc="268437432" symbol="initialize"/>
-        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="24" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268437434" symbol="initialize"/>
-        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="24" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268437452" symbol="initialize"/>
-        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="24" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268437508" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race3View.mc" id="1" lineNum="5" parent="globals/Race3View" pc="268435460" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="2" lineNum="26" parent="globals" pc="268435479" symbol="getApp"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="2" lineNum="27" parent="globals" pc="268435489" symbol="getApp"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="3" lineNum="4" parent="globals/YarSailorDelegate" pc="268435505" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="4" lineNum="9" parent="globals/YarSailorView" pc="268435524" symbol="&lt;init&gt;"/>
+        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="5" lineNum="7" parent="globals/Rez" pc="268435543" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="6" lineNum="6" parent="globals/RaceStartDelegate" pc="268435567" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="7" lineNum="5" parent="globals/YarSailorApp" pc="268435586" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="8" lineNum="9" parent="globals/RaceStartView" pc="268435605" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="9" lineNum="5" parent="globals/YarSailorMenuDelegate" pc="268435624" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race1View.mc" id="10" lineNum="5" parent="globals/Race1View" pc="268435643" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race2View.mc" id="11" lineNum="5" parent="globals/Race2View" pc="268435662" symbol="&lt;init&gt;"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race3View.mc" id="13" lineNum="11" parent="globals/Race3View" pc="268435681" symbol="onLayout"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race3View.mc" id="14" lineNum="7" parent="globals/Race3View" pc="268435684" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race3View.mc" id="14" lineNum="8" parent="globals/Race3View" pc="268435686" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race3View.mc" id="16" lineNum="17" parent="globals/Race3View" pc="268435705" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race3View.mc" id="16" lineNum="18" parent="globals/Race3View" pc="268435709" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race3View.mc" id="16" lineNum="19" parent="globals/Race3View" pc="268435731" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race3View.mc" id="16" lineNum="21" parent="globals/Race3View" pc="268435743" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race3View.mc" id="16" lineNum="23" parent="globals/Race3View" pc="268435765" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race3View.mc" id="16" lineNum="24" parent="globals/Race3View" pc="268435778" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race3View.mc" id="16" lineNum="26" parent="globals/Race3View" pc="268435791" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race3View.mc" id="16" lineNum="27" parent="globals/Race3View" pc="268435840" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="17" lineNum="16" parent="globals/YarSailorDelegate" pc="268435890" symbol="onMenu"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="17" lineNum="17" parent="globals/YarSailorDelegate" pc="268435892" symbol="onMenu"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="17" lineNum="18" parent="globals/YarSailorDelegate" pc="268435977" symbol="onMenu"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="18" lineNum="21" parent="globals/YarSailorDelegate" pc="268435980" symbol="onPreviousPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="18" lineNum="23" parent="globals/YarSailorDelegate" pc="268435982" symbol="onPreviousPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="18" lineNum="24" parent="globals/YarSailorDelegate" pc="268436010" symbol="onPreviousPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="18" lineNum="25" parent="globals/YarSailorDelegate" pc="268436030" symbol="onPreviousPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="19" lineNum="12" parent="globals/YarSailorDelegate" pc="268436033" symbol="setScreenIndex"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="19" lineNum="13" parent="globals/YarSailorDelegate" pc="268436035" symbol="setScreenIndex"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="28" parent="globals/YarSailorDelegate" pc="268436046" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="32" parent="globals/YarSailorDelegate" pc="268436050" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="33" parent="globals/YarSailorDelegate" pc="268436061" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="34" parent="globals/YarSailorDelegate" pc="268436089" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="35" parent="globals/YarSailorDelegate" pc="268436113" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="36" parent="globals/YarSailorDelegate" pc="268436130" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="37" parent="globals/YarSailorDelegate" pc="268436141" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="38" parent="globals/YarSailorDelegate" pc="268436169" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="39" parent="globals/YarSailorDelegate" pc="268436202" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="40" parent="globals/YarSailorDelegate" pc="268436213" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="41" parent="globals/YarSailorDelegate" pc="268436241" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="42" parent="globals/YarSailorDelegate" pc="268436265" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="43" parent="globals/YarSailorDelegate" pc="268436282" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="44" parent="globals/YarSailorDelegate" pc="268436293" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="45" parent="globals/YarSailorDelegate" pc="268436321" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="46" parent="globals/YarSailorDelegate" pc="268436345" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="47" parent="globals/YarSailorDelegate" pc="268436362" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="48" parent="globals/YarSailorDelegate" pc="268436373" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="49" parent="globals/YarSailorDelegate" pc="268436401" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="50" parent="globals/YarSailorDelegate" pc="268436425" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="52" parent="globals/YarSailorDelegate" pc="268436442" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="53" parent="globals/YarSailorDelegate" pc="268436470" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="54" parent="globals/YarSailorDelegate" pc="268436494" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="20" lineNum="57" parent="globals/YarSailorDelegate" pc="268436511" symbol="switchToScreen"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="21" lineNum="7" parent="globals/YarSailorDelegate" pc="268436537" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="21" lineNum="8" parent="globals/YarSailorDelegate" pc="268436539" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorDelegate.mc" id="21" lineNum="9" parent="globals/YarSailorDelegate" pc="268436557" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="22" lineNum="153" parent="globals/YarSailorView" pc="268436571" symbol="updatePosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="22" lineNum="154" parent="globals/YarSailorView" pc="268436575" symbol="updatePosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="22" lineNum="155" parent="globals/YarSailorView" pc="268436592" symbol="updatePosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="23" lineNum="33" parent="globals/YarSailorView" pc="268436607" symbol="onShow"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="23" lineNum="34" parent="globals/YarSailorView" pc="268436609" symbol="onShow"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="23" lineNum="37" parent="globals/YarSailorView" pc="268436646" symbol="onShow"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="23" lineNum="38" parent="globals/YarSailorView" pc="268436680" symbol="onShow"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="24" lineNum="159" parent="globals/YarSailorView" pc="268436722" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="24" lineNum="160" parent="globals/YarSailorView" pc="268436726" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="24" lineNum="161" parent="globals/YarSailorView" pc="268436739" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="24" lineNum="162" parent="globals/YarSailorView" pc="268436749" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="24" lineNum="163" parent="globals/YarSailorView" pc="268436774" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="24" lineNum="167" parent="globals/YarSailorView" pc="268436802" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="24" lineNum="168" parent="globals/YarSailorView" pc="268436815" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="24" lineNum="169" parent="globals/YarSailorView" pc="268436846" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="24" lineNum="170" parent="globals/YarSailorView" pc="268436863" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="24" lineNum="175" parent="globals/YarSailorView" pc="268436888" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="24" lineNum="176" parent="globals/YarSailorView" pc="268436901" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="24" lineNum="179" parent="globals/YarSailorView" pc="268436920" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="25" lineNum="26" parent="globals/YarSailorView" pc="268436937" symbol="onLayout"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="25" lineNum="27" parent="globals/YarSailorView" pc="268436939" symbol="onLayout"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="26" lineNum="16" parent="globals/YarSailorView" pc="268436981" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="26" lineNum="17" parent="globals/YarSailorView" pc="268436983" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="26" lineNum="18" parent="globals/YarSailorView" pc="268437001" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="26" lineNum="19" parent="globals/YarSailorView" pc="268437010" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="26" lineNum="20" parent="globals/YarSailorView" pc="268437019" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="26" lineNum="21" parent="globals/YarSailorView" pc="268437028" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="26" lineNum="22" parent="globals/YarSailorView" pc="268437037" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="27" lineNum="142" parent="globals/YarSailorView" pc="268437047" symbol="onHide"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="27" lineNum="143" parent="globals/YarSailorView" pc="268437049" symbol="onHide"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="27" lineNum="146" parent="globals/YarSailorView" pc="268437086" symbol="onHide"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="27" lineNum="147" parent="globals/YarSailorView" pc="268437099" symbol="onHide"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="27" lineNum="148" parent="globals/YarSailorView" pc="268437117" symbol="onHide"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="42" parent="globals/YarSailorView" pc="268437130" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="44" parent="globals/YarSailorView" pc="268437134" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="45" parent="globals/YarSailorView" pc="268437156" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="47" parent="globals/YarSailorView" pc="268437168" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="49" parent="globals/YarSailorView" pc="268437190" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="50" parent="globals/YarSailorView" pc="268437203" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="51" parent="globals/YarSailorView" pc="268437216" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="52" parent="globals/YarSailorView" pc="268437226" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="53" parent="globals/YarSailorView" pc="268437236" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="56" parent="globals/YarSailorView" pc="268437265" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="59" parent="globals/YarSailorView" pc="268437285" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="60" parent="globals/YarSailorView" pc="268437302" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="66" parent="globals/YarSailorView" pc="268437390" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="68" parent="globals/YarSailorView" pc="268437427" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="69" parent="globals/YarSailorView" pc="268437453" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="72" parent="globals/YarSailorView" pc="268437460" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="73" parent="globals/YarSailorView" pc="268437467" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="74" parent="globals/YarSailorView" pc="268437480" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="76" parent="globals/YarSailorView" pc="268437513" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="79" parent="globals/YarSailorView" pc="268437547" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="80" parent="globals/YarSailorView" pc="268437560" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="81" parent="globals/YarSailorView" pc="268437576" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="82" parent="globals/YarSailorView" pc="268437594" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="83" parent="globals/YarSailorView" pc="268437640" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="85" parent="globals/YarSailorView" pc="268437698" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="86" parent="globals/YarSailorView" pc="268437747" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="90" parent="globals/YarSailorView" pc="268437802" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="91" parent="globals/YarSailorView" pc="268437832" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="93" parent="globals/YarSailorView" pc="268437862" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="94" parent="globals/YarSailorView" pc="268437902" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="97" parent="globals/YarSailorView" pc="268437942" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="28" lineNum="99" parent="globals/YarSailorView" pc="268437988" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="104" parent="globals/YarSailorView" pc="268438032" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="105" parent="globals/YarSailorView" pc="268438036" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="108" parent="globals/YarSailorView" pc="268438067" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="109" parent="globals/YarSailorView" pc="268438127" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="111" parent="globals/YarSailorView" pc="268438134" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="114" parent="globals/YarSailorView" pc="268438158" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="115" parent="globals/YarSailorView" pc="268438168" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="118" parent="globals/YarSailorView" pc="268438187" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="119" parent="globals/YarSailorView" pc="268438212" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="120" parent="globals/YarSailorView" pc="268438237" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="121" parent="globals/YarSailorView" pc="268438265" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="124" parent="globals/YarSailorView" pc="268438293" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="125" parent="globals/YarSailorView" pc="268438304" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="127" parent="globals/YarSailorView" pc="268438329" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="130" parent="globals/YarSailorView" pc="268438351" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="131" parent="globals/YarSailorView" pc="268438368" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="135" parent="globals/YarSailorView" pc="268438401" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorView.mc" id="29" lineNum="136" parent="globals/YarSailorView" pc="268438423" symbol="drawCompassRing"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="30" lineNum="61" parent="globals/RaceStartDelegate" pc="268438441" symbol="onBack"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="30" lineNum="63" parent="globals/RaceStartDelegate" pc="268438443" symbol="onBack"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="30" lineNum="64" parent="globals/RaceStartDelegate" pc="268438461" symbol="onBack"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="31" lineNum="19" parent="globals/RaceStartDelegate" pc="268438464" symbol="onMenu"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="31" lineNum="21" parent="globals/RaceStartDelegate" pc="268438466" symbol="onMenu"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="32" lineNum="24" parent="globals/RaceStartDelegate" pc="268438469" symbol="onPreviousPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="32" lineNum="26" parent="globals/RaceStartDelegate" pc="268438473" symbol="onPreviousPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="32" lineNum="29" parent="globals/RaceStartDelegate" pc="268438485" symbol="onPreviousPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="32" lineNum="31" parent="globals/RaceStartDelegate" pc="268438492" symbol="onPreviousPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="32" lineNum="32" parent="globals/RaceStartDelegate" pc="268438520" symbol="onPreviousPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="32" lineNum="33" parent="globals/RaceStartDelegate" pc="268438534" symbol="onPreviousPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="32" lineNum="34" parent="globals/RaceStartDelegate" pc="268438548" symbol="onPreviousPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="33" lineNum="67" parent="globals/RaceStartDelegate" pc="268438551" symbol="onTimerTick"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="33" lineNum="68" parent="globals/RaceStartDelegate" pc="268438553" symbol="onTimerTick"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="34" lineNum="71" parent="globals/RaceStartDelegate" pc="268438572" symbol="cleanup"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="34" lineNum="72" parent="globals/RaceStartDelegate" pc="268438574" symbol="cleanup"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="34" lineNum="73" parent="globals/RaceStartDelegate" pc="268438587" symbol="cleanup"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="34" lineNum="74" parent="globals/RaceStartDelegate" pc="268438605" symbol="cleanup"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="35" lineNum="11" parent="globals/RaceStartDelegate" pc="268438618" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="35" lineNum="12" parent="globals/RaceStartDelegate" pc="268438620" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="35" lineNum="13" parent="globals/RaceStartDelegate" pc="268438638" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="35" lineNum="14" parent="globals/RaceStartDelegate" pc="268438648" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="35" lineNum="15" parent="globals/RaceStartDelegate" pc="268438682" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="35" lineNum="16" parent="globals/RaceStartDelegate" pc="268438723" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="36" lineNum="37" parent="globals/RaceStartDelegate" pc="268438737" symbol="onNextPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="36" lineNum="39" parent="globals/RaceStartDelegate" pc="268438739" symbol="onNextPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="36" lineNum="40" parent="globals/RaceStartDelegate" pc="268438757" symbol="onNextPage"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="37" lineNum="43" parent="globals/RaceStartDelegate" pc="268438760" symbol="onSelect"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="37" lineNum="45" parent="globals/RaceStartDelegate" pc="268438764" symbol="onSelect"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="37" lineNum="48" parent="globals/RaceStartDelegate" pc="268438781" symbol="onSelect"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="37" lineNum="50" parent="globals/RaceStartDelegate" pc="268438801" symbol="onSelect"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="37" lineNum="51" parent="globals/RaceStartDelegate" pc="268438819" symbol="onSelect"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="37" lineNum="54" parent="globals/RaceStartDelegate" pc="268438835" symbol="onSelect"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="37" lineNum="55" parent="globals/RaceStartDelegate" pc="268438853" symbol="onSelect"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartDelegate.mc" id="37" lineNum="58" parent="globals/RaceStartDelegate" pc="268438863" symbol="onSelect"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="38" lineNum="12" parent="globals/YarSailorApp" pc="268438866" symbol="onStart"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="39" lineNum="20" parent="globals/YarSailorApp" pc="268438869" symbol="getInitialView"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="39" lineNum="21" parent="globals/YarSailorApp" pc="268438871" symbol="getInitialView"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="40" lineNum="7" parent="globals/YarSailorApp" pc="268438946" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="40" lineNum="8" parent="globals/YarSailorApp" pc="268438948" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorApp.mc" id="41" lineNum="16" parent="globals/YarSailorApp" pc="268438967" symbol="onStop"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="42" lineNum="29" parent="globals/RaceStartView" pc="268438970" symbol="onShow"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="42" lineNum="30" parent="globals/RaceStartView" pc="268438972" symbol="onShow"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="42" lineNum="33" parent="globals/RaceStartView" pc="268439009" symbol="onShow"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="42" lineNum="34" parent="globals/RaceStartView" pc="268439043" symbol="onShow"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="43" lineNum="117" parent="globals/RaceStartView" pc="268439085" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="43" lineNum="118" parent="globals/RaceStartView" pc="268439087" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="43" lineNum="119" parent="globals/RaceStartView" pc="268439100" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="43" lineNum="120" parent="globals/RaceStartView" pc="268439131" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="43" lineNum="121" parent="globals/RaceStartView" pc="268439148" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="43" lineNum="125" parent="globals/RaceStartView" pc="268439173" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="43" lineNum="126" parent="globals/RaceStartView" pc="268439186" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="43" lineNum="129" parent="globals/RaceStartView" pc="268439205" symbol="onPosition"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="44" lineNum="133" parent="globals/RaceStartView" pc="268439222" symbol="incrementTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="44" lineNum="134" parent="globals/RaceStartView" pc="268439224" symbol="incrementTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="44" lineNum="135" parent="globals/RaceStartView" pc="268439243" symbol="incrementTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="45" lineNum="146" parent="globals/RaceStartView" pc="268439260" symbol="resetTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="45" lineNum="147" parent="globals/RaceStartView" pc="268439262" symbol="resetTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="45" lineNum="148" parent="globals/RaceStartView" pc="268439275" symbol="resetTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="45" lineNum="149" parent="globals/RaceStartView" pc="268439285" symbol="resetTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="46" lineNum="26" parent="globals/RaceStartView" pc="268439302" symbol="onLayout"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="47" lineNum="161" parent="globals/RaceStartView" pc="268439305" symbol="tickTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="47" lineNum="162" parent="globals/RaceStartView" pc="268439307" symbol="tickTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="47" lineNum="163" parent="globals/RaceStartView" pc="268439335" symbol="tickTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="47" lineNum="164" parent="globals/RaceStartView" pc="268439354" symbol="tickTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="47" lineNum="167" parent="globals/RaceStartView" pc="268439370" symbol="tickTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="47" lineNum="168" parent="globals/RaceStartView" pc="268439387" symbol="tickTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="48" lineNum="111" parent="globals/RaceStartView" pc="268439404" symbol="updateGPS"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="48" lineNum="112" parent="globals/RaceStartView" pc="268439408" symbol="updateGPS"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="48" lineNum="113" parent="globals/RaceStartView" pc="268439425" symbol="updateGPS"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="49" lineNum="138" parent="globals/RaceStartView" pc="268439440" symbol="decrementTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="49" lineNum="139" parent="globals/RaceStartView" pc="268439442" symbol="decrementTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="49" lineNum="140" parent="globals/RaceStartView" pc="268439461" symbol="decrementTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="49" lineNum="141" parent="globals/RaceStartView" pc="268439478" symbol="decrementTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="49" lineNum="143" parent="globals/RaceStartView" pc="268439494" symbol="decrementTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="50" lineNum="103" parent="globals/RaceStartView" pc="268439511" symbol="cleanup"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="50" lineNum="104" parent="globals/RaceStartView" pc="268439513" symbol="cleanup"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="50" lineNum="105" parent="globals/RaceStartView" pc="268439526" symbol="cleanup"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="50" lineNum="106" parent="globals/RaceStartView" pc="268439544" symbol="cleanup"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="51" lineNum="152" parent="globals/RaceStartView" pc="268439557" symbol="toggleTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="51" lineNum="153" parent="globals/RaceStartView" pc="268439559" symbol="toggleTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="51" lineNum="154" parent="globals/RaceStartView" pc="268439576" symbol="toggleTimer"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="52" lineNum="157" parent="globals/RaceStartView" pc="268439593" symbol="isTimerRunning"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="52" lineNum="158" parent="globals/RaceStartView" pc="268439595" symbol="isTimerRunning"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="53" lineNum="17" parent="globals/RaceStartView" pc="268439604" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="53" lineNum="18" parent="globals/RaceStartView" pc="268439606" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="53" lineNum="19" parent="globals/RaceStartView" pc="268439624" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="53" lineNum="20" parent="globals/RaceStartView" pc="268439637" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="53" lineNum="21" parent="globals/RaceStartView" pc="268439647" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="53" lineNum="22" parent="globals/RaceStartView" pc="268439656" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="53" lineNum="23" parent="globals/RaceStartView" pc="268439665" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="54" lineNum="94" parent="globals/RaceStartView" pc="268439675" symbol="onHide"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="54" lineNum="95" parent="globals/RaceStartView" pc="268439677" symbol="onHide"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="54" lineNum="97" parent="globals/RaceStartView" pc="268439714" symbol="onHide"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="54" lineNum="98" parent="globals/RaceStartView" pc="268439727" symbol="onHide"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="54" lineNum="99" parent="globals/RaceStartView" pc="268439745" symbol="onHide"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="37" parent="globals/RaceStartView" pc="268439758" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="38" parent="globals/RaceStartView" pc="268439762" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="39" parent="globals/RaceStartView" pc="268439784" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="41" parent="globals/RaceStartView" pc="268439796" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="43" parent="globals/RaceStartView" pc="268439818" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="46" parent="globals/RaceStartView" pc="268439831" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="47" parent="globals/RaceStartView" pc="268439848" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="53" parent="globals/RaceStartView" pc="268439936" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="56" parent="globals/RaceStartView" pc="268439973" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="59" parent="globals/RaceStartView" pc="268440013" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="60" parent="globals/RaceStartView" pc="268440029" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="61" parent="globals/RaceStartView" pc="268440045" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="65" parent="globals/RaceStartView" pc="268440121" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="68" parent="globals/RaceStartView" pc="268440158" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="69" parent="globals/RaceStartView" pc="268440170" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="73" parent="globals/RaceStartView" pc="268440210" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="74" parent="globals/RaceStartView" pc="268440247" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="75" parent="globals/RaceStartView" pc="268440284" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="76" parent="globals/RaceStartView" pc="268440321" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="79" parent="globals/RaceStartView" pc="268440358" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="80" parent="globals/RaceStartView" pc="268440365" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="81" parent="globals/RaceStartView" pc="268440378" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="84" parent="globals/RaceStartView" pc="268440411" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="85" parent="globals/RaceStartView" pc="268440418" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="86" parent="globals/RaceStartView" pc="268440431" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="87" parent="globals/RaceStartView" pc="268440447" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="90" parent="globals/RaceStartView" pc="268440474" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\RaceStartView.mc" id="55" lineNum="91" parent="globals/RaceStartView" pc="268440508" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="56" lineNum="11" parent="globals/YarSailorMenuDelegate" pc="268440543" symbol="onMenuItem"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="56" lineNum="12" parent="globals/YarSailorMenuDelegate" pc="268440545" symbol="onMenuItem"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="56" lineNum="13" parent="globals/YarSailorMenuDelegate" pc="268440556" symbol="onMenuItem"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="56" lineNum="14" parent="globals/YarSailorMenuDelegate" pc="268440580" symbol="onMenuItem"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="56" lineNum="15" parent="globals/YarSailorMenuDelegate" pc="268440591" symbol="onMenuItem"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="57" lineNum="7" parent="globals/YarSailorMenuDelegate" pc="268440616" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\YarSailorMenuDelegate.mc" id="57" lineNum="8" parent="globals/YarSailorMenuDelegate" pc="268440618" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race1View.mc" id="59" lineNum="11" parent="globals/Race1View" pc="268440637" symbol="onLayout"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race1View.mc" id="60" lineNum="7" parent="globals/Race1View" pc="268440640" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race1View.mc" id="60" lineNum="8" parent="globals/Race1View" pc="268440642" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race1View.mc" id="62" lineNum="17" parent="globals/Race1View" pc="268440661" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race1View.mc" id="62" lineNum="18" parent="globals/Race1View" pc="268440665" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race1View.mc" id="62" lineNum="19" parent="globals/Race1View" pc="268440687" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race1View.mc" id="62" lineNum="21" parent="globals/Race1View" pc="268440699" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race1View.mc" id="62" lineNum="23" parent="globals/Race1View" pc="268440721" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race1View.mc" id="62" lineNum="24" parent="globals/Race1View" pc="268440734" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race1View.mc" id="62" lineNum="26" parent="globals/Race1View" pc="268440747" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race1View.mc" id="62" lineNum="27" parent="globals/Race1View" pc="268440796" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race2View.mc" id="64" lineNum="11" parent="globals/Race2View" pc="268440846" symbol="onLayout"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race2View.mc" id="65" lineNum="7" parent="globals/Race2View" pc="268440849" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race2View.mc" id="65" lineNum="8" parent="globals/Race2View" pc="268440851" symbol="initialize"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race2View.mc" id="67" lineNum="17" parent="globals/Race2View" pc="268440870" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race2View.mc" id="67" lineNum="18" parent="globals/Race2View" pc="268440874" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race2View.mc" id="67" lineNum="19" parent="globals/Race2View" pc="268440896" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race2View.mc" id="67" lineNum="21" parent="globals/Race2View" pc="268440908" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race2View.mc" id="67" lineNum="23" parent="globals/Race2View" pc="268440930" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race2View.mc" id="67" lineNum="24" parent="globals/Race2View" pc="268440943" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race2View.mc" id="67" lineNum="26" parent="globals/Race2View" pc="268440956" symbol="onUpdate"/>
+        <entry filename="D:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\source\\Race2View.mc" id="67" lineNum="27" parent="globals/Race2View" pc="268441005" symbol="onUpdate"/>
+        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="68" lineNum="14" parent="globals/Rez/Layouts" pc="268441055" symbol="MainLayout"/>
+        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="68" lineNum="15" parent="globals/Rez/Layouts" pc="268441067" symbol="MainLayout"/>
+        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="68" lineNum="17" parent="globals/Rez/Layouts" pc="268441198" symbol="MainLayout"/>
+        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="68" lineNum="18" parent="globals/Rez/Layouts" pc="268441303" symbol="MainLayout"/>
+        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="68" lineNum="20" parent="globals/Rez/Layouts" pc="268441343" symbol="MainLayout"/>
+        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="69" lineNum="25" parent="globals/Rez/Menus/MainMenu" pc="268441370" symbol="&lt;init&gt;"/>
+        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="70" lineNum="26" parent="globals/Rez/Menus/MainMenu" pc="268441389" symbol="initialize"/>
+        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="70" lineNum="27" parent="globals/Rez/Menus/MainMenu" pc="268441391" symbol="initialize"/>
+        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="70" lineNum="28" parent="globals/Rez/Menus/MainMenu" pc="268441409" symbol="initialize"/>
+        <entry filename="d:\\ceethreedee\\Garmin\\YarSailor\\YarSailor\\YarSailor\\bin\\gen\\006-B3291-00\\source\\Rez.mcgen" id="70" lineNum="29" parent="globals/Rez/Menus/MainMenu" pc="268441465" symbol="initialize"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
         <entry id="8389346" symbol="text"/>
+        <entry id="39" method="true" symbol="decrementTimer"/>
         <entry id="8388632" method="true" symbol="&lt;init&gt;"/>
         <entry id="5" module="true" symbol="globals/Rez/Menus"/>
-        <entry id="22" method="true" symbol="MainLayout"/>
-        <entry id="16" method="true" symbol="onPosition"/>
+        <entry id="43" method="true" symbol="tickTimer"/>
+        <entry id="33" method="true" symbol="onTimerTick"/>
+        <entry id="48" method="true" symbol="MainLayout"/>
+        <entry id="44" method="true" symbol="toggleTimer"/>
+        <entry field="true" id="34" symbol="&lt;globals/RaceStartView/&lt;&gt;_countdownSeconds&gt;"/>
+        <entry id="8" object="true" symbol="Race2View"/>
+        <entry id="25" method="true" symbol="onPosition"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
-        <entry id="10" object="true" symbol="YarSailorView"/>
-        <entry field="true" id="24" symbol="AppName"/>
+        <entry id="17" method="true" symbol="setScreenIndex"/>
+        <entry id="24" method="true" symbol="drawCompassRing"/>
+        <entry id="15" object="true" symbol="YarSailorView"/>
+        <entry field="true" id="50" symbol="AppName"/>
         <entry id="6" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8389080" method="true" symbol="onMenu"/>
         <entry id="8389345" symbol="rezId"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
+        <entry id="8389081" method="true" symbol="onBack"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
-        <entry field="true" id="27" symbol="prompt"/>
-        <entry field="true" id="21" symbol="id_monkey"/>
+        <entry field="true" id="53" symbol="prompt"/>
+        <entry field="true" id="47" symbol="id_monkey"/>
+        <entry id="32" method="true" symbol="cleanup"/>
         <entry id="8389124" method="true" symbol="onUpdate"/>
         <entry field="true" id="8389065" symbol="locY"/>
         <entry field="true" id="8389064" symbol="locX"/>
         <entry id="8388771" module="true" object="true" symbol="Drawables"/>
         <entry id="8389348" symbol="font"/>
-        <entry id="29" symbol="item_2"/>
-        <entry id="28" symbol="item_1"/>
-        <entry id="19" module="true" symbol="Menus"/>
+        <entry id="55" symbol="item_2"/>
+        <entry id="54" symbol="item_1"/>
+        <entry id="8389079" method="true" symbol="onPreviousPage"/>
+        <entry id="28" module="true" symbol="Menus"/>
         <entry id="8389275" method="true" symbol="getApp"/>
         <entry id="4" module="true" symbol="globals/Rez/Layouts"/>
         <entry id="8389122" method="true" symbol="onLayout"/>
-        <entry field="true" id="13" symbol="&lt;globals/YarSailorView/&lt;&gt;_longitude&gt;"/>
+        <entry field="true" id="35" symbol="&lt;globals/RaceStartView/&lt;&gt;_heading&gt;"/>
+        <entry field="true" id="21" symbol="&lt;globals/YarSailorView/&lt;&gt;_longitude&gt;"/>
         <entry field="true" id="8389063" symbol="identifier"/>
-        <entry id="8" object="true" symbol="YarSailorDelegate"/>
+        <entry field="true" id="30" symbol="&lt;globals/RaceStartDelegate/&lt;&gt;_timer&gt;"/>
+        <entry id="13" object="true" symbol="YarSailorDelegate"/>
         <entry id="8389349" symbol="justification"/>
-        <entry field="true" id="12" symbol="&lt;globals/YarSailorView/&lt;&gt;_latitude&gt;"/>
-        <entry field="true" id="14" symbol="&lt;globals/YarSailorView/&lt;&gt;_speed&gt;"/>
-        <entry id="7" object="true" symbol="YarSailorApp"/>
-        <entry field="true" id="15" symbol="&lt;globals/YarSailorView/&lt;&gt;_timer&gt;"/>
+        <entry field="true" id="20" symbol="&lt;globals/YarSailorView/&lt;&gt;_latitude&gt;"/>
+        <entry field="true" id="22" symbol="&lt;globals/YarSailorView/&lt;&gt;_speed&gt;"/>
+        <entry id="12" object="true" symbol="YarSailorApp"/>
+        <entry field="true" id="29" symbol="&lt;globals/RaceStartDelegate/&lt;&gt;_lastSelectTime&gt;"/>
+        <entry id="7" object="true" symbol="Race1View"/>
+        <entry id="40" method="true" symbol="incrementTimer"/>
+        <entry field="true" id="23" symbol="&lt;globals/YarSailorView/&lt;&gt;_timer&gt;"/>
         <entry id="3" module="true" symbol="globals/Rez/Drawables"/>
-        <entry id="23" object="true" symbol="MainMenu"/>
-        <entry id="17" method="true" symbol="updatePosition"/>
-        <entry field="true" id="11" symbol="&lt;globals/YarSailorView/&lt;&gt;_heading&gt;"/>
+        <entry id="49" object="true" symbol="MainMenu"/>
+        <entry id="26" method="true" symbol="updatePosition"/>
+        <entry field="true" id="19" symbol="&lt;globals/YarSailorView/&lt;&gt;_heading&gt;"/>
+        <entry id="45" method="true" symbol="updateGPS"/>
         <entry id="8388644" module="true" symbol="System"/>
+        <entry id="8389619" method="true" symbol="onSelect"/>
         <entry id="8388769" module="true" object="true" symbol="Rez"/>
+        <entry field="true" id="38" symbol="&lt;globals/RaceStartView/&lt;&gt;_timerRunning&gt;"/>
+        <entry field="true" id="16" symbol="&lt;globals/YarSailorDelegate/&lt;&gt;_currentScreenIndex&gt;"/>
+        <entry id="41" method="true" symbol="isTimerRunning"/>
         <entry id="8388640" module="true" symbol="Lang"/>
-        <entry field="true" id="20" symbol="LauncherIcon"/>
+        <entry field="true" id="31" symbol="&lt;globals/RaceStartDelegate/&lt;&gt;_view&gt;"/>
+        <entry field="true" id="46" symbol="LauncherIcon"/>
         <entry id="8388610" symbol="statics"/>
         <entry id="8389123" method="true" symbol="onShow"/>
         <entry id="8389350" module="true" symbol="globals"/>
         <entry id="8388770" module="true" object="true" symbol="Strings"/>
         <entry id="8388702" method="true" symbol="initialize"/>
         <entry id="8389279" method="true" symbol="onStart"/>
-        <entry id="9" object="true" symbol="YarSailorMenuDelegate"/>
+        <entry id="14" object="true" symbol="YarSailorMenuDelegate"/>
+        <entry id="18" method="true" symbol="switchToScreen"/>
         <entry id="8388641" module="true" symbol="Math"/>
         <entry id="8389280" method="true" symbol="getInitialView"/>
         <entry id="8389281" method="true" symbol="onStop"/>
         <entry id="8389109" method="true" symbol="onMenuItem"/>
         <entry field="true" id="8389347" symbol="color"/>
+        <entry id="9" object="true" symbol="Race3View"/>
+        <entry field="true" id="36" symbol="&lt;globals/RaceStartView/&lt;&gt;_speed&gt;"/>
         <entry id="8388646" module="true" object="true" symbol="Timer"/>
-        <entry id="18" module="true" symbol="Layouts"/>
+        <entry id="27" module="true" symbol="Layouts"/>
+        <entry id="11" object="true" symbol="RaceStartView"/>
         <entry id="8388642" module="true" symbol="Position"/>
+        <entry field="true" id="37" symbol="&lt;globals/RaceStartView/&lt;&gt;_timer&gt;"/>
         <entry id="8389125" method="true" symbol="onHide"/>
+        <entry id="8389078" method="true" symbol="onNextPage"/>
         <entry id="8388635" module="true" symbol="Application"/>
-        <entry field="true" id="26" symbol="menu_label_2"/>
-        <entry field="true" id="25" symbol="menu_label_1"/>
+        <entry field="true" id="52" symbol="menu_label_2"/>
+        <entry field="true" id="51" symbol="menu_label_1"/>
+        <entry id="42" method="true" symbol="resetTimer"/>
+        <entry id="10" object="true" symbol="RaceStartDelegate"/>
     </symbolTable>
     <localVars>
-        <entry endPc="268435731" name="info" stackId="1" startPc="268435701"/>
-        <entry arg="true" endPc="268436062" name="info" stackId="1" startPc="268435848"/>
-        <entry endPc="268435924" name="position" stackId="2" startPc="268435865"/>
-        <entry arg="true" endPc="268436106" name="dc" stackId="1" startPc="268436063"/>
-        <entry arg="true" endPc="268436899" name="dc" stackId="1" startPc="268436256"/>
-        <entry endPc="268436898" name="width" stackId="2" startPc="268436260"/>
-        <entry endPc="268436898" name="height" stackId="3" startPc="268436260"/>
-        <entry endPc="268436898" name="clockTime" stackId="4" startPc="268436260"/>
-        <entry endPc="268436898" name="timeString" stackId="5" startPc="268436260"/>
-        <entry endPc="268436852" name="yPos" stackId="6" startPc="268436510"/>
-        <entry endPc="268436852" name="headingText" stackId="7" startPc="268436510"/>
-        <entry endPc="268436852" name="speedText" stackId="8" startPc="268436510"/>
-        <entry endPc="268436663" name="knots" stackId="9" startPc="268436624"/>
-        <entry endPc="268436852" name="latText" stackId="10" startPc="268436510"/>
-        <entry endPc="268436852" name="lonText" stackId="11" startPc="268436510"/>
-        <entry arg="true" endPc="268437076" name="item" stackId="1" startPc="268437004"/>
-        <entry arg="true" endPc="268437412" name="dc" stackId="1" startPc="268437098"/>
-        <entry endPc="268437412" name="rez_cmp_local_text_1193959466" stackId="2" startPc="268437110"/>
-        <entry endPc="268437412" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268437110"/>
+        <entry arg="true" endPc="268435889" name="dc" stackId="1" startPc="268435705"/>
+        <entry endPc="268435888" name="width" stackId="2" startPc="268435709"/>
+        <entry endPc="268435888" name="height" stackId="3" startPc="268435709"/>
+        <entry arg="true" endPc="268436045" name="index" stackId="1" startPc="268436033"/>
+        <entry arg="true" endPc="268436536" name="index" stackId="1" startPc="268436046"/>
+        <entry endPc="268436535" name="view" stackId="2" startPc="268436050"/>
+        <entry endPc="268436535" name="delegate" stackId="3" startPc="268436050"/>
+        <entry endPc="268436605" name="info" stackId="1" startPc="268436575"/>
+        <entry arg="true" endPc="268436936" name="info" stackId="1" startPc="268436722"/>
+        <entry endPc="268436798" name="position" stackId="2" startPc="268436739"/>
+        <entry arg="true" endPc="268436980" name="dc" stackId="1" startPc="268436937"/>
+        <entry arg="true" endPc="268438031" name="dc" stackId="1" startPc="268437130"/>
+        <entry endPc="268438030" name="width" stackId="2" startPc="268437134"/>
+        <entry endPc="268438030" name="height" stackId="3" startPc="268437134"/>
+        <entry endPc="268438030" name="centerX" stackId="4" startPc="268437134"/>
+        <entry endPc="268438030" name="centerY" stackId="5" startPc="268437134"/>
+        <entry endPc="268438030" name="radius" stackId="6" startPc="268437134"/>
+        <entry endPc="268438030" name="clockTime" stackId="7" startPc="268437134"/>
+        <entry endPc="268438030" name="timeString" stackId="8" startPc="268437134"/>
+        <entry endPc="268437984" name="yPos" stackId="9" startPc="268437453"/>
+        <entry endPc="268437984" name="headingText" stackId="10" startPc="268437453"/>
+        <entry endPc="268437694" name="knots" stackId="11" startPc="268437560"/>
+        <entry endPc="268437694" name="speedValue" stackId="12" startPc="268437560"/>
+        <entry endPc="268437984" name="latText" stackId="13" startPc="268437453"/>
+        <entry endPc="268437984" name="lonText" stackId="14" startPc="268437453"/>
+        <entry arg="true" endPc="268438440" name="dc" stackId="1" startPc="268438032"/>
+        <entry arg="true" endPc="268438440" name="centerX" stackId="2" startPc="268438032"/>
+        <entry arg="true" endPc="268438440" name="centerY" stackId="3" startPc="268438032"/>
+        <entry arg="true" endPc="268438440" name="radius" stackId="4" startPc="268438032"/>
+        <entry endPc="268438439" name="currentHeading" stackId="5" startPc="268438036"/>
+        <entry endPc="268438439" name="cardinals" stackId="6" startPc="268438036"/>
+        <entry endPc="268438439" name="lineLength" stackId="7" startPc="268438036"/>
+        <entry endPc="268438400" name="i" stackId="8" startPc="268438158"/>
+        <entry endPc="268438387" name="angle" stackId="9" startPc="268438158"/>
+        <entry endPc="268438387" name="radians" stackId="10" startPc="268438158"/>
+        <entry endPc="268438387" name="outerX" stackId="11" startPc="268438158"/>
+        <entry endPc="268438387" name="outerY" stackId="12" startPc="268438158"/>
+        <entry endPc="268438387" name="innerX" stackId="13" startPc="268438158"/>
+        <entry endPc="268438387" name="innerY" stackId="14" startPc="268438158"/>
+        <entry endPc="268438550" name="nextIndex" stackId="1" startPc="268438473"/>
+        <entry endPc="268438550" name="delegate" stackId="2" startPc="268438473"/>
+        <entry arg="true" endPc="268438736" name="view" stackId="1" startPc="268438618"/>
+        <entry endPc="268438865" name="currentTime" stackId="1" startPc="268438764"/>
+        <entry arg="true" endPc="268439221" name="info" stackId="1" startPc="268439085"/>
+        <entry endPc="268439438" name="info" stackId="1" startPc="268439408"/>
+        <entry arg="true" endPc="268440542" name="dc" stackId="1" startPc="268439758"/>
+        <entry endPc="268440541" name="width" stackId="2" startPc="268439762"/>
+        <entry endPc="268440541" name="clockTime" stackId="3" startPc="268439762"/>
+        <entry endPc="268440541" name="timeString" stackId="4" startPc="268439762"/>
+        <entry endPc="268440541" name="minutes" stackId="5" startPc="268439762"/>
+        <entry endPc="268440541" name="seconds" stackId="6" startPc="268439762"/>
+        <entry endPc="268440541" name="timerString" stackId="7" startPc="268439762"/>
+        <entry endPc="268440541" name="headingText" stackId="8" startPc="268439762"/>
+        <entry endPc="268440541" name="speedText" stackId="9" startPc="268439762"/>
+        <entry endPc="268440470" name="knots" stackId="10" startPc="268440431"/>
+        <entry arg="true" endPc="268440615" name="item" stackId="1" startPc="268440543"/>
+        <entry arg="true" endPc="268440845" name="dc" stackId="1" startPc="268440661"/>
+        <entry endPc="268440844" name="width" stackId="2" startPc="268440665"/>
+        <entry endPc="268440844" name="height" stackId="3" startPc="268440665"/>
+        <entry arg="true" endPc="268441054" name="dc" stackId="1" startPc="268440870"/>
+        <entry endPc="268441053" name="width" stackId="2" startPc="268440874"/>
+        <entry endPc="268441053" name="height" stackId="3" startPc="268440874"/>
+        <entry arg="true" endPc="268441369" name="dc" stackId="1" startPc="268441055"/>
+        <entry endPc="268441369" name="rez_cmp_local_text_1193959466" stackId="2" startPc="268441067"/>
+        <entry endPc="268441369" name="rez_cmp_local_bitmap_id_monkey" stackId="3" startPc="268441067"/>
     </localVars>
     <deviceInfo deviceVersion="8fc30743a4191ec19bcafa28e3ffcc2b5a958a17" partNumber="006-B3291-00"/>
     <annotations>
@@ -192,64 +480,119 @@
     </annotations>
     <dataEntryOffsetMappings>
         <dataEntry label="globals" offset="71" parentId="" symbolId="globals" type="module"/>
-        <dataEntry label="globals/YarSailorDelegate" offset="158" parentId="globals" symbolId="YarSailorDelegate" type="class"/>
-        <dataEntry label="globals/YarSailorView" offset="213" parentId="globals" symbolId="YarSailorView" type="class"/>
-        <dataEntry label="globals/Rez" offset="348" parentId="globals" symbolId="Rez" type="module"/>
-        <dataEntry label="globals/YarSailorApp" offset="411" parentId="globals" symbolId="YarSailorApp" type="class"/>
-        <dataEntry label="globals/YarSailorMenuDelegate" offset="482" parentId="globals" symbolId="YarSailorMenuDelegate" type="class"/>
-        <dataEntry label="globals/Rez/Drawables" offset="537" parentId="Rez" symbolId="Drawables" type="module"/>
-        <dataEntry label="globals/Rez/Layouts" offset="584" parentId="Rez" symbolId="Layouts" type="module"/>
-        <dataEntry label="globals/Rez/Menus" offset="623" parentId="Rez" symbolId="Menus" type="module"/>
-        <dataEntry label="globals/Rez/Strings" offset="662" parentId="Rez" symbolId="Strings" type="module"/>
-        <dataEntry label="globals/Rez/Menus/MainMenu" offset="725" parentId="Menus" symbolId="MainMenu" type="class"/>
+        <dataEntry label="globals/Race3View" offset="198" parentId="globals" symbolId="Race3View" type="class"/>
+        <dataEntry label="globals/YarSailorDelegate" offset="277" parentId="globals" symbolId="YarSailorDelegate" type="class"/>
+        <dataEntry label="globals/YarSailorView" offset="364" parentId="globals" symbolId="YarSailorView" type="class"/>
+        <dataEntry label="globals/Rez" offset="507" parentId="globals" symbolId="Rez" type="module"/>
+        <dataEntry label="globals/RaceStartDelegate" offset="570" parentId="globals" symbolId="RaceStartDelegate" type="class"/>
+        <dataEntry label="globals/YarSailorApp" offset="697" parentId="globals" symbolId="YarSailorApp" type="class"/>
+        <dataEntry label="globals/RaceStartView" offset="768" parentId="globals" symbolId="RaceStartView" type="class"/>
+        <dataEntry label="globals/YarSailorMenuDelegate" offset="959" parentId="globals" symbolId="YarSailorMenuDelegate" type="class"/>
+        <dataEntry label="globals/Race1View" offset="1014" parentId="globals" symbolId="Race1View" type="class"/>
+        <dataEntry label="globals/Race2View" offset="1093" parentId="globals" symbolId="Race2View" type="class"/>
+        <dataEntry label="globals/Rez/Drawables" offset="1172" parentId="Rez" symbolId="Drawables" type="module"/>
+        <dataEntry label="globals/Rez/Layouts" offset="1219" parentId="Rez" symbolId="Layouts" type="module"/>
+        <dataEntry label="globals/Rez/Menus" offset="1258" parentId="Rez" symbolId="Menus" type="module"/>
+        <dataEntry label="globals/Rez/Strings" offset="1297" parentId="Rez" symbolId="Strings" type="module"/>
+        <dataEntry label="globals/Rez/Menus/MainMenu" offset="1360" parentId="Menus" symbolId="MainMenu" type="class"/>
     </dataEntryOffsetMappings>
     <functions>
-        <functionEntry accessMode="public" endPc="268435485" name="getApp" startPc="268435460">
+        <functionEntry accessMode="public" endPc="268435478" name="&lt;init&gt;" parent="Race3View" startPc="268435460">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435504" name="&lt;init&gt;" parent="YarSailorDelegate" startPc="268435486">
+        <functionEntry accessMode="public" endPc="268435504" name="getApp" startPc="268435479">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435523" name="&lt;init&gt;" parent="YarSailorView" startPc="268435505">
+        <functionEntry accessMode="public" endPc="268435523" name="&lt;init&gt;" parent="YarSailorDelegate" startPc="268435505">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435547" name="&lt;init&gt;" parent="Rez" startPc="268435524">
+        <functionEntry accessMode="public" endPc="268435542" name="&lt;init&gt;" parent="YarSailorView" startPc="268435524">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435566" name="&lt;init&gt;" parent="YarSailorApp" startPc="268435548">
+        <functionEntry accessMode="public" endPc="268435566" name="&lt;init&gt;" parent="Rez" startPc="268435543">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435585" name="&lt;init&gt;" parent="YarSailorMenuDelegate" startPc="268435567">
+        <functionEntry accessMode="public" endPc="268435585" name="&lt;init&gt;" parent="RaceStartDelegate" startPc="268435567">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435675" name="onMenu" parent="YarSailorDelegate" startPc="268435586">
+        <functionEntry accessMode="public" endPc="268435604" name="&lt;init&gt;" parent="YarSailorApp" startPc="268435586">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435696" name="initialize" parent="YarSailorDelegate" startPc="268435676">
+        <functionEntry accessMode="public" endPc="268435623" name="&lt;init&gt;" parent="RaceStartView" startPc="268435605">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435732" name="updatePosition" parent="YarSailorView" startPc="268435697">
+        <functionEntry accessMode="public" endPc="268435642" name="&lt;init&gt;" parent="YarSailorMenuDelegate" startPc="268435624">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268435847" name="onShow" parent="YarSailorView" startPc="268435733">
+        <functionEntry accessMode="public" endPc="268435661" name="&lt;init&gt;" parent="Race1View" startPc="268435643">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436062" name="onPosition" parent="YarSailorView" startPc="268435848">
+        <functionEntry accessMode="public" endPc="268435680" name="&lt;init&gt;" parent="Race2View" startPc="268435662">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="Race3View">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435683" name="onLayout" parent="Race3View" startPc="268435681">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435704" name="initialize" parent="Race3View" startPc="268435684">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="Race3View">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435889" name="onUpdate" parent="Race3View" startPc="268435705">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268435979" name="onMenu" parent="YarSailorDelegate" startPc="268435890">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436032" name="onPreviousPage" parent="YarSailorDelegate" startPc="268435980">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436045" name="setScreenIndex" parent="YarSailorDelegate" startPc="268436033">
+            <param id="index"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436536" name="switchToScreen" parent="YarSailorDelegate" startPc="268436046">
+            <param id="index"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436570" name="initialize" parent="YarSailorDelegate" startPc="268436537">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436606" name="updatePosition" parent="YarSailorView" startPc="268436571">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436721" name="onShow" parent="YarSailorView" startPc="268436607">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268436936" name="onPosition" parent="YarSailorView" startPc="268436722">
             <param id="info"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436106" name="onLayout" parent="YarSailorView" startPc="268436063">
+        <functionEntry accessMode="public" endPc="268436980" name="onLayout" parent="YarSailorView" startPc="268436937">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436172" name="initialize" parent="YarSailorView" startPc="268436107">
+        <functionEntry accessMode="public" endPc="268437046" name="initialize" parent="YarSailorView" startPc="268436981">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436255" name="onHide" parent="YarSailorView" startPc="268436173">
+        <functionEntry accessMode="public" endPc="268437129" name="onHide" parent="YarSailorView" startPc="268437047">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436899" name="onUpdate" parent="YarSailorView" startPc="268436256">
+        <functionEntry accessMode="public" endPc="268438031" name="onUpdate" parent="YarSailorView" startPc="268437130">
             <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438440" name="drawCompassRing" parent="YarSailorView" startPc="268438032">
+            <param id="dc"/>
+            <param id="centerX"/>
+            <param id="centerY"/>
+            <param id="radius"/>
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -264,35 +607,139 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Strings">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436902" name="onStart" parent="YarSailorApp" startPc="268436900">
+        <functionEntry accessMode="public" endPc="268438463" name="onBack" parent="RaceStartDelegate" startPc="268438441">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438468" name="onMenu" parent="RaceStartDelegate" startPc="268438464">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438550" name="onPreviousPage" parent="RaceStartDelegate" startPc="268438469">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438571" name="onTimerTick" parent="RaceStartDelegate" startPc="268438551">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438617" name="cleanup" parent="RaceStartDelegate" startPc="268438572">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438736" name="initialize" parent="RaceStartDelegate" startPc="268438618">
+            <param id="view"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438759" name="onNextPage" parent="RaceStartDelegate" startPc="268438737">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438865" name="onSelect" parent="RaceStartDelegate" startPc="268438760">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268438868" name="onStart" parent="YarSailorApp" startPc="268438866">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436979" name="getInitialView" parent="YarSailorApp" startPc="268436903">
+        <functionEntry accessMode="public" endPc="268438945" name="getInitialView" parent="YarSailorApp" startPc="268438869">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437000" name="initialize" parent="YarSailorApp" startPc="268436980">
+        <functionEntry accessMode="public" endPc="268438966" name="initialize" parent="YarSailorApp" startPc="268438946">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437003" name="onStop" parent="YarSailorApp" startPc="268437001">
+        <functionEntry accessMode="public" endPc="268438969" name="onStop" parent="YarSailorApp" startPc="268438967">
             <param id="state"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437076" name="onMenuItem" parent="YarSailorMenuDelegate" startPc="268437004">
-            <param id="item"/>
+        <functionEntry accessMode="public" endPc="268439084" name="onShow" parent="RaceStartView" startPc="268438970">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437097" name="initialize" parent="YarSailorMenuDelegate" startPc="268437077">
+        <functionEntry accessMode="public" endPc="268439221" name="onPosition" parent="RaceStartView" startPc="268439085">
+            <param id="info"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437412" name="MainLayout" parent="Layouts" startPc="268437098">
+        <functionEntry accessMode="public" endPc="268439259" name="incrementTimer" parent="RaceStartView" startPc="268439222">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439301" name="resetTimer" parent="RaceStartView" startPc="268439260">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439304" name="onLayout" parent="RaceStartView" startPc="268439302">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437431" name="&lt;init&gt;" parent="MainMenu" startPc="268437413">
+        <functionEntry accessMode="public" endPc="268439403" name="tickTimer" parent="RaceStartView" startPc="268439305">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437564" name="initialize" parent="MainMenu" startPc="268437432">
+        <functionEntry accessMode="public" endPc="268439439" name="updateGPS" parent="RaceStartView" startPc="268439404">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439510" name="decrementTimer" parent="RaceStartView" startPc="268439440">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439556" name="cleanup" parent="RaceStartView" startPc="268439511">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439592" name="toggleTimer" parent="RaceStartView" startPc="268439557">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439603" name="isTimerRunning" parent="RaceStartView" startPc="268439593">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439674" name="initialize" parent="RaceStartView" startPc="268439604">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268439757" name="onHide" parent="RaceStartView" startPc="268439675">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440542" name="onUpdate" parent="RaceStartView" startPc="268439758">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440615" name="onMenuItem" parent="YarSailorMenuDelegate" startPc="268440543">
+            <param id="item"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440636" name="initialize" parent="YarSailorMenuDelegate" startPc="268440616">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="Race1View">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440639" name="onLayout" parent="Race1View" startPc="268440637">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440660" name="initialize" parent="Race1View" startPc="268440640">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="Race1View">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440845" name="onUpdate" parent="Race1View" startPc="268440661">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onShow" parent="Race2View">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440848" name="onLayout" parent="Race2View" startPc="268440846">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268440869" name="initialize" parent="Race2View" startPc="268440849">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" name="onHide" parent="Race2View">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441054" name="onUpdate" parent="Race2View" startPc="268440870">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441369" name="MainLayout" parent="Layouts" startPc="268441055">
+            <param id="dc"/>
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441388" name="&lt;init&gt;" parent="MainMenu" startPc="268441370">
+            <documentation/>
+        </functionEntry>
+        <functionEntry accessMode="public" endPc="268441521" name="initialize" parent="MainMenu" startPc="268441389">
             <documentation/>
         </functionEntry>
     </functions>

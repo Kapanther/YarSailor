@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<gpx version="1.1" creator="GDAL 3.11.4" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+<metadata>
+<bounds minlat="-32.012234078766568" minlon="115.774119345663763" maxlat="-31.995832452128557" maxlon="115.825945695646340"/>                                   
+</metadata>
+<wpt lat="-31.999377854606628" lon="115.780446781310587">
+  <name>PKD:  Parker DAY BOUY (S)</name>
+  <type>Mark</type>
+</wpt>
+<wpt lat="-32.008086240108376" lon="115.774119345663763">
+  <name>MOS: Mosman Bouy (P)</name>
+  <type>Mark</type>
+</wpt>
+<wpt lat="-32.008345799833201" lon="115.775709827478721">
+  <name>SUI: Suicide Bouy (P)</name>
+  <type>Mark</type>
+</wpt>
+<wpt lat="-32.010965108851622" lon="115.7969312294953">
+  <name>MIL: Miller (P)</name>
+  <type>Mark</type>
+</wpt>
+<wpt lat="-32.000571970725275" lon="115.814454706267242">
+  <name>ARM: Armstrong (P)</name>
+  <type>Mark</type>
+</wpt>
+<wpt lat="-31.995832452128557" lon="115.82594569564634">
+  <name>DLW: Dolphin West (S)</name>
+  <type>Mark</type>
+</wpt>
+<wpt lat="-31.998900714626771" lon="115.780301012328309">
+  <name>PKR: Parker Bouy (P)</name>
+  <type>Mark</type>
+</wpt>
+<wpt lat="-32.002127375810716" lon="115.775839848536904">
+  <name>SF1: Start Finish 1</name>
+  <type>Mark</type>
+</wpt>
+<wpt lat="-32.012234078766568" lon="115.799957671218792">
+  <name>BLA: Bricklanding A (S)</name>
+  <type>Mark</type>
+</wpt>
+<wpt lat="-32.011347075046089" lon="115.798604233408014">
+  <name>BLB: Bricklanding B (S)</name>
+  <type>Mark</type>
+</wpt>
+<wpt lat="-32.004602726144377" lon="115.805896485798371">
+  <name>DOM: Dome Bouy (P)</name>
+  <type>Mark</type>
+</wpt>
+</gpx>
