@@ -7,11 +7,11 @@ using Toybox.Lang as Lang;
 // Main data view for sailing metrics
 class YarSailorView extends Ui.View {
 
-    hidden var speed;
-    hidden var heading;
-    hidden var latitude;
-    hidden var longitude;
-    hidden var accuracy;
+    hidden var speed as Float;
+    hidden var heading as Float;
+    hidden var latitude as Float;
+    hidden var longitude as Float;
+    hidden var accuracy as Number;
 
     function initialize() {
         View.initialize();
@@ -93,8 +93,8 @@ class YarSailorView extends Ui.View {
     // Position callback
     function onPosition(info) {
         if (info has :speed && info.speed != null) {
-            // Convert m/s to knots (1 m/s = 1.94384 knots)
-            speed = info.speed * 1.94384;
+            // Convert m/s to knots (1 m/s = 1.943844 knots)
+            speed = info.speed * 1.943844;
         }
         
         if (info has :heading && info.heading != null) {

@@ -65,9 +65,7 @@ YarSailor supports a wide range of Garmin devices including:
 
 ### Controls
 
-- **Select**: Reserved for future features
 - **Back**: Exit the application
-- **Next/Previous**: Navigate between pages (future feature)
 
 ## Project Structure
 
