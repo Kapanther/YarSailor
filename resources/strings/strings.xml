@@ -1,0 +1,10 @@
+<resources>
+    <strings>
+        <string id="AppName">YarSailor</string>
+        <string id="Speed">Speed</string>
+        <string id="Heading">Heading</string>
+        <string id="Latitude">Latitude</string>
+        <string id="Longitude">Longitude</string>
+        <string id="GPS">GPS</string>
+    </strings>
+</resources>

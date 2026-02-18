@@ -1,0 +1,4 @@
+<resources>
+    <!-- Launcher icon - simple sailboat representation -->
+    <bitmap id="LauncherIcon" filename="launcher_icon.png" />
+</resources>

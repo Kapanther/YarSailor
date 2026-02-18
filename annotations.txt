@@ -1,0 +1,2 @@
+# Connect IQ Compiler Annotations
+# Annotations help the compiler optimize and validate code

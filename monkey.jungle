@@ -1,0 +1,11 @@
+# YarSailor - Garmin Sailing Application
+# Connect IQ Project Configuration
+
+project.manifest = manifest.xml
+
+# Source paths
+base.sourcePath = source
+base.resourcePath = resources
+
+# Compiler annotations
+base.annotations = annotations.txt

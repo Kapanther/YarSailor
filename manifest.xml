@@ -1,0 +1,32 @@
+<!-- YarSailor - Garmin Sailing Application -->
+<iq:manifest xmlns:iq="http://www.garmin.com/xml/connectiq" version="3">
+    <iq:application entry="YarSailorApp" id="6a4e8f3c-1234-5678-9abc-def012345678" launcherIcon="@Drawables.LauncherIcon" minSdkVersion="3.2.0" name="@Strings.AppName" type="watch-app" version="1.0.0">
+        <iq:products>
+            <!-- Garmin Marine Devices -->
+            <iq:product id="fenix6"/>
+            <iq:product id="fenix6pro"/>
+            <iq:product id="fenix6s"/>
+            <iq:product id="fenix6spro"/>
+            <iq:product id="fenix7"/>
+            <iq:product id="fenix7s"/>
+            <iq:product id="fenix7x"/>
+            <iq:product id="vivoactive4"/>
+            <iq:product id="vivoactive4s"/>
+            <iq:product id="venu"/>
+            <iq:product id="venu2"/>
+            <iq:product id="epix2"/>
+            <iq:product id="marq2"/>
+        </iq:products>
+
+        <iq:permissions>
+            <iq:uses-permission id="Positioning"/>
+            <iq:uses-permission id="Sensor"/>
+        </iq:permissions>
+
+        <iq:languages>
+            <iq:language>eng</iq:language>
+        </iq:languages>
+
+        <iq:barrels/>
+    </iq:application>
+</iq:manifest>
