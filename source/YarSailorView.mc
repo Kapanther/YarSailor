@@ -22,12 +22,6 @@ class YarSailorView extends Ui.View {
         accuracy = Position.QUALITY_NOT_AVAILABLE;
     }
 
-    // Set your layout here. Anytime the size of obscurity of
-    // the draw context is changed this will be called.
-    function onLayout(dc) {
-        // Custom layout handled in onUpdate
-    }
-
     // Called when this View is brought to the foreground. Restore
     // the state of this View and prepare it to be shown. This includes
     // loading resources into memory.
