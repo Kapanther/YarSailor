@@ -5,7 +5,7 @@ using Toybox.System as Sys;
 using Toybox.Lang as Lang;
 
 // Main data view for sailing metrics
-class YarSailorView extends Ui.DataField {
+class YarSailorView extends Ui.View {
 
     hidden var speed;
     hidden var heading;
@@ -14,7 +14,7 @@ class YarSailorView extends Ui.DataField {
     hidden var accuracy;
 
     function initialize() {
-        DataField.initialize();
+        View.initialize();
         speed = 0.0;
         heading = 0.0;
         latitude = 0.0;
@@ -25,7 +25,7 @@ class YarSailorView extends Ui.DataField {
     // Set your layout here. Anytime the size of obscurity of
     // the draw context is changed this will be called.
     function onLayout(dc) {
-        View.setLayout(Rez.Layouts.MainLayout(dc));
+        // Custom layout handled in onUpdate
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -122,12 +122,6 @@ class YarSailorView extends Ui.DataField {
         }
         
         Ui.requestUpdate();
-    }
-
-    // The given info object contains all the current workout information.
-    // Calculate a value and save it locally in this method.
-    function compute(info) {
-        // This method is called once per second during an activity
     }
 
 }
