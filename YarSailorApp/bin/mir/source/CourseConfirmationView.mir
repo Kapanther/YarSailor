@@ -1,0 +1,563 @@
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Graphics,1,14,22]; ]
+import Toybox.Graphics;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 3; @symbol_importdef<0> = [Toybox,3,7,13]; @symbol_importdef<1> = [Lang,3,14,18]; ]
+import Toybox.Lang;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 4; @symbol_importdef<0> = [Toybox,4,7,13]; @symbol_importdef<1> = [System,4,14,20]; ]
+import Toybox.System;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 5; @symbol_importdef<0> = [Toybox,5,7,13]; @symbol_importdef<1> = [Application,5,14,25]; ]
+import Toybox.Application;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 7; @symbol_classdef = [CourseConfirmationView,7,6,28]; @symbol_extends<0> = [WatchUi,7,37,44]; @symbol_extends<1> = [View,7,45,49]; ]
+class CourseConfirmationView extends WatchUi.View {
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 8; @position = 16; @symbol_vardef = [_courseName,8,16,27]; @symbol_type<0> = [String,8,31,37]; ]
+    private
+    var _courseName as String;
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 9; @position = 16; @symbol_vardef = [_waypointCount,9,16,30]; @symbol_type<0> = [Number,9,34,40]; ]
+    private
+    var _waypointCount as Number;
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 10; @position = 16; @symbol_vardef = [_isSampleCourse,10,16,31]; @symbol_type<0> = [Boolean,10,35,42]; ]
+    private
+    var _isSampleCourse as Boolean;
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 11; @position = 16; @symbol_vardef = [_backArrow,11,16,26]; @symbol_type<0> = [BitmapResource,11,30,44]; ]
+    private
+    var _backArrow as BitmapResource or Null;
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 13; @symbol_functiondef = [initialize,13,13,23]; @symbol_param<0> = [courseName,13,24,34]; @symbol_param<0>_type<0> = [String,13,38,44]; @symbol_param<1> = [waypointCount,13,46,59]; @symbol_param<1>_type<0> = [Number,13,63,69]; @symbol_param<2> = [isSampleCourse,13,71,85]; @symbol_param<2>_type<0> = [Boolean,13,89,96]; ]
+    function initialize(courseName as String, waypointCount as Number, isSampleCourse as Boolean) as Void {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_13_98_19_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 14 8 ]
+        symbol [ View %tmp.2 14 8 12 ];
+        %tmp.2 = getv ? :View;
+        symbol [ initialize %tmp.3 14 13 23 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 15 8 ]
+        %tmp.4 = lgetv %courseName;
+        symbol [ courseName %tmp.4 15 22 32 ];
+        symbol [ _courseName ? 15 8 19 ];
+        putv self :_courseName %tmp.4;
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 16 8 ]
+        %tmp.5 = lgetv %waypointCount;
+        symbol [ waypointCount %tmp.5 16 25 38 ];
+        symbol [ _waypointCount ? 16 8 22 ];
+        putv self :_waypointCount %tmp.5;
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 17 8 ]
+        %tmp.6 = lgetv %isSampleCourse;
+        symbol [ isSampleCourse %tmp.6 17 26 40 ];
+        symbol [ _isSampleCourse ? 17 8 23 ];
+        putv self :_isSampleCourse %tmp.6;
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 18 8 ]
+        %tmp.7 = null;
+        symbol [ _backArrow ? 18 8 18 ];
+        putv self :_backArrow %tmp.7;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_13_98_19_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 21; @symbol_functiondef = [onLayout,21,13,21]; @symbol_param<0> = [dc,21,22,24]; @symbol_param<0>_type<0> = [Dc,21,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_21_40_23_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 22 8 ]
+        symbol [ WatchUi %tmp.1 22 21 28 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.2 22 29 41 ];
+        %tmp.2 = getv function %tmp.1 :loadResource;
+        symbol [ Rez %tmp.4 22 42 45 ];
+        %tmp.4 = getv ? :Rez;
+        symbol [ Drawables %tmp.5 22 46 55 ];
+        %tmp.5 = getv %tmp.4 :Drawables;
+        symbol [ BackArrow %tmp.6 22 56 65 ];
+        %tmp.6 = getv %tmp.5 :BackArrow;
+        %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+        symbol [ _backArrow ? 22 8 18 ];
+        putv self :_backArrow %tmp.7;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_21_40_23_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 25; @symbol_functiondef = [onShow,25,13,19]; ]
+    function onShow() as Void {
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 28; @symbol_functiondef = [onUpdate,28,13,21]; @symbol_param<0> = [dc,28,22,24]; @symbol_param<0>_type<0> = [Dc,28,28,30]; ]
+    function onUpdate(dc as Dc) as Void {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_28_40_80_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 29 8 ]
+        %tmp.1 = lgetv %dc;
+        symbol [ dc %tmp.1 29 8 10 ];
+        symbol [ setColor %tmp.2 29 11 19 ];
+        %tmp.2 = getv function %tmp.1 :setColor;
+        symbol [ Graphics %tmp.3 29 20 28 ];
+        %tmp.3 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.4 29 29 40 ];
+        %tmp.4 = getv %tmp.3 :COLOR_BLACK;
+        symbol [ Graphics %tmp.5 29 42 50 ];
+        %tmp.5 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLACK %tmp.6 29 51 62 ];
+        %tmp.6 = getv %tmp.5 :COLOR_BLACK;
+        invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 30 8 ]
+        %tmp.7 = lgetv %dc;
+        symbol [ dc %tmp.7 30 8 10 ];
+        symbol [ clear %tmp.8 30 11 16 ];
+        %tmp.8 = getv function %tmp.7 :clear;
+        invoke %tmp.7 %tmp.8();
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 32 8 ]
+        %tmp.9 = lgetv %dc;
+        symbol [ dc %tmp.9 32 8 10 ];
+        symbol [ setColor %tmp.10 32 11 19 ];
+        %tmp.10 = getv function %tmp.9 :setColor;
+        symbol [ Graphics %tmp.11 32 20 28 ];
+        %tmp.11 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.12 32 29 40 ];
+        %tmp.12 = getv %tmp.11 :COLOR_WHITE;
+        symbol [ Graphics %tmp.13 32 42 50 ];
+        %tmp.13 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.14 32 51 68 ];
+        %tmp.14 = getv %tmp.13 :COLOR_TRANSPARENT;
+        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 34 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_28_40_80_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_28_40_80_4_stop" ]
+        %width.1 = local;
+        symbol [ width %width.1 34 12 17 ];
+        %tmp.15 = lgetv %dc;
+        symbol [ dc %tmp.15 34 20 22 ];
+        symbol [ getWidth %tmp.16 34 23 31 ];
+        %tmp.16 = getv function %tmp.15 :getWidth;
+        %tmp.17 = invoke %tmp.15 %tmp.16();
+        lputv %width.1 %tmp.17;
+        symbol [ width %width.1 34 12 17 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 37 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_28_40_80_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_28_40_80_4_stop" ]
+        %clockTime.2 = local;
+        symbol [ clockTime %clockTime.2 37 12 21 ];
+        symbol [ System %tmp.18 37 24 30 ];
+        %tmp.18 = getm $.Toybox.System;
+        symbol [ getClockTime %tmp.19 37 31 43 ];
+        %tmp.19 = getv function %tmp.18 :getClockTime;
+        %tmp.20 = invoke %tmp.18 %tmp.19();
+        lputv %clockTime.2 %tmp.20;
+        symbol [ clockTime %clockTime.2 37 12 21 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 38 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_28_40_80_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_28_40_80_4_stop" ]
+        %timeString.3 = local;
+        symbol [ timeString %timeString.3 38 12 22 ];
+        symbol [ Lang %tmp.21 38 25 29 ];
+        %tmp.21 = getm $.Toybox.Lang;
+        symbol [ format %tmp.22 38 30 36 ];
+        %tmp.22 = getv function %tmp.21 :format;
+        %tmp.23 = "$1$:$2$";
+        %tmp.24 = newa 2;
+        %tmp.25 = lgetv %clockTime.2;
+        symbol [ clockTime %tmp.25 39 12 21 ];
+        symbol [ hour %tmp.26 39 22 26 ];
+        %tmp.26 = getv %tmp.25 :hour;
+        symbol [ format %tmp.27 39 27 33 ];
+        %tmp.27 = getv function %tmp.26 :format;
+        %tmp.28 = "%02d";
+        %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
+        %tmp.30 = dup %tmp.24;
+        %tmp.31 = aputv %tmp.30 0 %tmp.29;
+        %tmp.32 = lgetv %clockTime.2;
+        symbol [ clockTime %tmp.32 40 12 21 ];
+        symbol [ min %tmp.33 40 22 25 ];
+        %tmp.33 = getv %tmp.32 :min;
+        symbol [ format %tmp.34 40 26 32 ];
+        %tmp.34 = getv function %tmp.33 :format;
+        %tmp.35 = "%02d";
+        %tmp.36 = invoke %tmp.33 %tmp.34(%tmp.35);
+        %tmp.37 = dup %tmp.31;
+        %tmp.38 = aputv %tmp.37 1 %tmp.36;
+        %tmp.39 = invoke %tmp.21 %tmp.22(%tmp.23, %tmp.38);
+        lputv %timeString.3 %tmp.39;
+        symbol [ timeString %timeString.3 38 12 22 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 44 8 ]
+        %tmp.40 = lgetv %dc;
+        symbol [ dc %tmp.40 44 8 10 ];
+        symbol [ drawText %tmp.41 44 11 19 ];
+        %tmp.41 = getv function %tmp.40 :drawText;
+        %tmp.42 = lgetv %width.1;
+        symbol [ width %tmp.42 44 20 25 ];
+        %tmp.43 = 2;
+        %tmp.44 = div %tmp.42 %tmp.43;
+        %tmp.45 = 5;
+        symbol [ Graphics %tmp.46 44 34 42 ];
+        %tmp.46 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.47 44 43 54 ];
+        %tmp.47 = getv %tmp.46 :FONT_MEDIUM;
+        %tmp.48 = lgetv %timeString.3;
+        symbol [ timeString %tmp.48 44 56 66 ];
+        symbol [ Graphics %tmp.49 44 68 76 ];
+        %tmp.49 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.50 44 77 96 ];
+        %tmp.50 = getv %tmp.49 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.40 %tmp.41(%tmp.44, %tmp.45, %tmp.47, %tmp.48, %tmp.50);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 47 8 ]
+        %tmp.51 = lgetv %dc;
+        symbol [ dc %tmp.51 47 8 10 ];
+        symbol [ setColor %tmp.52 47 11 19 ];
+        %tmp.52 = getv function %tmp.51 :setColor;
+        symbol [ Graphics %tmp.53 47 20 28 ];
+        %tmp.53 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.54 47 29 42 ];
+        %tmp.54 = getv %tmp.53 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.55 47 44 52 ];
+        %tmp.55 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.56 47 53 70 ];
+        %tmp.56 = getv %tmp.55 :COLOR_TRANSPARENT;
+        invoke %tmp.51 %tmp.52(%tmp.54, %tmp.56);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 48 8 ]
+        %tmp.57 = lgetv %dc;
+        symbol [ dc %tmp.57 48 8 10 ];
+        symbol [ drawText %tmp.58 48 11 19 ];
+        %tmp.58 = getv function %tmp.57 :drawText;
+        %tmp.59 = lgetv %width.1;
+        symbol [ width %tmp.59 48 20 25 ];
+        %tmp.60 = 2;
+        %tmp.61 = div %tmp.59 %tmp.60;
+        %tmp.62 = 35;
+        symbol [ Graphics %tmp.63 48 35 43 ];
+        %tmp.63 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.64 48 44 53 ];
+        %tmp.64 = getv %tmp.63 :FONT_TINY;
+        %tmp.65 = "Confirm Course";
+        symbol [ Graphics %tmp.66 48 73 81 ];
+        %tmp.66 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.67 48 82 101 ];
+        %tmp.67 = getv %tmp.66 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.57 %tmp.58(%tmp.61, %tmp.62, %tmp.64, %tmp.65, %tmp.67);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 49 8 ]
+        %tmp.68 = lgetv %dc;
+        symbol [ dc %tmp.68 49 8 10 ];
+        symbol [ setColor %tmp.69 49 11 19 ];
+        %tmp.69 = getv function %tmp.68 :setColor;
+        symbol [ Graphics %tmp.70 49 20 28 ];
+        %tmp.70 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.71 49 29 40 ];
+        %tmp.71 = getv %tmp.70 :COLOR_WHITE;
+        symbol [ Graphics %tmp.72 49 42 50 ];
+        %tmp.72 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.73 49 51 68 ];
+        %tmp.73 = getv %tmp.72 :COLOR_TRANSPARENT;
+        invoke %tmp.68 %tmp.69(%tmp.71, %tmp.73);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 52 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_28_40_80_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_28_40_80_4_stop" ]
+        %displayName.4 = local;
+        symbol [ displayName %displayName.4 52 12 23 ];
+        symbol [ _courseName %tmp.75 52 26 37 ];
+        %tmp.75 = getv ? :_courseName;
+        lputv %displayName.4 %tmp.75;
+        symbol [ displayName %displayName.4 52 12 23 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 53 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_53_8_55_8_if_stmt:
+        %tmp.76 = lgetv %displayName.4;
+        symbol [ displayName %tmp.76 53 12 23 ];
+        symbol [ length %tmp.77 53 24 30 ];
+        %tmp.77 = getv function %tmp.76 :length;
+        %tmp.78 = invoke %tmp.76 %tmp.77();
+        %tmp.79 = 20;
+        %tmp.80 = gt %tmp.78 %tmp.79;
+        bf %tmp.80 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_53_8_55_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_53_8_55_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_53_39_55_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 54 12 ]
+        %tmp.81 = lgetv %displayName.4;
+        symbol [ displayName %tmp.81 54 26 37 ];
+        symbol [ substring %tmp.82 54 38 47 ];
+        %tmp.82 = getv function %tmp.81 :substring;
+        %tmp.83 = 0;
+        %tmp.84 = 20;
+        %tmp.85 = invoke %tmp.81 %tmp.82(%tmp.83, %tmp.84);
+        lputv %displayName.4 %tmp.85;
+        symbol [ displayName %displayName.4 54 12 23 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_53_39_55_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_53_8_55_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_53_8_55_8_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 56 8 ]
+        %tmp.86 = lgetv %dc;
+        symbol [ dc %tmp.86 56 8 10 ];
+        symbol [ drawText %tmp.87 56 11 19 ];
+        %tmp.87 = getv function %tmp.86 :drawText;
+        %tmp.88 = lgetv %width.1;
+        symbol [ width %tmp.88 56 20 25 ];
+        %tmp.89 = 2;
+        %tmp.90 = div %tmp.88 %tmp.89;
+        %tmp.91 = 80;
+        symbol [ Graphics %tmp.92 56 35 43 ];
+        %tmp.92 = getm $.Toybox.Graphics;
+        symbol [ FONT_MEDIUM %tmp.93 56 44 55 ];
+        %tmp.93 = getv %tmp.92 :FONT_MEDIUM;
+        %tmp.94 = lgetv %displayName.4;
+        symbol [ displayName %tmp.94 56 57 68 ];
+        symbol [ Graphics %tmp.95 56 70 78 ];
+        %tmp.95 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.96 56 79 98 ];
+        %tmp.96 = getv %tmp.95 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.86 %tmp.87(%tmp.90, %tmp.91, %tmp.93, %tmp.94, %tmp.96);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 59 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_28_40_80_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_28_40_80_4_stop" ]
+        %waypointText.5 = local;
+        symbol [ waypointText %waypointText.5 59 12 24 ];
+        %tmp.97 = "";
+        lputv %waypointText.5 %tmp.97;
+        symbol [ waypointText %waypointText.5 59 12 24 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 60 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_60_8_64_8_if_stmt:
+        symbol [ _waypointCount %tmp.99 60 12 26 ];
+        %tmp.99 = getv ? :_waypointCount;
+        %tmp.100 = 0;
+        %tmp.101 = gt %tmp.99 %tmp.100;
+        bf %tmp.101 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_60_8_64_8_if_else_false;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_60_8_64_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_60_32_62_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 61 12 ]
+        symbol [ _waypointCount %tmp.103 61 27 41 ];
+        %tmp.103 = getv ? :_waypointCount;
+        %tmp.104 = " waypoints";
+        %tmp.105 = add %tmp.103 %tmp.104;
+        lputv %waypointText.5 %tmp.105;
+        symbol [ waypointText %waypointText.5 61 12 24 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_60_32_62_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_60_8_64_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_60_8_64_8_if_else_false:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_62_15_64_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 63 12 ]
+        %tmp.106 = "waypoints: unknown";
+        lputv %waypointText.5 %tmp.106;
+        symbol [ waypointText %waypointText.5 63 12 24 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_62_15_64_8_stop:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_60_8_64_8_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 65 8 ]
+        %tmp.107 = lgetv %dc;
+        symbol [ dc %tmp.107 65 8 10 ];
+        symbol [ drawText %tmp.108 65 11 19 ];
+        %tmp.108 = getv function %tmp.107 :drawText;
+        %tmp.109 = lgetv %width.1;
+        symbol [ width %tmp.109 65 20 25 ];
+        %tmp.110 = 2;
+        %tmp.111 = div %tmp.109 %tmp.110;
+        %tmp.112 = 120;
+        symbol [ Graphics %tmp.113 65 36 44 ];
+        %tmp.113 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.114 65 45 55 ];
+        %tmp.114 = getv %tmp.113 :FONT_SMALL;
+        %tmp.115 = lgetv %waypointText.5;
+        symbol [ waypointText %tmp.115 65 57 69 ];
+        symbol [ Graphics %tmp.116 65 71 79 ];
+        %tmp.116 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.117 65 80 99 ];
+        %tmp.117 = getv %tmp.116 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.107 %tmp.108(%tmp.111, %tmp.112, %tmp.114, %tmp.115, %tmp.117);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 68 8 ]
+        %tmp.118 = lgetv %dc;
+        symbol [ dc %tmp.118 68 8 10 ];
+        symbol [ setColor %tmp.119 68 11 19 ];
+        %tmp.119 = getv function %tmp.118 :setColor;
+        symbol [ Graphics %tmp.120 68 20 28 ];
+        %tmp.120 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.121 68 29 42 ];
+        %tmp.121 = getv %tmp.120 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.122 68 44 52 ];
+        %tmp.122 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.123 68 53 70 ];
+        %tmp.123 = getv %tmp.122 :COLOR_TRANSPARENT;
+        invoke %tmp.118 %tmp.119(%tmp.121, %tmp.123);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 69 8 ]
+        %tmp.124 = lgetv %dc;
+        symbol [ dc %tmp.124 69 8 10 ];
+        symbol [ drawText %tmp.125 69 11 19 ];
+        %tmp.125 = getv function %tmp.124 :drawText;
+        %tmp.126 = lgetv %width.1;
+        symbol [ width %tmp.126 69 20 25 ];
+        %tmp.127 = 2;
+        %tmp.128 = div %tmp.126 %tmp.127;
+        %tmp.129 = 160;
+        symbol [ Graphics %tmp.130 69 36 44 ];
+        %tmp.130 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.131 69 45 55 ];
+        %tmp.131 = getv %tmp.130 :FONT_XTINY;
+        %tmp.132 = "Press OK to confirm";
+        symbol [ Graphics %tmp.133 69 80 88 ];
+        %tmp.133 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.134 69 89 108 ];
+        %tmp.134 = getv %tmp.133 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.124 %tmp.125(%tmp.128, %tmp.129, %tmp.131, %tmp.132, %tmp.134);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 70 8 ]
+        %tmp.135 = lgetv %dc;
+        symbol [ dc %tmp.135 70 8 10 ];
+        symbol [ setColor %tmp.136 70 11 19 ];
+        %tmp.136 = getv function %tmp.135 :setColor;
+        symbol [ Graphics %tmp.137 70 20 28 ];
+        %tmp.137 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.138 70 29 40 ];
+        %tmp.138 = getv %tmp.137 :COLOR_WHITE;
+        symbol [ Graphics %tmp.139 70 42 50 ];
+        %tmp.139 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.140 70 51 68 ];
+        %tmp.140 = getv %tmp.139 :COLOR_TRANSPARENT;
+        invoke %tmp.135 %tmp.136(%tmp.138, %tmp.140);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 73 8 ]
+        %tmp.141 = lgetv %dc;
+        symbol [ dc %tmp.141 73 8 10 ];
+        symbol [ setColor %tmp.142 73 11 19 ];
+        %tmp.142 = getv function %tmp.141 :setColor;
+        symbol [ Graphics %tmp.143 73 20 28 ];
+        %tmp.143 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GREEN %tmp.144 73 29 43 ];
+        %tmp.144 = getv %tmp.143 :COLOR_DK_GREEN;
+        symbol [ Graphics %tmp.145 73 45 53 ];
+        %tmp.145 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.146 73 54 71 ];
+        %tmp.146 = getv %tmp.145 :COLOR_TRANSPARENT;
+        invoke %tmp.141 %tmp.142(%tmp.144, %tmp.146);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 74 8 ]
+        %tmp.147 = lgetv %dc;
+        symbol [ dc %tmp.147 74 8 10 ];
+        symbol [ drawText %tmp.148 74 11 19 ];
+        %tmp.148 = getv function %tmp.147 :drawText;
+        %tmp.149 = 251;
+        %tmp.150 = 71;
+        symbol [ Graphics %tmp.151 74 29 37 ];
+        %tmp.151 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.152 74 38 47 ];
+        %tmp.152 = getv %tmp.151 :FONT_TINY;
+        %tmp.153 = "Ok";
+        symbol [ Graphics %tmp.154 74 55 63 ];
+        %tmp.154 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_RIGHT %tmp.155 74 64 82 ];
+        %tmp.155 = getv %tmp.154 :TEXT_JUSTIFY_RIGHT;
+        invoke %tmp.147 %tmp.148(%tmp.149, %tmp.150, %tmp.152, %tmp.153, %tmp.155);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 75 8 ]
+        %tmp.156 = lgetv %dc;
+        symbol [ dc %tmp.156 75 8 10 ];
+        symbol [ setColor %tmp.157 75 11 19 ];
+        %tmp.157 = getv function %tmp.156 :setColor;
+        symbol [ Graphics %tmp.158 75 20 28 ];
+        %tmp.158 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.159 75 29 40 ];
+        %tmp.159 = getv %tmp.158 :COLOR_WHITE;
+        symbol [ Graphics %tmp.160 75 42 50 ];
+        %tmp.160 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.161 75 51 68 ];
+        %tmp.161 = getv %tmp.160 :COLOR_TRANSPARENT;
+        invoke %tmp.156 %tmp.157(%tmp.159, %tmp.161);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 77 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_77_8_79_8_if_stmt:
+        symbol [ _backArrow %tmp.163 77 12 22 ];
+        %tmp.163 = getv ? :_backArrow;
+        %tmp.164 = null;
+        %tmp.165 = ne %tmp.163 %tmp.164;
+        bf %tmp.165 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_77_8_79_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_77_8_79_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_77_32_79_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 78 12 ]
+        %tmp.166 = lgetv %dc;
+        symbol [ dc %tmp.166 78 12 14 ];
+        symbol [ drawBitmap %tmp.167 78 15 25 ];
+        %tmp.167 = getv function %tmp.166 :drawBitmap;
+        %tmp.168 = 220;
+        %tmp.169 = 186;
+        symbol [ _backArrow %tmp.171 78 36 46 ];
+        %tmp.171 = getv ? :_backArrow;
+        %tmp.172 = as %tmp.171 { (!Null) };
+        invoke %tmp.166 %tmp.167(%tmp.168, %tmp.169, %tmp.172);
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_77_32_79_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_77_8_79_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_77_8_79_8_if_end:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_28_40_80_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 82; @symbol_functiondef = [onHide,82,13,19]; ]
+    function onHide() as Void {
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 85; @symbol_functiondef = [confirmCourse,85,13,26]; ]
+    function confirmCourse() as Void {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_85_37_94_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 87 8 ]
+        symbol [ Application %tmp.1 87 8 19 ];
+        %tmp.1 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.2 87 20 27 ];
+        %tmp.2 = getv %tmp.1 :Storage;
+        symbol [ setValue %tmp.3 87 28 36 ];
+        %tmp.3 = getv function %tmp.2 :setValue;
+        %tmp.4 = "selectedCourseName";
+        symbol [ _courseName %tmp.6 87 59 70 ];
+        %tmp.6 = getv ? :_courseName;
+        invoke %tmp.2 %tmp.3(%tmp.4, %tmp.6);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 88 8 ]
+        symbol [ Application %tmp.7 88 8 19 ];
+        %tmp.7 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.8 88 20 27 ];
+        %tmp.8 = getv %tmp.7 :Storage;
+        symbol [ setValue %tmp.9 88 28 36 ];
+        %tmp.9 = getv function %tmp.8 :setValue;
+        %tmp.10 = "isSampleCourse";
+        symbol [ _isSampleCourse %tmp.12 88 55 70 ];
+        %tmp.12 = getv ? :_isSampleCourse;
+        invoke %tmp.8 %tmp.9(%tmp.10, %tmp.12);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 91 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_85_37_94_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_85_37_94_4_stop" ]
+        %view.1 = local;
+        symbol [ view %view.1 91 12 16 ];
+        symbol [ YarSailorView %tmp.16 91 23 36 ];
+        %tmp.16 = getv ? :YarSailorView;
+        %tmp.13 = newc %tmp.16 ();
+        lputv %view.1 %tmp.13;
+        symbol [ view %view.1 91 12 16 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 92 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_85_37_94_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_85_37_94_4_stop" ]
+        %delegate.2 = local;
+        symbol [ delegate %delegate.2 92 12 20 ];
+        symbol [ NavDelegate %tmp.20 92 27 38 ];
+        %tmp.20 = getv ? :NavDelegate;
+        %tmp.17 = newc %tmp.20 ();
+        lputv %delegate.2 %tmp.17;
+        symbol [ delegate %delegate.2 92 12 20 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 93 8 ]
+        symbol [ WatchUi %tmp.21 93 8 15 ];
+        %tmp.21 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.22 93 16 28 ];
+        %tmp.22 = getv function %tmp.21 :switchToView;
+        %tmp.23 = lgetv %view.1;
+        symbol [ view %tmp.23 93 29 33 ];
+        %tmp.24 = lgetv %delegate.2;
+        symbol [ delegate %tmp.24 93 35 43 ];
+        symbol [ WatchUi %tmp.25 93 45 52 ];
+        %tmp.25 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.26 93 53 64 ];
+        %tmp.26 = getv %tmp.25 :SLIDE_RIGHT;
+        invoke %tmp.21 %tmp.22(%tmp.23, %tmp.24, %tmp.26);
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_85_37_94_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 96; @symbol_functiondef = [getCourseName,96,13,26]; @symbol_return<0> = [String,96,32,38]; ]
+    function getCourseName() as String {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_96_39_98_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 97 8 ]
+        symbol [ _courseName %tmp.2 97 15 26 ];
+        %tmp.2 = getv ? :_courseName;
+        ret %tmp.2;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_96_39_98_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 100; @symbol_functiondef = [getWaypointCount,100,13,29]; @symbol_return<0> = [Number,100,35,41]; ]
+    function getWaypointCount() as Number {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_100_42_102_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 101 8 ]
+        symbol [ _waypointCount %tmp.2 101 15 29 ];
+        %tmp.2 = getv ? :_waypointCount;
+        ret %tmp.2;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_100_42_102_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 104; @symbol_functiondef = [isSampleCourse,104,13,27]; @symbol_return<0> = [Boolean,104,33,40]; ]
+    function isSampleCourse() as Boolean {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_104_41_106_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc" 105 8 ]
+        symbol [ _isSampleCourse %tmp.2 105 15 30 ];
+        %tmp.2 = getv ? :_isSampleCourse;
+        ret %tmp.2;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationView_mc_104_41_106_4_stop:
+    }
+}
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationView.mc"; @line = 1; ]
+<init> {
+}

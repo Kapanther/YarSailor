@@ -5,6 +5,7 @@ import Toybox.Lang;
 import Toybox.Timer;
 import Toybox.System;
 import Toybox.Math;
+import Toybox.Application;
 
 class YarSailorView extends WatchUi.View {
     private var _latitude as Double?;
@@ -12,6 +13,8 @@ class YarSailorView extends WatchUi.View {
     private var _heading as Float?;
     private var _speed as Float?;
     private var _timer as Timer.Timer?;
+    private var _menuIcon as BitmapResource?;
+    private var _cogIcon as BitmapResource?;
 
     function initialize() {
         View.initialize();
@@ -20,11 +23,15 @@ class YarSailorView extends WatchUi.View {
         _heading = null;
         _speed = null;
         _timer = null;
+        _menuIcon = null;
+        _cogIcon = null;
     }
 
     // Load your resources here
     function onLayout(dc as Dc) as Void {
         setLayout(Rez.Layouts.MainLayout(dc));
+        _menuIcon = WatchUi.loadResource(Rez.Drawables.MenuIcon);
+        _cogIcon = WatchUi.loadResource(Rez.Drawables.CogIcon);
     }
 
     // Called when this View is brought to the foreground. Restore
@@ -62,8 +69,12 @@ class YarSailorView extends WatchUi.View {
             clockTime.min.format("%02d")
         ]);
         
-        // Draw time at top (larger)
-        dc.drawText(width / 2, 5, Graphics.FONT_MEDIUM, timeString, Graphics.TEXT_JUSTIFY_CENTER);
+        // Draw "Header and time at top
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(width / 2, 10, Graphics.FONT_TINY, "Home", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(width / 2, 35, Graphics.FONT_TINY, timeString, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         
         if (_latitude != null && _longitude != null) {
             var yPos = 50;
@@ -75,16 +86,30 @@ class YarSailorView extends WatchUi.View {
             }
             dc.drawText(width / 2, yPos, Graphics.FONT_NUMBER_HOT, headingText, Graphics.TEXT_JUSTIFY_CENTER);
             
-            // Draw speed in knots (centered, with kts at bottom right)
+            // Draw speed in knots (centered, with kn at bottom right)
             if (_speed != null) {
                 var knots = _speed * 1.94384; // Convert m/s to knots
                 var speedValue = knots.format("%.1f");
-                dc.drawText(width / 2, height / 2 + 15, Graphics.FONT_NUMBER_HOT, speedValue, Graphics.TEXT_JUSTIFY_CENTER);
-                dc.drawText(width / 2 + 40, height / 2 + 50, Graphics.FONT_XTINY, "kts", Graphics.TEXT_JUSTIFY_LEFT);
+                dc.drawText(width / 2, height / 2 - 10, Graphics.FONT_NUMBER_HOT, speedValue, Graphics.TEXT_JUSTIFY_CENTER);
+                dc.drawText(195, 209, Graphics.FONT_XTINY, "kn", Graphics.TEXT_JUSTIFY_LEFT);
             } else {
-                dc.drawText(width / 2, height / 2 + 15, Graphics.FONT_NUMBER_HOT, "--", Graphics.TEXT_JUSTIFY_CENTER);
-                dc.drawText(width / 2 + 40, height / 2 + 50, Graphics.FONT_XTINY, "kts", Graphics.TEXT_JUSTIFY_LEFT);
+                dc.drawText(width / 2, height / 2 - 10, Graphics.FONT_NUMBER_HOT, "--", Graphics.TEXT_JUSTIFY_CENTER);
+                dc.drawText(195, 209, Graphics.FONT_XTINY, "kn", Graphics.TEXT_JUSTIFY_LEFT);
             }
+            
+            // Draw course status in the middle
+            var courseName = Application.Storage.getValue("selectedCourseName");
+            var courseText = "No Course";
+            if (courseName != null && courseName.length() > 0) {
+                if (courseName.length() > 9) {
+                    courseText = courseName.substring(0, 9);
+                } else {
+                    courseText = courseName;
+                }
+            }
+            dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+            dc.drawText(width / 2, height / 2 + 75, Graphics.FONT_XTINY, courseText, Graphics.TEXT_JUSTIFY_CENTER);
+            dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
             
             // Draw GPS coordinates at bottom in smaller text (moved up by 6 units)
             var latText = "Lat: " + _latitude.format("%.4f");
@@ -93,8 +118,13 @@ class YarSailorView extends WatchUi.View {
             dc.drawText(width / 2, height - 41, Graphics.FONT_XTINY, latText, Graphics.TEXT_JUSTIFY_CENTER);
             dc.drawText(width / 2, height - 26, Graphics.FONT_XTINY, lonText, Graphics.TEXT_JUSTIFY_CENTER);
             
-            // Draw screen label
-            dc.drawText(width / 2, height - 12, Graphics.FONT_XTINY, "Nav Screen", Graphics.TEXT_JUSTIFY_CENTER);
+            // Draw button icons
+            if (_menuIcon != null) {
+                dc.drawBitmap(10, 120, _menuIcon); // Menu icon - Middle left
+            }
+            if (_cogIcon != null) {
+                dc.drawBitmap(35, 190, _cogIcon); // Config icon - Bottom left
+            }
         } else {
             dc.drawText(width / 2, height / 2, Graphics.FONT_SMALL, "Acquiring GPS...", Graphics.TEXT_JUSTIFY_CENTER);
         }
@@ -106,7 +136,7 @@ class YarSailorView extends WatchUi.View {
         
         // Cardinal directions (N=0, E=90, S=180, W=270)
         var cardinals = [0, 90, 180, 270]; // N, E, S, W
-        var lineLength = 15;
+        var lineLength = 7.5;
         
         for (var i = 0; i < cardinals.size(); i++) {
             // Calculate angle relative to current heading
@@ -124,7 +154,7 @@ class YarSailorView extends WatchUi.View {
             if (i == 0) {
                 dc.setColor(Graphics.COLOR_RED, Graphics.COLOR_TRANSPARENT);
             } else {
-                dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+                dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
             }
             
             dc.setPenWidth(3);

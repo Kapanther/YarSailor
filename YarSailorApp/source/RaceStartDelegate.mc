@@ -25,7 +25,7 @@ class RaceStartDelegate extends WatchUi.BehaviorDelegate {
         // Middle left button - cycle screens
         cleanup();
         
-        // Race Start is index 1, so cycle to index 2 (Race 1)
+        // Race Start is index 1, so cycle to index 2 (Race Mark)
         var nextIndex = 2;
         
         var delegate = new YarSailorDelegate();

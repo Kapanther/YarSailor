@@ -1,0 +1,379 @@
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc"; @line = 4; @symbol_classdef = [SampleCourse,4,6,18]; ]
+class SampleCourse {
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc"; @line = 4; ]
+    static
+    <init> {
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 7 17 ]
+        %tmp.1 = newa 12;
+        %tmp.2 = newa 4;
+        %tmp.3 = -32.002127375811;
+        %tmp.4 = dup %tmp.2;
+        %tmp.5 = aputv %tmp.4 0 %tmp.3;
+        %tmp.6 = 115.775839848537;
+        %tmp.7 = dup %tmp.5;
+        %tmp.8 = aputv %tmp.7 1 %tmp.6;
+        %tmp.9 = "Start Finish 1";
+        %tmp.10 = dup %tmp.8;
+        %tmp.11 = aputv %tmp.10 2 %tmp.9;
+        %tmp.12 = "1";
+        %tmp.13 = dup %tmp.11;
+        %tmp.14 = aputv %tmp.13 3 %tmp.12;
+        %tmp.15 = dup %tmp.1;
+        %tmp.16 = aputv %tmp.15 0 %tmp.14;
+        %tmp.17 = newa 4;
+        %tmp.18 = -32.010965108852;
+        %tmp.19 = dup %tmp.17;
+        %tmp.20 = aputv %tmp.19 0 %tmp.18;
+        %tmp.21 = 115.796931229495;
+        %tmp.22 = dup %tmp.20;
+        %tmp.23 = aputv %tmp.22 1 %tmp.21;
+        %tmp.24 = "Miller (P)";
+        %tmp.25 = dup %tmp.23;
+        %tmp.26 = aputv %tmp.25 2 %tmp.24;
+        %tmp.27 = "2";
+        %tmp.28 = dup %tmp.26;
+        %tmp.29 = aputv %tmp.28 3 %tmp.27;
+        %tmp.30 = dup %tmp.16;
+        %tmp.31 = aputv %tmp.30 1 %tmp.29;
+        %tmp.32 = newa 4;
+        %tmp.33 = -31.995832452129;
+        %tmp.34 = dup %tmp.32;
+        %tmp.35 = aputv %tmp.34 0 %tmp.33;
+        %tmp.36 = 115.825945695646;
+        %tmp.37 = dup %tmp.35;
+        %tmp.38 = aputv %tmp.37 1 %tmp.36;
+        %tmp.39 = "Dolphin West (S)";
+        %tmp.40 = dup %tmp.38;
+        %tmp.41 = aputv %tmp.40 2 %tmp.39;
+        %tmp.42 = "3";
+        %tmp.43 = dup %tmp.41;
+        %tmp.44 = aputv %tmp.43 3 %tmp.42;
+        %tmp.45 = dup %tmp.31;
+        %tmp.46 = aputv %tmp.45 2 %tmp.44;
+        %tmp.47 = newa 4;
+        %tmp.48 = -32.012234078767;
+        %tmp.49 = dup %tmp.47;
+        %tmp.50 = aputv %tmp.49 0 %tmp.48;
+        %tmp.51 = 115.799957671219;
+        %tmp.52 = dup %tmp.50;
+        %tmp.53 = aputv %tmp.52 1 %tmp.51;
+        %tmp.54 = "Bricklanding A (S)";
+        %tmp.55 = dup %tmp.53;
+        %tmp.56 = aputv %tmp.55 2 %tmp.54;
+        %tmp.57 = "4";
+        %tmp.58 = dup %tmp.56;
+        %tmp.59 = aputv %tmp.58 3 %tmp.57;
+        %tmp.60 = dup %tmp.46;
+        %tmp.61 = aputv %tmp.60 3 %tmp.59;
+        %tmp.62 = newa 4;
+        %tmp.63 = -32.000571970725;
+        %tmp.64 = dup %tmp.62;
+        %tmp.65 = aputv %tmp.64 0 %tmp.63;
+        %tmp.66 = 115.814454706267;
+        %tmp.67 = dup %tmp.65;
+        %tmp.68 = aputv %tmp.67 1 %tmp.66;
+        %tmp.69 = "Armstrong (P)";
+        %tmp.70 = dup %tmp.68;
+        %tmp.71 = aputv %tmp.70 2 %tmp.69;
+        %tmp.72 = "5";
+        %tmp.73 = dup %tmp.71;
+        %tmp.74 = aputv %tmp.73 3 %tmp.72;
+        %tmp.75 = dup %tmp.61;
+        %tmp.76 = aputv %tmp.75 4 %tmp.74;
+        %tmp.77 = newa 4;
+        %tmp.78 = -32.004602726144;
+        %tmp.79 = dup %tmp.77;
+        %tmp.80 = aputv %tmp.79 0 %tmp.78;
+        %tmp.81 = 115.805896485798;
+        %tmp.82 = dup %tmp.80;
+        %tmp.83 = aputv %tmp.82 1 %tmp.81;
+        %tmp.84 = "Dome Bouy (P)";
+        %tmp.85 = dup %tmp.83;
+        %tmp.86 = aputv %tmp.85 2 %tmp.84;
+        %tmp.87 = "6";
+        %tmp.88 = dup %tmp.86;
+        %tmp.89 = aputv %tmp.88 3 %tmp.87;
+        %tmp.90 = dup %tmp.76;
+        %tmp.91 = aputv %tmp.90 5 %tmp.89;
+        %tmp.92 = newa 4;
+        %tmp.93 = -32.011347075046;
+        %tmp.94 = dup %tmp.92;
+        %tmp.95 = aputv %tmp.94 0 %tmp.93;
+        %tmp.96 = 115.798604233408;
+        %tmp.97 = dup %tmp.95;
+        %tmp.98 = aputv %tmp.97 1 %tmp.96;
+        %tmp.99 = "Bricklanding B (S)";
+        %tmp.100 = dup %tmp.98;
+        %tmp.101 = aputv %tmp.100 2 %tmp.99;
+        %tmp.102 = "7";
+        %tmp.103 = dup %tmp.101;
+        %tmp.104 = aputv %tmp.103 3 %tmp.102;
+        %tmp.105 = dup %tmp.91;
+        %tmp.106 = aputv %tmp.105 6 %tmp.104;
+        %tmp.107 = newa 4;
+        %tmp.108 = -31.998900714627;
+        %tmp.109 = dup %tmp.107;
+        %tmp.110 = aputv %tmp.109 0 %tmp.108;
+        %tmp.111 = 115.780301012328;
+        %tmp.112 = dup %tmp.110;
+        %tmp.113 = aputv %tmp.112 1 %tmp.111;
+        %tmp.114 = "Parker Bouy (P)";
+        %tmp.115 = dup %tmp.113;
+        %tmp.116 = aputv %tmp.115 2 %tmp.114;
+        %tmp.117 = "8";
+        %tmp.118 = dup %tmp.116;
+        %tmp.119 = aputv %tmp.118 3 %tmp.117;
+        %tmp.120 = dup %tmp.106;
+        %tmp.121 = aputv %tmp.120 7 %tmp.119;
+        %tmp.122 = newa 4;
+        %tmp.123 = -32.008345799833;
+        %tmp.124 = dup %tmp.122;
+        %tmp.125 = aputv %tmp.124 0 %tmp.123;
+        %tmp.126 = 115.775709827479;
+        %tmp.127 = dup %tmp.125;
+        %tmp.128 = aputv %tmp.127 1 %tmp.126;
+        %tmp.129 = "Suicide Bouy (P)";
+        %tmp.130 = dup %tmp.128;
+        %tmp.131 = aputv %tmp.130 2 %tmp.129;
+        %tmp.132 = "9";
+        %tmp.133 = dup %tmp.131;
+        %tmp.134 = aputv %tmp.133 3 %tmp.132;
+        %tmp.135 = dup %tmp.121;
+        %tmp.136 = aputv %tmp.135 8 %tmp.134;
+        %tmp.137 = newa 4;
+        %tmp.138 = -31.999377854607;
+        %tmp.139 = dup %tmp.137;
+        %tmp.140 = aputv %tmp.139 0 %tmp.138;
+        %tmp.141 = 115.780446781311;
+        %tmp.142 = dup %tmp.140;
+        %tmp.143 = aputv %tmp.142 1 %tmp.141;
+        %tmp.144 = "Parker DAY BOUY (S)";
+        %tmp.145 = dup %tmp.143;
+        %tmp.146 = aputv %tmp.145 2 %tmp.144;
+        %tmp.147 = "10";
+        %tmp.148 = dup %tmp.146;
+        %tmp.149 = aputv %tmp.148 3 %tmp.147;
+        %tmp.150 = dup %tmp.136;
+        %tmp.151 = aputv %tmp.150 9 %tmp.149;
+        %tmp.152 = newa 4;
+        %tmp.153 = -32.008086240108;
+        %tmp.154 = dup %tmp.152;
+        %tmp.155 = aputv %tmp.154 0 %tmp.153;
+        %tmp.156 = 115.774119345664;
+        %tmp.157 = dup %tmp.155;
+        %tmp.158 = aputv %tmp.157 1 %tmp.156;
+        %tmp.159 = "Mosman Bouy (P)";
+        %tmp.160 = dup %tmp.158;
+        %tmp.161 = aputv %tmp.160 2 %tmp.159;
+        %tmp.162 = "11";
+        %tmp.163 = dup %tmp.161;
+        %tmp.164 = aputv %tmp.163 3 %tmp.162;
+        %tmp.165 = dup %tmp.151;
+        %tmp.166 = aputv %tmp.165 10 %tmp.164;
+        %tmp.167 = newa 4;
+        %tmp.168 = -32.002127375811;
+        %tmp.169 = dup %tmp.167;
+        %tmp.170 = aputv %tmp.169 0 %tmp.168;
+        %tmp.171 = 115.775839848537;
+        %tmp.172 = dup %tmp.170;
+        %tmp.173 = aputv %tmp.172 1 %tmp.171;
+        %tmp.174 = "Start Finish 1";
+        %tmp.175 = dup %tmp.173;
+        %tmp.176 = aputv %tmp.175 2 %tmp.174;
+        %tmp.177 = "12";
+        %tmp.178 = dup %tmp.176;
+        %tmp.179 = aputv %tmp.178 3 %tmp.177;
+        %tmp.180 = dup %tmp.166;
+        %tmp.181 = aputv %tmp.180 11 %tmp.179;
+        putv self :WAYPOINTS %tmp.181;
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc"; @line = 7; @position = 17; @symbol_constdef = [WAYPOINTS,7,17,26]; @symbol_type<0> = [Array,7,30,35]; @symbol_type<1> = [Array,7,36,41]; ]
+    static
+    const WAYPOINTS as Array<Array>;
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc"; @line = 22; @position = 17; @symbol_constdef = [COURSE_NAME,22,17,28]; @symbol_type<0> = [String,22,32,38]; ]
+    static
+    const COURSE_NAME as String = "Sample Course";
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc"; @line = 24; @symbol_functiondef = [getWaypointCount,24,20,36]; @symbol_return<0> = [Number,24,42,48]; ]
+    static
+    function getWaypointCount() as Number {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_24_49_26_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 25 8 ]
+        symbol [ WAYPOINTS %tmp.2 25 15 24 ];
+        %tmp.2 = getv ? :WAYPOINTS;
+        symbol [ size %tmp.3 25 25 29 ];
+        %tmp.3 = getv function %tmp.2 :size;
+        %tmp.4 = invoke %tmp.2 %tmp.3();
+        ret %tmp.4;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_24_49_26_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc"; @line = 28; @symbol_functiondef = [getWaypoint,28,20,31]; @symbol_param<0> = [index,28,32,37]; @symbol_param<0>_type<0> = [Number,28,41,47]; @symbol_return<0> = [Array,28,52,57]; ]
+    static
+    function getWaypoint(index as Number) as Array or Null {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_28_59_33_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 29 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_8_31_8_if_stmt:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_12_29_49_begin:
+        %tmp.1 = lgetv %index;
+        symbol [ index %tmp.1 29 12 17 ];
+        %tmp.2 = 0;
+        %tmp.3 = gte %tmp.1 %tmp.2;
+        bf %tmp.3 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_8_31_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_26_29_49_true:
+        %tmp.4 = lgetv %index;
+        symbol [ index %tmp.4 29 26 31 ];
+        symbol [ WAYPOINTS %tmp.6 29 34 43 ];
+        %tmp.6 = getv ? :WAYPOINTS;
+        symbol [ size %tmp.7 29 44 48 ];
+        %tmp.7 = getv function %tmp.6 :size;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        %tmp.9 = lt %tmp.4 %tmp.8;
+        push %tmp.9;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_26_29_49_end:
+        %tmp.10 = phi [%tmp.3 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_12_29_49_begin] [%tmp.9 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_26_29_49_true] [%tmp.10 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_26_29_49_end];
+        bf %tmp.10 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_8_31_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_8_31_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_52_31_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 30 12 ]
+        symbol [ WAYPOINTS %tmp.12 30 19 28 ];
+        %tmp.12 = getv ? :WAYPOINTS;
+        %tmp.13 = lgetv %index;
+        symbol [ index %tmp.13 30 29 34 ];
+        %tmp.14 = agetv %tmp.12 %tmp.13;
+        ret %tmp.14;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_52_31_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_8_31_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_29_8_31_8_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 32 8 ]
+        %tmp.15 = null;
+        ret %tmp.15;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_28_59_33_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc"; @line = 35; @symbol_functiondef = [getWaypointLatitude,35,20,39]; @symbol_param<0> = [index,35,40,45]; @symbol_param<0>_type<0> = [Number,35,49,55]; @symbol_return<0> = [Double,35,60,66]; ]
+    static
+    function getWaypointLatitude(index as Number) as Double or Null {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_35_68_41_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 36 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_35_68_41_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_35_68_41_4_stop" ]
+        %waypoint.1 = local;
+        symbol [ waypoint %waypoint.1 36 12 20 ];
+        %tmp.1 = self;
+        symbol [ getWaypoint %tmp.2 36 23 34 ];
+        %tmp.2 = getv function %tmp.1 :getWaypoint;
+        %tmp.3 = lgetv %index;
+        symbol [ index %tmp.3 36 35 40 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %waypoint.1 %tmp.4;
+        symbol [ waypoint %waypoint.1 36 12 20 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 37 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_37_8_39_8_if_stmt:
+        %tmp.5 = lgetv %waypoint.1;
+        symbol [ waypoint %tmp.5 37 12 20 ];
+        %tmp.6 = null;
+        %tmp.7 = ne %tmp.5 %tmp.6;
+        bf %tmp.7 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_37_8_39_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_37_8_39_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_37_30_39_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 38 12 ]
+        %tmp.8 = lgetv %waypoint.1;
+        symbol [ waypoint %tmp.8 38 19 27 ];
+        %tmp.9 = as %tmp.8 { (!Null) };
+        %tmp.10 = 0;
+        %tmp.11 = agetv %tmp.9 %tmp.10;
+        ret %tmp.11;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_37_30_39_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_37_8_39_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_37_8_39_8_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 40 8 ]
+        %tmp.12 = null;
+        ret %tmp.12;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_35_68_41_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc"; @line = 43; @symbol_functiondef = [getWaypointLongitude,43,20,40]; @symbol_param<0> = [index,43,41,46]; @symbol_param<0>_type<0> = [Number,43,50,56]; @symbol_return<0> = [Double,43,61,67]; ]
+    static
+    function getWaypointLongitude(index as Number) as Double or Null {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_43_69_49_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 44 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_43_69_49_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_43_69_49_4_stop" ]
+        %waypoint.1 = local;
+        symbol [ waypoint %waypoint.1 44 12 20 ];
+        %tmp.1 = self;
+        symbol [ getWaypoint %tmp.2 44 23 34 ];
+        %tmp.2 = getv function %tmp.1 :getWaypoint;
+        %tmp.3 = lgetv %index;
+        symbol [ index %tmp.3 44 35 40 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %waypoint.1 %tmp.4;
+        symbol [ waypoint %waypoint.1 44 12 20 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 45 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_45_8_47_8_if_stmt:
+        %tmp.5 = lgetv %waypoint.1;
+        symbol [ waypoint %tmp.5 45 12 20 ];
+        %tmp.6 = null;
+        %tmp.7 = ne %tmp.5 %tmp.6;
+        bf %tmp.7 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_45_8_47_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_45_8_47_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_45_30_47_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 46 12 ]
+        %tmp.8 = lgetv %waypoint.1;
+        symbol [ waypoint %tmp.8 46 19 27 ];
+        %tmp.9 = as %tmp.8 { (!Null) };
+        %tmp.10 = 1;
+        %tmp.11 = agetv %tmp.9 %tmp.10;
+        ret %tmp.11;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_45_30_47_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_45_8_47_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_45_8_47_8_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 48 8 ]
+        %tmp.12 = null;
+        ret %tmp.12;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_43_69_49_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc"; @line = 51; @symbol_functiondef = [getWaypointName,51,20,35]; @symbol_param<0> = [index,51,36,41]; @symbol_param<0>_type<0> = [Number,51,45,51]; @symbol_return<0> = [String,51,56,62]; ]
+    static
+    function getWaypointName(index as Number) as String or Null {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_51_64_57_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 52 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_51_64_57_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_51_64_57_4_stop" ]
+        %waypoint.1 = local;
+        symbol [ waypoint %waypoint.1 52 12 20 ];
+        %tmp.1 = self;
+        symbol [ getWaypoint %tmp.2 52 23 34 ];
+        %tmp.2 = getv function %tmp.1 :getWaypoint;
+        %tmp.3 = lgetv %index;
+        symbol [ index %tmp.3 52 35 40 ];
+        %tmp.4 = invoke %tmp.1 %tmp.2(%tmp.3);
+        lputv %waypoint.1 %tmp.4;
+        symbol [ waypoint %waypoint.1 52 12 20 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 53 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_53_8_55_8_if_stmt:
+        %tmp.5 = lgetv %waypoint.1;
+        symbol [ waypoint %tmp.5 53 12 20 ];
+        %tmp.6 = null;
+        %tmp.7 = ne %tmp.5 %tmp.6;
+        bf %tmp.7 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_53_8_55_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_53_8_55_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_53_30_55_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 54 12 ]
+        %tmp.8 = lgetv %waypoint.1;
+        symbol [ waypoint %tmp.8 54 19 27 ];
+        %tmp.9 = as %tmp.8 { (!Null) };
+        %tmp.10 = 2;
+        %tmp.11 = agetv %tmp.9 %tmp.10;
+        ret %tmp.11;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_53_30_55_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_53_8_55_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_53_8_55_8_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc" 56 8 ]
+        %tmp.12 = null;
+        ret %tmp.12;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SampleCourse_mc_51_64_57_4_stop:
+    }
+}
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SampleCourse.mc"; @line = 1; ]
+<init> {
+}

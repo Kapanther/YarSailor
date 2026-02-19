@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Starboard marker - S with clockwise arc arrow (green) -->
+  <!-- Letter S -->
+  <text x="30" y="35" font-family="Arial" font-size="28" font-weight="bold" fill="#00FF00" text-anchor="middle">S</text>
+  <!-- Clockwise arrow arc wrapping around text -->
+  <path d="M 15 33 A 18 18 0 1 1 45 33" fill="none" stroke="#00FF00" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Arrow head rotated 30 degrees anti-clockwise from vertical -->
+  <path d="M 45 33 L 45 25 M 45 33 L 52 29" fill="none" stroke="#00FF00" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

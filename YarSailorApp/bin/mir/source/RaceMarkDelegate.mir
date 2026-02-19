@@ -1,0 +1,95 @@
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc"; @line = 4; @symbol_classdef = [RaceMarkDelegate,4,6,22]; @symbol_extends<0> = [WatchUi,4,31,38]; @symbol_extends<1> = [BehaviorDelegate,4,39,55]; ]
+class RaceMarkDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc"; @line = 5; @position = 16; @symbol_vardef = [_view,5,16,21]; @symbol_type<0> = [RaceMarkView,5,25,37]; ]
+    private
+    var _view as RaceMarkView;
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; @symbol_param<0> = [view,7,24,28]; @symbol_param<0>_type<0> = [RaceMarkView,7,32,44]; ]
+    function initialize(view as RaceMarkView) as Void {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_RaceMarkDelegate_mc_7_46_10_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc" 8 8 ]
+        symbol [ BehaviorDelegate %tmp.2 8 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 8 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc" 9 8 ]
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 9 16 20 ];
+        symbol [ _view ? 9 8 13 ];
+        putv self :_view %tmp.4;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_RaceMarkDelegate_mc_7_46_10_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc"; @line = 12; @symbol_functiondef = [onPreviousPage,12,13,27]; @symbol_return<0> = [Boolean,12,33,40]; ]
+    function onPreviousPage() as Boolean {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_RaceMarkDelegate_mc_12_41_18_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc" 14 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_RaceMarkDelegate_mc_12_41_18_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_RaceMarkDelegate_mc_12_41_18_4_stop" ]
+        %delegate.1 = local;
+        symbol [ delegate %delegate.1 14 12 20 ];
+        symbol [ YarSailorDelegate %tmp.4 14 27 44 ];
+        %tmp.4 = getv ? :YarSailorDelegate;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %delegate.1 %tmp.1;
+        symbol [ delegate %delegate.1 14 12 20 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc" 15 8 ]
+        %tmp.5 = lgetv %delegate.1;
+        symbol [ delegate %tmp.5 15 8 16 ];
+        symbol [ setScreenIndex %tmp.6 15 17 31 ];
+        %tmp.6 = getv function %tmp.5 :setScreenIndex;
+        %tmp.7 = 2;
+        invoke %tmp.5 %tmp.6(%tmp.7);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc" 16 8 ]
+        %tmp.8 = lgetv %delegate.1;
+        symbol [ delegate %tmp.8 16 8 16 ];
+        symbol [ switchToScreen %tmp.9 16 17 31 ];
+        %tmp.9 = getv function %tmp.8 :switchToScreen;
+        %tmp.10 = 0;
+        invoke %tmp.8 %tmp.9(%tmp.10);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc" 17 8 ]
+        %tmp.11 = true;
+        ret %tmp.11;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_RaceMarkDelegate_mc_12_41_18_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc"; @line = 20; @symbol_functiondef = [onNextPage,20,13,23]; @symbol_return<0> = [Boolean,20,29,36]; ]
+    function onNextPage() as Boolean {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_RaceMarkDelegate_mc_20_37_24_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc" 22 8 ]
+        symbol [ _view %tmp.2 22 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ previousMark %tmp.3 22 14 26 ];
+        %tmp.3 = getv function %tmp.2 :previousMark;
+        invoke %tmp.2 %tmp.3();
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc" 23 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_RaceMarkDelegate_mc_20_37_24_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc"; @line = 26; @symbol_functiondef = [onBack,26,13,19]; @symbol_return<0> = [Boolean,26,25,32]; ]
+    function onBack() as Boolean {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_RaceMarkDelegate_mc_26_33_30_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc" 28 8 ]
+        symbol [ _view %tmp.2 28 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ nextMark %tmp.3 28 14 22 ];
+        %tmp.3 = getv function %tmp.2 :nextMark;
+        invoke %tmp.2 %tmp.3();
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc" 29 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_RaceMarkDelegate_mc_26_33_30_4_stop:
+    }
+}
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\RaceMarkDelegate.mc"; @line = 1; ]
+<init> {
+}

@@ -75,7 +75,7 @@ D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_21_41_26
         %tmp.2 = getv ? :_currentScreenIndex;
         %tmp.3 = 1;
         %tmp.4 = add %tmp.2 %tmp.3;
-        %tmp.5 = 5;
+        %tmp.5 = 3;
         %tmp.6 = mod %tmp.4 %tmp.5;
         symbol [ _currentScreenIndex ? 23 8 27 ];
         putv self :_currentScreenIndex %tmp.6;
@@ -93,24 +93,24 @@ D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_21_41_26
     }
     [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc"; @line = 28; @symbol_functiondef = [switchToScreen,28,13,27]; @symbol_param<0> = [index,28,28,33]; @symbol_param<0>_type<0> = [Number,28,37,43]; ]
     function switchToScreen(index as Number) as Void {
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_28_53_58_4_start:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_28_53_48_4_start:
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 29 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_28_53_58_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_28_53_58_4_stop" ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_28_53_48_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_28_53_48_4_stop" ]
         %view.1 = local;
         symbol [ view %view.1 29 12 16 ];
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 30 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_28_53_58_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_28_53_58_4_stop" ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_28_53_48_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_28_53_48_4_stop" ]
         %delegate.2 = local;
         symbol [ delegate %delegate.2 30 12 20 ];
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 32 8 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_8_55_8_if_stmt:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_8_45_8_if_stmt:
         %tmp.1 = lgetv %index;
         symbol [ index %tmp.1 32 12 17 ];
         %tmp.2 = 0;
         %tmp.3 = eq %tmp.1 %tmp.2;
-        bf %tmp.3 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_8_55_8_if_false;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_8_55_8_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_24_36_8_start:
+        bf %tmp.3 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_8_45_8_if_false;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_8_45_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_24_35_8_start:
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 33 12 ]
         symbol [ YarSailorView %tmp.7 33 23 36 ];
         %tmp.7 = getv ? :YarSailorView;
@@ -118,185 +118,105 @@ D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_24_36
         lputv %view.1 %tmp.4;
         symbol [ view %view.1 33 12 16 ];
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 34 12 ]
-        symbol [ YarSailorDelegate %tmp.11 34 27 44 ];
-        %tmp.11 = getv ? :YarSailorDelegate;
+        symbol [ NavDelegate %tmp.11 34 27 38 ];
+        %tmp.11 = getv ? :NavDelegate;
         %tmp.8 = newc %tmp.11 ();
         lputv %delegate.2 %tmp.8;
         symbol [ delegate %delegate.2 34 12 20 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 35 12 ]
-        %tmp.12 = lgetv %delegate.2;
-        symbol [ delegate %tmp.12 35 12 20 ];
-        symbol [ setScreenIndex %tmp.13 35 21 35 ];
-        %tmp.13 = getv function %tmp.12 :setScreenIndex;
-        %tmp.14 = lgetv %index;
-        symbol [ index %tmp.14 35 36 41 ];
-        invoke %tmp.12 %tmp.13(%tmp.14);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_24_36_8_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_8_55_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_8_55_8_if_false:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 36 15 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_36_15_55_8_if_stmt:
-        %tmp.15 = lgetv %index;
-        symbol [ index %tmp.15 36 19 24 ];
-        %tmp.16 = 1;
-        %tmp.17 = eq %tmp.15 %tmp.16;
-        bf %tmp.17 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_36_15_55_8_if_false;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_36_15_55_8_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_36_31_39_8_start:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_24_35_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_8_45_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_8_45_8_if_false:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 35 15 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_35_15_45_8_if_stmt:
+        %tmp.12 = lgetv %index;
+        symbol [ index %tmp.12 35 19 24 ];
+        %tmp.13 = 1;
+        %tmp.14 = eq %tmp.12 %tmp.13;
+        bf %tmp.14 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_35_15_45_8_if_false;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_35_15_45_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_35_31_38_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 36 12 ]
+        symbol [ RaceStartView %tmp.18 36 23 36 ];
+        %tmp.18 = getv ? :RaceStartView;
+        %tmp.15 = newc %tmp.18 ();
+        lputv %view.1 %tmp.15;
+        symbol [ view %view.1 36 12 16 ];
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 37 12 ]
-        symbol [ RaceStartView %tmp.21 37 23 36 ];
-        %tmp.21 = getv ? :RaceStartView;
-        %tmp.18 = newc %tmp.21 ();
-        lputv %view.1 %tmp.18;
-        symbol [ view %view.1 37 12 16 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 38 12 ]
-        symbol [ RaceStartDelegate %tmp.25 38 27 44 ];
-        %tmp.25 = getv ? :RaceStartDelegate;
-        %tmp.26 = lgetv %view.1;
-        symbol [ view %tmp.26 38 45 49 ];
-        %tmp.22 = newc %tmp.25 (%tmp.26);
-        lputv %delegate.2 %tmp.22;
-        symbol [ delegate %delegate.2 38 12 20 ];
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_36_31_39_8_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_36_15_55_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_36_15_55_8_if_false:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 39 15 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_39_15_55_8_if_stmt:
-        %tmp.27 = lgetv %index;
-        symbol [ index %tmp.27 39 19 24 ];
-        %tmp.28 = 2;
-        %tmp.29 = eq %tmp.27 %tmp.28;
-        bf %tmp.29 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_39_15_55_8_if_false;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_39_15_55_8_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_39_31_43_8_start:
+        symbol [ RaceStartDelegate %tmp.22 37 27 44 ];
+        %tmp.22 = getv ? :RaceStartDelegate;
+        %tmp.23 = lgetv %view.1;
+        symbol [ view %tmp.23 37 45 49 ];
+        %tmp.19 = newc %tmp.22 (%tmp.23);
+        lputv %delegate.2 %tmp.19;
+        symbol [ delegate %delegate.2 37 12 20 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_35_31_38_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_35_15_45_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_35_15_45_8_if_false:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 38 15 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_38_15_45_8_if_stmt:
+        %tmp.24 = lgetv %index;
+        symbol [ index %tmp.24 38 19 24 ];
+        %tmp.25 = 2;
+        %tmp.26 = eq %tmp.24 %tmp.25;
+        bf %tmp.26 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_38_15_45_8_if_else_false;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_38_15_45_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_38_31_41_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 39 12 ]
+        symbol [ RaceMarkView %tmp.30 39 23 35 ];
+        %tmp.30 = getv ? :RaceMarkView;
+        %tmp.27 = newc %tmp.30 ();
+        lputv %view.1 %tmp.27;
+        symbol [ view %view.1 39 12 16 ];
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 40 12 ]
-        symbol [ Race1View %tmp.33 40 23 32 ];
-        %tmp.33 = getv ? :Race1View;
-        %tmp.30 = newc %tmp.33 ();
-        lputv %view.1 %tmp.30;
-        symbol [ view %view.1 40 12 16 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 41 12 ]
-        symbol [ YarSailorDelegate %tmp.37 41 27 44 ];
-        %tmp.37 = getv ? :YarSailorDelegate;
-        %tmp.34 = newc %tmp.37 ();
-        lputv %delegate.2 %tmp.34;
-        symbol [ delegate %delegate.2 41 12 20 ];
+        symbol [ RaceMarkDelegate %tmp.34 40 27 43 ];
+        %tmp.34 = getv ? :RaceMarkDelegate;
+        %tmp.35 = lgetv %view.1;
+        symbol [ view %tmp.35 40 44 48 ];
+        %tmp.31 = newc %tmp.34 (%tmp.35);
+        lputv %delegate.2 %tmp.31;
+        symbol [ delegate %delegate.2 40 12 20 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_38_31_41_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_38_15_45_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_38_15_45_8_if_else_false:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_41_15_45_8_start:
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 42 12 ]
-        %tmp.38 = lgetv %delegate.2;
-        symbol [ delegate %tmp.38 42 12 20 ];
-        symbol [ setScreenIndex %tmp.39 42 21 35 ];
-        %tmp.39 = getv function %tmp.38 :setScreenIndex;
-        %tmp.40 = lgetv %index;
-        symbol [ index %tmp.40 42 36 41 ];
-        invoke %tmp.38 %tmp.39(%tmp.40);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_39_31_43_8_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_39_15_55_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_39_15_55_8_if_false:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 43 15 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_43_15_55_8_if_stmt:
-        %tmp.41 = lgetv %index;
-        symbol [ index %tmp.41 43 19 24 ];
-        %tmp.42 = 3;
-        %tmp.43 = eq %tmp.41 %tmp.42;
-        bf %tmp.43 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_43_15_55_8_if_false;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_43_15_55_8_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_43_31_47_8_start:
+        symbol [ YarSailorView %tmp.39 42 23 36 ];
+        %tmp.39 = getv ? :YarSailorView;
+        %tmp.36 = newc %tmp.39 ();
+        lputv %view.1 %tmp.36;
+        symbol [ view %view.1 42 12 16 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 43 12 ]
+        symbol [ YarSailorDelegate %tmp.43 43 27 44 ];
+        %tmp.43 = getv ? :YarSailorDelegate;
+        %tmp.40 = newc %tmp.43 ();
+        lputv %delegate.2 %tmp.40;
+        symbol [ delegate %delegate.2 43 12 20 ];
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 44 12 ]
-        symbol [ Race2View %tmp.47 44 23 32 ];
-        %tmp.47 = getv ? :Race2View;
-        %tmp.44 = newc %tmp.47 ();
-        lputv %view.1 %tmp.44;
-        symbol [ view %view.1 44 12 16 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 45 12 ]
-        symbol [ YarSailorDelegate %tmp.51 45 27 44 ];
-        %tmp.51 = getv ? :YarSailorDelegate;
-        %tmp.48 = newc %tmp.51 ();
-        lputv %delegate.2 %tmp.48;
-        symbol [ delegate %delegate.2 45 12 20 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 46 12 ]
-        %tmp.52 = lgetv %delegate.2;
-        symbol [ delegate %tmp.52 46 12 20 ];
-        symbol [ setScreenIndex %tmp.53 46 21 35 ];
-        %tmp.53 = getv function %tmp.52 :setScreenIndex;
-        %tmp.54 = lgetv %index;
-        symbol [ index %tmp.54 46 36 41 ];
-        invoke %tmp.52 %tmp.53(%tmp.54);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_43_31_47_8_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_43_15_55_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_43_15_55_8_if_false:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 47 15 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_47_15_55_8_if_stmt:
-        %tmp.55 = lgetv %index;
-        symbol [ index %tmp.55 47 19 24 ];
-        %tmp.56 = 4;
-        %tmp.57 = eq %tmp.55 %tmp.56;
-        bf %tmp.57 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_47_15_55_8_if_else_false;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_47_15_55_8_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_47_31_51_8_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 48 12 ]
-        symbol [ Race3View %tmp.61 48 23 32 ];
-        %tmp.61 = getv ? :Race3View;
-        %tmp.58 = newc %tmp.61 ();
-        lputv %view.1 %tmp.58;
-        symbol [ view %view.1 48 12 16 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 49 12 ]
-        symbol [ YarSailorDelegate %tmp.65 49 27 44 ];
-        %tmp.65 = getv ? :YarSailorDelegate;
-        %tmp.62 = newc %tmp.65 ();
-        lputv %delegate.2 %tmp.62;
-        symbol [ delegate %delegate.2 49 12 20 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 50 12 ]
-        %tmp.66 = lgetv %delegate.2;
-        symbol [ delegate %tmp.66 50 12 20 ];
-        symbol [ setScreenIndex %tmp.67 50 21 35 ];
-        %tmp.67 = getv function %tmp.66 :setScreenIndex;
-        %tmp.68 = lgetv %index;
-        symbol [ index %tmp.68 50 36 41 ];
-        invoke %tmp.66 %tmp.67(%tmp.68);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_47_31_51_8_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_47_15_55_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_47_15_55_8_if_else_false:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_51_15_55_8_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 52 12 ]
-        symbol [ YarSailorView %tmp.72 52 23 36 ];
-        %tmp.72 = getv ? :YarSailorView;
-        %tmp.69 = newc %tmp.72 ();
-        lputv %view.1 %tmp.69;
-        symbol [ view %view.1 52 12 16 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 53 12 ]
-        symbol [ YarSailorDelegate %tmp.76 53 27 44 ];
-        %tmp.76 = getv ? :YarSailorDelegate;
-        %tmp.73 = newc %tmp.76 ();
-        lputv %delegate.2 %tmp.73;
-        symbol [ delegate %delegate.2 53 12 20 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 54 12 ]
-        %tmp.77 = lgetv %delegate.2;
-        symbol [ delegate %tmp.77 54 12 20 ];
-        symbol [ setScreenIndex %tmp.78 54 21 35 ];
-        %tmp.78 = getv function %tmp.77 :setScreenIndex;
-        %tmp.79 = 0;
-        invoke %tmp.77 %tmp.78(%tmp.79);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_51_15_55_8_stop:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_47_15_55_8_if_end:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_43_15_55_8_if_end:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_39_15_55_8_if_end:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_36_15_55_8_if_end:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_8_55_8_if_end:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 57 8 ]
-        symbol [ WatchUi %tmp.80 57 8 15 ];
-        %tmp.80 = getm $.Toybox.WatchUi;
-        symbol [ switchToView %tmp.81 57 16 28 ];
-        %tmp.81 = getv function %tmp.80 :switchToView;
-        %tmp.82 = lgetv %view.1;
-        symbol [ view %tmp.82 57 29 33 ];
-        %tmp.83 = lgetv %delegate.2;
-        symbol [ delegate %tmp.83 57 35 43 ];
-        symbol [ WatchUi %tmp.84 57 45 52 ];
-        %tmp.84 = getm $.Toybox.WatchUi;
-        symbol [ SLIDE_LEFT %tmp.85 57 53 63 ];
-        %tmp.85 = getv %tmp.84 :SLIDE_LEFT;
-        invoke %tmp.80 %tmp.81(%tmp.82, %tmp.83, %tmp.85);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_28_53_58_4_stop:
+        %tmp.44 = lgetv %delegate.2;
+        symbol [ delegate %tmp.44 44 12 20 ];
+        symbol [ setScreenIndex %tmp.45 44 21 35 ];
+        %tmp.45 = getv function %tmp.44 :setScreenIndex;
+        %tmp.46 = 0;
+        invoke %tmp.44 %tmp.45(%tmp.46);
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_41_15_45_8_stop:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_38_15_45_8_if_end:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_35_15_45_8_if_end:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_32_8_45_8_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc" 47 8 ]
+        symbol [ WatchUi %tmp.47 47 8 15 ];
+        %tmp.47 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.48 47 16 28 ];
+        %tmp.48 = getv function %tmp.47 :switchToView;
+        %tmp.49 = lgetv %view.1;
+        symbol [ view %tmp.49 47 29 33 ];
+        %tmp.50 = lgetv %delegate.2;
+        symbol [ delegate %tmp.50 47 35 43 ];
+        symbol [ WatchUi %tmp.51 47 45 52 ];
+        %tmp.51 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_LEFT %tmp.52 47 53 63 ];
+        %tmp.52 = getv %tmp.51 :SLIDE_LEFT;
+        invoke %tmp.47 %tmp.48(%tmp.49, %tmp.50, %tmp.52);
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorDelegate_mc_28_53_48_4_stop:
     }
 }
 [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorDelegate.mc"; @line = 1; ]

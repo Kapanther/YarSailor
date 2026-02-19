@@ -20,7 +20,7 @@ class YarSailorDelegate extends WatchUi.BehaviorDelegate {
     
     function onPreviousPage() as Boolean {
         // Middle left button - cycle to next screen
-        _currentScreenIndex = (_currentScreenIndex + 1) % 5;
+        _currentScreenIndex = (_currentScreenIndex + 1) % 3;
         switchToScreen(_currentScreenIndex);
         return true;
     }
@@ -31,23 +31,13 @@ class YarSailorDelegate extends WatchUi.BehaviorDelegate {
         
         if (index == 0) {
             view = new YarSailorView();
-            delegate = new YarSailorDelegate();
-            delegate.setScreenIndex(index);
+            delegate = new NavDelegate();
         } else if (index == 1) {
             view = new RaceStartView();
             delegate = new RaceStartDelegate(view);
         } else if (index == 2) {
-            view = new Race1View();
-            delegate = new YarSailorDelegate();
-            delegate.setScreenIndex(index);
-        } else if (index == 3) {
-            view = new Race2View();
-            delegate = new YarSailorDelegate();
-            delegate.setScreenIndex(index);
-        } else if (index == 4) {
-            view = new Race3View();
-            delegate = new YarSailorDelegate();
-            delegate.setScreenIndex(index);
+            view = new RaceMarkView();
+            delegate = new RaceMarkDelegate(view);
         } else {
             view = new YarSailorView();
             delegate = new YarSailorDelegate();

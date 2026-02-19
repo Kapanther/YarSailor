@@ -1,0 +1,140 @@
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [Lang,1,14,18]; ]
+import Toybox.Lang;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [WatchUi,2,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc"; @line = 4; @symbol_classdef = [SettingsDelegate,4,6,22]; @symbol_extends<0> = [WatchUi,4,31,38]; @symbol_extends<1> = [BehaviorDelegate,4,39,55]; ]
+class SettingsDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc"; @line = 6; @symbol_functiondef = [initialize,6,13,23]; ]
+    function initialize() as Void {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_6_26_8_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc" 7 8 ]
+        symbol [ BehaviorDelegate %tmp.2 7 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 7 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_6_26_8_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc"; @line = 10; @symbol_functiondef = [onMenu,10,13,19]; @symbol_return<0> = [Boolean,10,25,32]; ]
+    function onMenu() as Boolean {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_10_33_13_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc" 11 8 ]
+        symbol [ WatchUi %tmp.1 11 8 15 ];
+        %tmp.1 = getm $.Toybox.WatchUi;
+        symbol [ pushView %tmp.2 11 16 24 ];
+        %tmp.2 = getv function %tmp.1 :pushView;
+        symbol [ Rez %tmp.6 11 29 32 ];
+        %tmp.6 = getv ? :Rez;
+        symbol [ Menus %tmp.7 11 33 38 ];
+        %tmp.7 = getv %tmp.6 :Menus;
+        symbol [ MainMenu %tmp.8 11 39 47 ];
+        %tmp.8 = getv function ? %tmp.7 :MainMenu;
+        %tmp.3 = newc %tmp.8 ();
+        symbol [ YarSailorMenuDelegate %tmp.12 11 55 76 ];
+        %tmp.12 = getv ? :YarSailorMenuDelegate;
+        %tmp.9 = newc %tmp.12 ();
+        symbol [ WatchUi %tmp.13 11 80 87 ];
+        %tmp.13 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_UP %tmp.14 11 88 96 ];
+        %tmp.14 = getv %tmp.13 :SLIDE_UP;
+        invoke %tmp.1 %tmp.2(%tmp.3, %tmp.9, %tmp.14);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc" 12 8 ]
+        %tmp.15 = true;
+        ret %tmp.15;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_10_33_13_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc"; @line = 15; @symbol_functiondef = [onNextPage,15,13,23]; @symbol_return<0> = [Boolean,15,29,36]; ]
+    function onNextPage() as Boolean {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_15_37_21_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc" 17 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_15_37_21_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_15_37_21_4_stop" ]
+        %view.1 = local;
+        symbol [ view %view.1 17 12 16 ];
+        symbol [ ConfigView %tmp.4 17 23 33 ];
+        %tmp.4 = getv ? :ConfigView;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %view.1 %tmp.1;
+        symbol [ view %view.1 17 12 16 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc" 18 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_15_37_21_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_15_37_21_4_stop" ]
+        %delegate.2 = local;
+        symbol [ delegate %delegate.2 18 12 20 ];
+        symbol [ ConfigDelegate %tmp.8 18 27 41 ];
+        %tmp.8 = getv ? :ConfigDelegate;
+        %tmp.9 = lgetv %view.1;
+        symbol [ view %tmp.9 18 42 46 ];
+        %tmp.5 = newc %tmp.8 (%tmp.9);
+        lputv %delegate.2 %tmp.5;
+        symbol [ delegate %delegate.2 18 12 20 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc" 19 8 ]
+        symbol [ WatchUi %tmp.10 19 8 15 ];
+        %tmp.10 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.11 19 16 28 ];
+        %tmp.11 = getv function %tmp.10 :switchToView;
+        %tmp.12 = lgetv %view.1;
+        symbol [ view %tmp.12 19 29 33 ];
+        %tmp.13 = lgetv %delegate.2;
+        symbol [ delegate %tmp.13 19 35 43 ];
+        symbol [ WatchUi %tmp.14 19 45 52 ];
+        %tmp.14 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.15 19 53 64 ];
+        %tmp.15 = getv %tmp.14 :SLIDE_RIGHT;
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.13, %tmp.15);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc" 20 8 ]
+        %tmp.16 = true;
+        ret %tmp.16;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_15_37_21_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc"; @line = 23; @symbol_functiondef = [onBack,23,13,19]; @symbol_return<0> = [Boolean,23,25,32]; ]
+    function onBack() as Boolean {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_23_33_29_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc" 25 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_23_33_29_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_23_33_29_4_stop" ]
+        %view.1 = local;
+        symbol [ view %view.1 25 12 16 ];
+        symbol [ ConfigView %tmp.4 25 23 33 ];
+        %tmp.4 = getv ? :ConfigView;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %view.1 %tmp.1;
+        symbol [ view %view.1 25 12 16 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc" 26 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_23_33_29_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_23_33_29_4_stop" ]
+        %delegate.2 = local;
+        symbol [ delegate %delegate.2 26 12 20 ];
+        symbol [ ConfigDelegate %tmp.8 26 27 41 ];
+        %tmp.8 = getv ? :ConfigDelegate;
+        %tmp.9 = lgetv %view.1;
+        symbol [ view %tmp.9 26 42 46 ];
+        %tmp.5 = newc %tmp.8 (%tmp.9);
+        lputv %delegate.2 %tmp.5;
+        symbol [ delegate %delegate.2 26 12 20 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc" 27 8 ]
+        symbol [ WatchUi %tmp.10 27 8 15 ];
+        %tmp.10 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.11 27 16 28 ];
+        %tmp.11 = getv function %tmp.10 :switchToView;
+        %tmp.12 = lgetv %view.1;
+        symbol [ view %tmp.12 27 29 33 ];
+        %tmp.13 = lgetv %delegate.2;
+        symbol [ delegate %tmp.13 27 35 43 ];
+        symbol [ WatchUi %tmp.14 27 45 52 ];
+        %tmp.14 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.15 27 53 64 ];
+        %tmp.15 = getv %tmp.14 :SLIDE_RIGHT;
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.13, %tmp.15);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc" 28 8 ]
+        %tmp.16 = true;
+        ret %tmp.16;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_SettingsDelegate_mc_23_33_29_4_stop:
+    }
+}
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\SettingsDelegate.mc"; @line = 1; ]
+<init> {
+}

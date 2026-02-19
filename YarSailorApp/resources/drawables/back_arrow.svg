@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main curved path: start top left, go right, curve around, go left -->
+  <path d="M 10 12 L 22 12 Q 30 12, 30 20 Q 30 28, 22 28 L 10 28" stroke="#00FF00" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Arrow head pointing left at the end -->
+  <polyline points="16,22 8,28 16,34" stroke="#00FF00" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

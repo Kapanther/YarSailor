@@ -12,279 +12,323 @@ import Toybox.Timer;
 import Toybox.System;
 [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 7; @symbol_importdef<0> = [Toybox,7,7,13]; @symbol_importdef<1> = [Math,7,14,18]; ]
 import Toybox.Math;
-[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 9; @symbol_classdef = [YarSailorView,9,6,19]; @symbol_extends<0> = [WatchUi,9,28,35]; @symbol_extends<1> = [View,9,36,40]; ]
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 8; @symbol_importdef<0> = [Toybox,8,7,13]; @symbol_importdef<1> = [Application,8,14,25]; ]
+import Toybox.Application;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 10; @symbol_classdef = [YarSailorView,10,6,19]; @symbol_extends<0> = [WatchUi,10,28,35]; @symbol_extends<1> = [View,10,36,40]; ]
 class YarSailorView extends WatchUi.View {
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 9; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 10; ]
     <init> {
     }
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 9; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 10; ]
     static
     <init> {
     }
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 10; @position = 16; @symbol_vardef = [_latitude,10,16,25]; @symbol_type<0> = [Double,10,29,35]; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 11; @position = 16; @symbol_vardef = [_latitude,11,16,25]; @symbol_type<0> = [Double,11,29,35]; ]
     private
     var _latitude as Double or Null;
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 11; @position = 16; @symbol_vardef = [_longitude,11,16,26]; @symbol_type<0> = [Double,11,30,36]; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 12; @position = 16; @symbol_vardef = [_longitude,12,16,26]; @symbol_type<0> = [Double,12,30,36]; ]
     private
     var _longitude as Double or Null;
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 12; @position = 16; @symbol_vardef = [_heading,12,16,24]; @symbol_type<0> = [Float,12,28,33]; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 13; @position = 16; @symbol_vardef = [_heading,13,16,24]; @symbol_type<0> = [Float,13,28,33]; ]
     private
     var _heading as Float or Null;
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 13; @position = 16; @symbol_vardef = [_speed,13,16,22]; @symbol_type<0> = [Float,13,26,31]; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 14; @position = 16; @symbol_vardef = [_speed,14,16,22]; @symbol_type<0> = [Float,14,26,31]; ]
     private
     var _speed as Float or Null;
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 14; @position = 16; @symbol_vardef = [_timer,14,16,22]; @symbol_type<0> = [Timer,14,26,31]; @symbol_type<1> = [Timer,14,32,37]; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 15; @position = 16; @symbol_vardef = [_timer,15,16,22]; @symbol_type<0> = [Timer,15,26,31]; @symbol_type<1> = [Timer,15,32,37]; ]
     private
     var _timer as Timer.Timer or Null;
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 16; @symbol_functiondef = [initialize,16,13,23]; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 16; @position = 16; @symbol_vardef = [_menuIcon,16,16,25]; @symbol_type<0> = [BitmapResource,16,29,43]; ]
+    private
+    var _menuIcon as BitmapResource or Null;
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 17; @position = 16; @symbol_vardef = [_cogIcon,17,16,24]; @symbol_type<0> = [BitmapResource,17,28,42]; ]
+    private
+    var _cogIcon as BitmapResource or Null;
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 19; @symbol_functiondef = [initialize,19,13,23]; ]
     function initialize() as Void {
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_16_26_23_4_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 17 8 ]
-        symbol [ View %tmp.2 17 8 12 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_19_26_28_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 20 8 ]
+        symbol [ View %tmp.2 20 8 12 ];
         %tmp.2 = getv ? :View;
-        symbol [ initialize %tmp.3 17 13 23 ];
+        symbol [ initialize %tmp.3 20 13 23 ];
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 18 8 ]
-        %tmp.4 = null;
-        symbol [ _latitude ? 18 8 17 ];
-        putv self :_latitude %tmp.4;
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 19 8 ]
-        %tmp.5 = null;
-        symbol [ _longitude ? 19 8 18 ];
-        putv self :_longitude %tmp.5;
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 20 8 ]
-        %tmp.6 = null;
-        symbol [ _heading ? 20 8 16 ];
-        putv self :_heading %tmp.6;
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 21 8 ]
-        %tmp.7 = null;
-        symbol [ _speed ? 21 8 14 ];
-        putv self :_speed %tmp.7;
+        %tmp.4 = null;
+        symbol [ _latitude ? 21 8 17 ];
+        putv self :_latitude %tmp.4;
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 22 8 ]
+        %tmp.5 = null;
+        symbol [ _longitude ? 22 8 18 ];
+        putv self :_longitude %tmp.5;
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 23 8 ]
+        %tmp.6 = null;
+        symbol [ _heading ? 23 8 16 ];
+        putv self :_heading %tmp.6;
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 24 8 ]
+        %tmp.7 = null;
+        symbol [ _speed ? 24 8 14 ];
+        putv self :_speed %tmp.7;
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 25 8 ]
         %tmp.8 = null;
-        symbol [ _timer ? 22 8 14 ];
+        symbol [ _timer ? 25 8 14 ];
         putv self :_timer %tmp.8;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_16_26_23_4_stop:
-    }
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 26; @symbol_functiondef = [onLayout,26,13,21]; @symbol_param<0> = [dc,26,22,24]; @symbol_param<0>_type<0> = [Dc,26,28,30]; ]
-    function onLayout(dc as Dc) as Void {
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_26_40_28_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 26 8 ]
+        %tmp.9 = null;
+        symbol [ _menuIcon ? 26 8 17 ];
+        putv self :_menuIcon %tmp.9;
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 27 8 ]
+        %tmp.10 = null;
+        symbol [ _cogIcon ? 27 8 16 ];
+        putv self :_cogIcon %tmp.10;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_19_26_28_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 31; @symbol_functiondef = [onLayout,31,13,21]; @symbol_param<0> = [dc,31,22,24]; @symbol_param<0>_type<0> = [Dc,31,28,30]; ]
+    function onLayout(dc as Dc) as Void {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_31_40_35_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 32 8 ]
         %tmp.1 = self;
-        symbol [ setLayout %tmp.2 27 8 17 ];
+        symbol [ setLayout %tmp.2 32 8 17 ];
         %tmp.2 = getv function %tmp.1 :setLayout;
-        symbol [ Rez %tmp.4 27 18 21 ];
+        symbol [ Rez %tmp.4 32 18 21 ];
         %tmp.4 = getv ? :Rez;
-        symbol [ Layouts %tmp.5 27 22 29 ];
+        symbol [ Layouts %tmp.5 32 22 29 ];
         %tmp.5 = getv %tmp.4 :Layouts;
-        symbol [ MainLayout %tmp.6 27 30 40 ];
+        symbol [ MainLayout %tmp.6 32 30 40 ];
         %tmp.6 = getv function %tmp.5 :MainLayout;
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 27 41 43 ];
+        symbol [ dc %tmp.7 32 41 43 ];
         %tmp.8 = invoke %tmp.5 %tmp.6(%tmp.7);
         invoke %tmp.1 %tmp.2(%tmp.8);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_26_40_28_4_stop:
-    }
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 33; @symbol_functiondef = [onShow,33,13,19]; ]
-    function onShow() as Void {
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_33_30_39_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 33 8 ]
+        symbol [ WatchUi %tmp.9 33 20 27 ];
+        %tmp.9 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.10 33 28 40 ];
+        %tmp.10 = getv function %tmp.9 :loadResource;
+        symbol [ Rez %tmp.12 33 41 44 ];
+        %tmp.12 = getv ? :Rez;
+        symbol [ Drawables %tmp.13 33 45 54 ];
+        %tmp.13 = getv %tmp.12 :Drawables;
+        symbol [ MenuIcon %tmp.14 33 55 63 ];
+        %tmp.14 = getv %tmp.13 :MenuIcon;
+        %tmp.15 = invoke %tmp.9 %tmp.10(%tmp.14);
+        symbol [ _menuIcon ? 33 8 17 ];
+        putv self :_menuIcon %tmp.15;
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 34 8 ]
-        symbol [ Position %tmp.1 34 8 16 ];
+        symbol [ WatchUi %tmp.16 34 19 26 ];
+        %tmp.16 = getm $.Toybox.WatchUi;
+        symbol [ loadResource %tmp.17 34 27 39 ];
+        %tmp.17 = getv function %tmp.16 :loadResource;
+        symbol [ Rez %tmp.19 34 40 43 ];
+        %tmp.19 = getv ? :Rez;
+        symbol [ Drawables %tmp.20 34 44 53 ];
+        %tmp.20 = getv %tmp.19 :Drawables;
+        symbol [ CogIcon %tmp.21 34 54 61 ];
+        %tmp.21 = getv %tmp.20 :CogIcon;
+        %tmp.22 = invoke %tmp.16 %tmp.17(%tmp.21);
+        symbol [ _cogIcon ? 34 8 16 ];
+        putv self :_cogIcon %tmp.22;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_31_40_35_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 40; @symbol_functiondef = [onShow,40,13,19]; ]
+    function onShow() as Void {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_40_30_46_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 41 8 ]
+        symbol [ Position %tmp.1 41 8 16 ];
         %tmp.1 = getm $.Toybox.Position;
-        symbol [ enableLocationEvents %tmp.2 34 17 37 ];
+        symbol [ enableLocationEvents %tmp.2 41 17 37 ];
         %tmp.2 = getv function %tmp.1 :enableLocationEvents;
-        symbol [ Position %tmp.3 34 38 46 ];
+        symbol [ Position %tmp.3 41 38 46 ];
         %tmp.3 = getm $.Toybox.Position;
-        symbol [ LOCATION_CONTINUOUS %tmp.4 34 47 66 ];
+        symbol [ LOCATION_CONTINUOUS %tmp.4 41 47 66 ];
         %tmp.4 = getv %tmp.3 :LOCATION_CONTINUOUS;
         %tmp.5 = self;
-        symbol [ method %tmp.6 34 68 74 ];
+        symbol [ method %tmp.6 41 68 74 ];
         %tmp.6 = getv function %tmp.5 :method;
         %tmp.8 = const :onPosition;
-        symbol [ onPosition %tmp.8 34 76 86 const ];
+        symbol [ onPosition %tmp.8 41 76 86 const ];
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.9);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 37 8 ]
-        symbol [ Timer %tmp.12 37 21 26 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 44 8 ]
+        symbol [ Timer %tmp.12 44 21 26 ];
         %tmp.12 = getm $.Toybox.Timer;
-        symbol [ Timer %tmp.13 37 27 32 ];
+        symbol [ Timer %tmp.13 44 27 32 ];
         %tmp.13 = getv function ? %tmp.12 :Timer;
         %tmp.10 = newc %tmp.13 ();
-        symbol [ _timer ? 37 8 14 ];
+        symbol [ _timer ? 44 8 14 ];
         putv self :_timer %tmp.10;
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 38 8 ]
-        symbol [ _timer %tmp.15 38 8 14 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 45 8 ]
+        symbol [ _timer %tmp.15 45 8 14 ];
         %tmp.15 = getv ? :_timer;
-        symbol [ start %tmp.16 38 15 20 ];
+        symbol [ start %tmp.16 45 15 20 ];
         %tmp.16 = getv function %tmp.15 :start;
         %tmp.17 = self;
-        symbol [ method %tmp.18 38 21 27 ];
+        symbol [ method %tmp.18 45 21 27 ];
         %tmp.18 = getv function %tmp.17 :method;
         %tmp.20 = const :updatePosition;
-        symbol [ updatePosition %tmp.20 38 29 43 const ];
+        symbol [ updatePosition %tmp.20 45 29 43 const ];
         %tmp.21 = invoke %tmp.17 %tmp.18(%tmp.20);
         %tmp.22 = 250;
         %tmp.23 = true;
         invoke %tmp.15 %tmp.16(%tmp.21, %tmp.22, %tmp.23);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_33_30_39_4_stop:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_40_30_46_4_stop:
     }
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 42; @symbol_functiondef = [onUpdate,42,13,21]; @symbol_param<0> = [dc,42,22,24]; @symbol_param<0>_type<0> = [Dc,42,28,30]; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 49; @symbol_functiondef = [onUpdate,49,13,21]; @symbol_param<0> = [dc,49,22,24]; @symbol_param<0>_type<0> = [Dc,49,28,30]; ]
     function onUpdate(dc as Dc) as Void {
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 44 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 51 8 ]
         %tmp.1 = lgetv %dc;
-        symbol [ dc %tmp.1 44 8 10 ];
-        symbol [ setColor %tmp.2 44 11 19 ];
+        symbol [ dc %tmp.1 51 8 10 ];
+        symbol [ setColor %tmp.2 51 11 19 ];
         %tmp.2 = getv function %tmp.1 :setColor;
-        symbol [ Graphics %tmp.3 44 20 28 ];
+        symbol [ Graphics %tmp.3 51 20 28 ];
         %tmp.3 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.4 44 29 40 ];
+        symbol [ COLOR_BLACK %tmp.4 51 29 40 ];
         %tmp.4 = getv %tmp.3 :COLOR_BLACK;
-        symbol [ Graphics %tmp.5 44 42 50 ];
+        symbol [ Graphics %tmp.5 51 42 50 ];
         %tmp.5 = getm $.Toybox.Graphics;
-        symbol [ COLOR_BLACK %tmp.6 44 51 62 ];
+        symbol [ COLOR_BLACK %tmp.6 51 51 62 ];
         %tmp.6 = getv %tmp.5 :COLOR_BLACK;
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.6);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 45 8 ]
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 52 8 ]
         %tmp.7 = lgetv %dc;
-        symbol [ dc %tmp.7 45 8 10 ];
-        symbol [ clear %tmp.8 45 11 16 ];
+        symbol [ dc %tmp.7 52 8 10 ];
+        symbol [ clear %tmp.8 52 11 16 ];
         %tmp.8 = getv function %tmp.7 :clear;
         invoke %tmp.7 %tmp.8();
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 47 8 ]
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 54 8 ]
         %tmp.9 = lgetv %dc;
-        symbol [ dc %tmp.9 47 8 10 ];
-        symbol [ setColor %tmp.10 47 11 19 ];
+        symbol [ dc %tmp.9 54 8 10 ];
+        symbol [ setColor %tmp.10 54 11 19 ];
         %tmp.10 = getv function %tmp.9 :setColor;
-        symbol [ Graphics %tmp.11 47 20 28 ];
+        symbol [ Graphics %tmp.11 54 20 28 ];
         %tmp.11 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.12 47 29 40 ];
+        symbol [ COLOR_WHITE %tmp.12 54 29 40 ];
         %tmp.12 = getv %tmp.11 :COLOR_WHITE;
-        symbol [ Graphics %tmp.13 47 42 50 ];
+        symbol [ Graphics %tmp.13 54 42 50 ];
         %tmp.13 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.14 47 51 68 ];
+        symbol [ COLOR_TRANSPARENT %tmp.14 54 51 68 ];
         %tmp.14 = getv %tmp.13 :COLOR_TRANSPARENT;
         invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 49 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_stop" ]
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 56 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_stop" ]
         %width.1 = local;
-        symbol [ width %width.1 49 12 17 ];
+        symbol [ width %width.1 56 12 17 ];
         %tmp.15 = lgetv %dc;
-        symbol [ dc %tmp.15 49 20 22 ];
-        symbol [ getWidth %tmp.16 49 23 31 ];
+        symbol [ dc %tmp.15 56 20 22 ];
+        symbol [ getWidth %tmp.16 56 23 31 ];
         %tmp.16 = getv function %tmp.15 :getWidth;
         %tmp.17 = invoke %tmp.15 %tmp.16();
         lputv %width.1 %tmp.17;
-        symbol [ width %width.1 49 12 17 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 50 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_stop" ]
+        symbol [ width %width.1 56 12 17 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 57 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_stop" ]
         %height.2 = local;
-        symbol [ height %height.2 50 12 18 ];
+        symbol [ height %height.2 57 12 18 ];
         %tmp.18 = lgetv %dc;
-        symbol [ dc %tmp.18 50 21 23 ];
-        symbol [ getHeight %tmp.19 50 24 33 ];
+        symbol [ dc %tmp.18 57 21 23 ];
+        symbol [ getHeight %tmp.19 57 24 33 ];
         %tmp.19 = getv function %tmp.18 :getHeight;
         %tmp.20 = invoke %tmp.18 %tmp.19();
         lputv %height.2 %tmp.20;
-        symbol [ height %height.2 50 12 18 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 51 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_stop" ]
+        symbol [ height %height.2 57 12 18 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 58 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_stop" ]
         %centerX.3 = local;
-        symbol [ centerX %centerX.3 51 12 19 ];
+        symbol [ centerX %centerX.3 58 12 19 ];
         %tmp.21 = lgetv %width.1;
-        symbol [ width %tmp.21 51 22 27 ];
+        symbol [ width %tmp.21 58 22 27 ];
         %tmp.22 = 2;
         %tmp.23 = div %tmp.21 %tmp.22;
         lputv %centerX.3 %tmp.23;
-        symbol [ centerX %centerX.3 51 12 19 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 52 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_stop" ]
+        symbol [ centerX %centerX.3 58 12 19 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 59 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_stop" ]
         %centerY.4 = local;
-        symbol [ centerY %centerY.4 52 12 19 ];
+        symbol [ centerY %centerY.4 59 12 19 ];
         %tmp.24 = lgetv %height.2;
-        symbol [ height %tmp.24 52 22 28 ];
+        symbol [ height %tmp.24 59 22 28 ];
         %tmp.25 = 2;
         %tmp.26 = div %tmp.24 %tmp.25;
         lputv %centerY.4 %tmp.26;
-        symbol [ centerY %centerY.4 52 12 19 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 53 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_stop" ]
+        symbol [ centerY %centerY.4 59 12 19 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 60 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_stop" ]
         %radius.5 = local;
-        symbol [ radius %radius.5 53 12 18 ];
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_53_22_53_47_begin:
+        symbol [ radius %radius.5 60 12 18 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_60_22_60_47_begin:
         %tmp.27 = lgetv %width.1;
-        symbol [ width %tmp.27 53 22 27 ];
+        symbol [ width %tmp.27 60 22 27 ];
         %tmp.28 = lgetv %height.2;
-        symbol [ height %tmp.28 53 30 36 ];
+        symbol [ height %tmp.28 60 30 36 ];
         %tmp.29 = lt %tmp.27 %tmp.28;
-        bf %tmp.29 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_53_22_53_47_false;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_53_22_53_47_true:
+        bf %tmp.29 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_60_22_60_47_false;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_60_22_60_47_true:
         %tmp.30 = lgetv %width.1;
-        symbol [ width %tmp.30 53 39 44 ];
+        symbol [ width %tmp.30 60 39 44 ];
         push %tmp.30;
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_53_22_53_47_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_53_22_53_47_false:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_60_22_60_47_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_60_22_60_47_false:
         %tmp.31 = lgetv %height.2;
-        symbol [ height %tmp.31 53 47 53 ];
+        symbol [ height %tmp.31 60 47 53 ];
         push %tmp.31;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_53_22_53_47_end:
-        %tmp.32 = phi [%tmp.29 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_53_22_53_47_begin] [%tmp.30 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_53_22_53_47_true] [%tmp.31 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_53_22_53_47_false] [%tmp.32 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_53_22_53_47_end];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_60_22_60_47_end:
+        %tmp.32 = phi [%tmp.29 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_60_22_60_47_begin] [%tmp.30 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_60_22_60_47_true] [%tmp.31 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_60_22_60_47_false] [%tmp.32 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_60_22_60_47_end];
         %tmp.33 = 2;
         %tmp.34 = div %tmp.32 %tmp.33;
         %tmp.35 = 5;
         %tmp.36 = sub %tmp.34 %tmp.35;
         lputv %radius.5 %tmp.36;
-        symbol [ radius %radius.5 53 12 18 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 56 8 ]
+        symbol [ radius %radius.5 60 12 18 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 63 8 ]
         %tmp.37 = self;
-        symbol [ drawCompassRing %tmp.38 56 8 23 ];
+        symbol [ drawCompassRing %tmp.38 63 8 23 ];
         %tmp.38 = getv function %tmp.37 :drawCompassRing;
         %tmp.39 = lgetv %dc;
-        symbol [ dc %tmp.39 56 24 26 ];
+        symbol [ dc %tmp.39 63 24 26 ];
         %tmp.40 = lgetv %centerX.3;
-        symbol [ centerX %tmp.40 56 28 35 ];
+        symbol [ centerX %tmp.40 63 28 35 ];
         %tmp.41 = lgetv %centerY.4;
-        symbol [ centerY %tmp.41 56 37 44 ];
+        symbol [ centerY %tmp.41 63 37 44 ];
         %tmp.42 = lgetv %radius.5;
-        symbol [ radius %tmp.42 56 46 52 ];
+        symbol [ radius %tmp.42 63 46 52 ];
         invoke %tmp.37 %tmp.38(%tmp.39, %tmp.40, %tmp.41, %tmp.42);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 59 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_stop" ]
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 66 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_stop" ]
         %clockTime.6 = local;
-        symbol [ clockTime %clockTime.6 59 12 21 ];
-        symbol [ System %tmp.43 59 24 30 ];
+        symbol [ clockTime %clockTime.6 66 12 21 ];
+        symbol [ System %tmp.43 66 24 30 ];
         %tmp.43 = getm $.Toybox.System;
-        symbol [ getClockTime %tmp.44 59 31 43 ];
+        symbol [ getClockTime %tmp.44 66 31 43 ];
         %tmp.44 = getv function %tmp.43 :getClockTime;
         %tmp.45 = invoke %tmp.43 %tmp.44();
         lputv %clockTime.6 %tmp.45;
-        symbol [ clockTime %clockTime.6 59 12 21 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 60 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_stop" ]
+        symbol [ clockTime %clockTime.6 66 12 21 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 67 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_stop" ]
         %timeString.7 = local;
-        symbol [ timeString %timeString.7 60 12 22 ];
-        symbol [ Lang %tmp.46 60 25 29 ];
+        symbol [ timeString %timeString.7 67 12 22 ];
+        symbol [ Lang %tmp.46 67 25 29 ];
         %tmp.46 = getm $.Toybox.Lang;
-        symbol [ format %tmp.47 60 30 36 ];
+        symbol [ format %tmp.47 67 30 36 ];
         %tmp.47 = getv function %tmp.46 :format;
         %tmp.48 = "$1$:$2$";
         %tmp.49 = newa 2;
         %tmp.50 = lgetv %clockTime.6;
-        symbol [ clockTime %tmp.50 61 12 21 ];
-        symbol [ hour %tmp.51 61 22 26 ];
+        symbol [ clockTime %tmp.50 68 12 21 ];
+        symbol [ hour %tmp.51 68 22 26 ];
         %tmp.51 = getv %tmp.50 :hour;
-        symbol [ format %tmp.52 61 27 33 ];
+        symbol [ format %tmp.52 68 27 33 ];
         %tmp.52 = getv function %tmp.51 :format;
         %tmp.53 = "%02d";
         %tmp.54 = invoke %tmp.51 %tmp.52(%tmp.53);
         %tmp.55 = dup %tmp.49;
         %tmp.56 = aputv %tmp.55 0 %tmp.54;
         %tmp.57 = lgetv %clockTime.6;
-        symbol [ clockTime %tmp.57 62 12 21 ];
-        symbol [ min %tmp.58 62 22 25 ];
+        symbol [ clockTime %tmp.57 69 12 21 ];
+        symbol [ min %tmp.58 69 22 25 ];
         %tmp.58 = getv %tmp.57 :min;
-        symbol [ format %tmp.59 62 26 32 ];
+        symbol [ format %tmp.59 69 26 32 ];
         %tmp.59 = getv function %tmp.58 :format;
         %tmp.60 = "%02d";
         %tmp.61 = invoke %tmp.58 %tmp.59(%tmp.60);
@@ -292,410 +336,612 @@ D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_53_22_53_47_
         %tmp.63 = aputv %tmp.62 1 %tmp.61;
         %tmp.64 = invoke %tmp.46 %tmp.47(%tmp.48, %tmp.63);
         lputv %timeString.7 %tmp.64;
-        symbol [ timeString %timeString.7 60 12 22 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 66 8 ]
+        symbol [ timeString %timeString.7 67 12 22 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 73 8 ]
         %tmp.65 = lgetv %dc;
-        symbol [ dc %tmp.65 66 8 10 ];
-        symbol [ drawText %tmp.66 66 11 19 ];
-        %tmp.66 = getv function %tmp.65 :drawText;
-        %tmp.67 = lgetv %width.1;
-        symbol [ width %tmp.67 66 20 25 ];
-        %tmp.68 = 2;
-        %tmp.69 = div %tmp.67 %tmp.68;
-        %tmp.70 = 5;
-        symbol [ Graphics %tmp.71 66 34 42 ];
-        %tmp.71 = getm $.Toybox.Graphics;
-        symbol [ FONT_MEDIUM %tmp.72 66 43 54 ];
-        %tmp.72 = getv %tmp.71 :FONT_MEDIUM;
-        %tmp.73 = lgetv %timeString.7;
-        symbol [ timeString %tmp.73 66 56 66 ];
-        symbol [ Graphics %tmp.74 66 68 76 ];
-        %tmp.74 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.75 66 77 96 ];
-        %tmp.75 = getv %tmp.74 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.65 %tmp.66(%tmp.69, %tmp.70, %tmp.72, %tmp.73, %tmp.75);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 68 8 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_8_100_8_if_stmt:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_12_68_47_begin:
-        symbol [ _latitude %tmp.77 68 12 21 ];
-        %tmp.77 = getv ? :_latitude;
-        %tmp.78 = null;
-        %tmp.79 = ne %tmp.77 %tmp.78;
-        bf %tmp.79 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_8_100_8_if_else_false;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_33_68_47_true:
-        symbol [ _longitude %tmp.81 68 33 43 ];
-        %tmp.81 = getv ? :_longitude;
-        %tmp.82 = null;
-        %tmp.83 = ne %tmp.81 %tmp.82;
-        push %tmp.83;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_33_68_47_end:
-        %tmp.84 = phi [%tmp.79 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_12_68_47_begin] [%tmp.83 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_33_68_47_true] [%tmp.84 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_33_68_47_end];
-        bf %tmp.84 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_8_100_8_if_else_false;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_8_100_8_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_53_98_8_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 69 12 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_53_98_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_53_98_8_stop" ]
-        %yPos.8 = local;
-        symbol [ yPos %yPos.8 69 16 20 ];
-        %tmp.85 = 50;
-        lputv %yPos.8 %tmp.85;
-        symbol [ yPos %yPos.8 69 16 20 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 72 12 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_53_98_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_53_98_8_stop" ]
-        %headingText.9 = local;
-        symbol [ headingText %headingText.9 72 16 27 ];
-        %tmp.86 = "---°";
-        lputv %headingText.9 %tmp.86;
-        symbol [ headingText %headingText.9 72 16 27 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 73 12 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_73_12_75_12_if_stmt:
-        symbol [ _heading %tmp.88 73 16 24 ];
-        %tmp.88 = getv ? :_heading;
-        %tmp.89 = null;
-        %tmp.90 = ne %tmp.88 %tmp.89;
-        bf %tmp.90 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_73_12_75_12_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_73_12_75_12_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_73_34_75_12_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 74 16 ]
-        symbol [ _heading %tmp.92 74 30 38 ];
-        %tmp.92 = getv ? :_heading;
-        %tmp.93 = as %tmp.92 { (!Null) };
-        symbol [ format %tmp.94 74 39 45 ];
-        %tmp.94 = getv function %tmp.93 :format;
-        %tmp.95 = "%03d";
-        %tmp.96 = invoke %tmp.93 %tmp.94(%tmp.95);
-        %tmp.97 = "°";
-        %tmp.98 = add %tmp.96 %tmp.97;
-        lputv %headingText.9 %tmp.98;
-        symbol [ headingText %headingText.9 74 16 27 ];
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_73_34_75_12_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_73_12_75_12_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_73_12_75_12_if_end:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 76 12 ]
+        symbol [ dc %tmp.65 73 8 10 ];
+        symbol [ setColor %tmp.66 73 11 19 ];
+        %tmp.66 = getv function %tmp.65 :setColor;
+        symbol [ Graphics %tmp.67 73 20 28 ];
+        %tmp.67 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.68 73 29 42 ];
+        %tmp.68 = getv %tmp.67 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.69 73 44 52 ];
+        %tmp.69 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.70 73 53 70 ];
+        %tmp.70 = getv %tmp.69 :COLOR_TRANSPARENT;
+        invoke %tmp.65 %tmp.66(%tmp.68, %tmp.70);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 74 8 ]
+        %tmp.71 = lgetv %dc;
+        symbol [ dc %tmp.71 74 8 10 ];
+        symbol [ drawText %tmp.72 74 11 19 ];
+        %tmp.72 = getv function %tmp.71 :drawText;
+        %tmp.73 = lgetv %width.1;
+        symbol [ width %tmp.73 74 20 25 ];
+        %tmp.74 = 2;
+        %tmp.75 = div %tmp.73 %tmp.74;
+        %tmp.76 = 10;
+        symbol [ Graphics %tmp.77 74 35 43 ];
+        %tmp.77 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.78 74 44 53 ];
+        %tmp.78 = getv %tmp.77 :FONT_TINY;
+        %tmp.79 = "Home";
+        symbol [ Graphics %tmp.80 74 63 71 ];
+        %tmp.80 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.81 74 72 91 ];
+        %tmp.81 = getv %tmp.80 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.71 %tmp.72(%tmp.75, %tmp.76, %tmp.78, %tmp.79, %tmp.81);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 75 8 ]
+        %tmp.82 = lgetv %dc;
+        symbol [ dc %tmp.82 75 8 10 ];
+        symbol [ setColor %tmp.83 75 11 19 ];
+        %tmp.83 = getv function %tmp.82 :setColor;
+        symbol [ Graphics %tmp.84 75 20 28 ];
+        %tmp.84 = getm $.Toybox.Graphics;
+        symbol [ COLOR_BLUE %tmp.85 75 29 39 ];
+        %tmp.85 = getv %tmp.84 :COLOR_BLUE;
+        symbol [ Graphics %tmp.86 75 41 49 ];
+        %tmp.86 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.87 75 50 67 ];
+        %tmp.87 = getv %tmp.86 :COLOR_TRANSPARENT;
+        invoke %tmp.82 %tmp.83(%tmp.85, %tmp.87);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 76 8 ]
+        %tmp.88 = lgetv %dc;
+        symbol [ dc %tmp.88 76 8 10 ];
+        symbol [ drawText %tmp.89 76 11 19 ];
+        %tmp.89 = getv function %tmp.88 :drawText;
+        %tmp.90 = lgetv %width.1;
+        symbol [ width %tmp.90 76 20 25 ];
+        %tmp.91 = 2;
+        %tmp.92 = div %tmp.90 %tmp.91;
+        %tmp.93 = 35;
+        symbol [ Graphics %tmp.94 76 35 43 ];
+        %tmp.94 = getm $.Toybox.Graphics;
+        symbol [ FONT_TINY %tmp.95 76 44 53 ];
+        %tmp.95 = getv %tmp.94 :FONT_TINY;
+        %tmp.96 = lgetv %timeString.7;
+        symbol [ timeString %tmp.96 76 55 65 ];
+        symbol [ Graphics %tmp.97 76 67 75 ];
+        %tmp.97 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.98 76 76 95 ];
+        %tmp.98 = getv %tmp.97 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.88 %tmp.89(%tmp.92, %tmp.93, %tmp.95, %tmp.96, %tmp.98);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 77 8 ]
         %tmp.99 = lgetv %dc;
-        symbol [ dc %tmp.99 76 12 14 ];
-        symbol [ drawText %tmp.100 76 15 23 ];
-        %tmp.100 = getv function %tmp.99 :drawText;
-        %tmp.101 = lgetv %width.1;
-        symbol [ width %tmp.101 76 24 29 ];
-        %tmp.102 = 2;
-        %tmp.103 = div %tmp.101 %tmp.102;
-        %tmp.104 = lgetv %yPos.8;
-        symbol [ yPos %tmp.104 76 35 39 ];
-        symbol [ Graphics %tmp.105 76 41 49 ];
-        %tmp.105 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_HOT %tmp.106 76 50 65 ];
-        %tmp.106 = getv %tmp.105 :FONT_NUMBER_HOT;
-        %tmp.107 = lgetv %headingText.9;
-        symbol [ headingText %tmp.107 76 67 78 ];
-        symbol [ Graphics %tmp.108 76 80 88 ];
-        %tmp.108 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.109 76 89 108 ];
-        %tmp.109 = getv %tmp.108 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.99 %tmp.100(%tmp.103, %tmp.104, %tmp.106, %tmp.107, %tmp.109);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 79 12 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_12_87_12_if_stmt:
-        symbol [ _speed %tmp.111 79 16 22 ];
-        %tmp.111 = getv ? :_speed;
-        %tmp.112 = null;
-        %tmp.113 = ne %tmp.111 %tmp.112;
-        bf %tmp.113 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_12_87_12_if_else_false;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_12_87_12_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_32_84_12_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 80 16 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_32_84_12_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_32_84_12_stop" ]
-        %knots.10 = local;
-        symbol [ knots %knots.10 80 20 25 ];
-        symbol [ _speed %tmp.115 80 28 34 ];
-        %tmp.115 = getv ? :_speed;
-        %tmp.116 = as %tmp.115 { (!Null) };
-        %tmp.117 = 1.94384;
-        %tmp.118 = mul %tmp.116 %tmp.117;
-        lputv %knots.10 %tmp.118;
-        symbol [ knots %knots.10 80 20 25 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 81 16 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_32_84_12_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_32_84_12_stop" ]
-        %speedValue.11 = local;
-        symbol [ speedValue %speedValue.11 81 20 30 ];
-        %tmp.119 = lgetv %knots.10;
-        symbol [ knots %tmp.119 81 33 38 ];
-        symbol [ format %tmp.120 81 39 45 ];
-        %tmp.120 = getv function %tmp.119 :format;
-        %tmp.121 = "%.1f";
-        %tmp.122 = invoke %tmp.119 %tmp.120(%tmp.121);
-        lputv %speedValue.11 %tmp.122;
-        symbol [ speedValue %speedValue.11 81 20 30 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 82 16 ]
-        %tmp.123 = lgetv %dc;
-        symbol [ dc %tmp.123 82 16 18 ];
-        symbol [ drawText %tmp.124 82 19 27 ];
-        %tmp.124 = getv function %tmp.123 :drawText;
-        %tmp.125 = lgetv %width.1;
-        symbol [ width %tmp.125 82 28 33 ];
-        %tmp.126 = 2;
-        %tmp.127 = div %tmp.125 %tmp.126;
-        %tmp.128 = lgetv %height.2;
-        symbol [ height %tmp.128 82 39 45 ];
-        %tmp.129 = 2;
-        %tmp.130 = div %tmp.128 %tmp.129;
-        %tmp.131 = 15;
-        %tmp.132 = add %tmp.130 %tmp.131;
-        symbol [ Graphics %tmp.133 82 56 64 ];
-        %tmp.133 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_HOT %tmp.134 82 65 80 ];
-        %tmp.134 = getv %tmp.133 :FONT_NUMBER_HOT;
-        %tmp.135 = lgetv %speedValue.11;
-        symbol [ speedValue %tmp.135 82 82 92 ];
-        symbol [ Graphics %tmp.136 82 94 102 ];
-        %tmp.136 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.137 82 103 122 ];
-        %tmp.137 = getv %tmp.136 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.123 %tmp.124(%tmp.127, %tmp.132, %tmp.134, %tmp.135, %tmp.137);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 83 16 ]
-        %tmp.138 = lgetv %dc;
-        symbol [ dc %tmp.138 83 16 18 ];
-        symbol [ drawText %tmp.139 83 19 27 ];
-        %tmp.139 = getv function %tmp.138 :drawText;
-        %tmp.140 = lgetv %width.1;
-        symbol [ width %tmp.140 83 28 33 ];
-        %tmp.141 = 2;
-        %tmp.142 = div %tmp.140 %tmp.141;
-        %tmp.143 = 40;
-        %tmp.144 = add %tmp.142 %tmp.143;
-        %tmp.145 = lgetv %height.2;
-        symbol [ height %tmp.145 83 44 50 ];
-        %tmp.146 = 2;
-        %tmp.147 = div %tmp.145 %tmp.146;
-        %tmp.148 = 50;
-        %tmp.149 = add %tmp.147 %tmp.148;
-        symbol [ Graphics %tmp.150 83 61 69 ];
-        %tmp.150 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.151 83 70 80 ];
-        %tmp.151 = getv %tmp.150 :FONT_XTINY;
-        %tmp.152 = "kts";
-        symbol [ Graphics %tmp.153 83 89 97 ];
-        %tmp.153 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.154 83 98 115 ];
-        %tmp.154 = getv %tmp.153 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.138 %tmp.139(%tmp.144, %tmp.149, %tmp.151, %tmp.152, %tmp.154);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_32_84_12_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_12_87_12_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_12_87_12_if_else_false:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_84_19_87_12_start:
+        symbol [ dc %tmp.99 77 8 10 ];
+        symbol [ setColor %tmp.100 77 11 19 ];
+        %tmp.100 = getv function %tmp.99 :setColor;
+        symbol [ Graphics %tmp.101 77 20 28 ];
+        %tmp.101 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.102 77 29 40 ];
+        %tmp.102 = getv %tmp.101 :COLOR_WHITE;
+        symbol [ Graphics %tmp.103 77 42 50 ];
+        %tmp.103 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.104 77 51 68 ];
+        %tmp.104 = getv %tmp.103 :COLOR_TRANSPARENT;
+        invoke %tmp.99 %tmp.100(%tmp.102, %tmp.104);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 79 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_8_130_8_if_stmt:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_12_79_47_begin:
+        symbol [ _latitude %tmp.106 79 12 21 ];
+        %tmp.106 = getv ? :_latitude;
+        %tmp.107 = null;
+        %tmp.108 = ne %tmp.106 %tmp.107;
+        bf %tmp.108 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_8_130_8_if_else_false;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_33_79_47_true:
+        symbol [ _longitude %tmp.110 79 33 43 ];
+        %tmp.110 = getv ? :_longitude;
+        %tmp.111 = null;
+        %tmp.112 = ne %tmp.110 %tmp.111;
+        push %tmp.112;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_33_79_47_end:
+        %tmp.113 = phi [%tmp.108 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_12_79_47_begin] [%tmp.112 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_33_79_47_true] [%tmp.113 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_33_79_47_end];
+        bf %tmp.113 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_8_130_8_if_else_false;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_8_130_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 80 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_stop" ]
+        %yPos.8 = local;
+        symbol [ yPos %yPos.8 80 16 20 ];
+        %tmp.114 = 50;
+        lputv %yPos.8 %tmp.114;
+        symbol [ yPos %yPos.8 80 16 20 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 83 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_stop" ]
+        %headingText.9 = local;
+        symbol [ headingText %headingText.9 83 16 27 ];
+        %tmp.115 = "---°";
+        lputv %headingText.9 %tmp.115;
+        symbol [ headingText %headingText.9 83 16 27 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 84 12 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_84_12_86_12_if_stmt:
+        symbol [ _heading %tmp.117 84 16 24 ];
+        %tmp.117 = getv ? :_heading;
+        %tmp.118 = null;
+        %tmp.119 = ne %tmp.117 %tmp.118;
+        bf %tmp.119 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_84_12_86_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_84_12_86_12_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_84_34_86_12_start:
 [ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 85 16 ]
-        %tmp.155 = lgetv %dc;
-        symbol [ dc %tmp.155 85 16 18 ];
-        symbol [ drawText %tmp.156 85 19 27 ];
-        %tmp.156 = getv function %tmp.155 :drawText;
-        %tmp.157 = lgetv %width.1;
-        symbol [ width %tmp.157 85 28 33 ];
+        symbol [ _heading %tmp.121 85 30 38 ];
+        %tmp.121 = getv ? :_heading;
+        %tmp.122 = as %tmp.121 { (!Null) };
+        symbol [ format %tmp.123 85 39 45 ];
+        %tmp.123 = getv function %tmp.122 :format;
+        %tmp.124 = "%03d";
+        %tmp.125 = invoke %tmp.122 %tmp.123(%tmp.124);
+        %tmp.126 = "°";
+        %tmp.127 = add %tmp.125 %tmp.126;
+        lputv %headingText.9 %tmp.127;
+        symbol [ headingText %headingText.9 85 16 27 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_84_34_86_12_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_84_12_86_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_84_12_86_12_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 87 12 ]
+        %tmp.128 = lgetv %dc;
+        symbol [ dc %tmp.128 87 12 14 ];
+        symbol [ drawText %tmp.129 87 15 23 ];
+        %tmp.129 = getv function %tmp.128 :drawText;
+        %tmp.130 = lgetv %width.1;
+        symbol [ width %tmp.130 87 24 29 ];
+        %tmp.131 = 2;
+        %tmp.132 = div %tmp.130 %tmp.131;
+        %tmp.133 = lgetv %yPos.8;
+        symbol [ yPos %tmp.133 87 35 39 ];
+        symbol [ Graphics %tmp.134 87 41 49 ];
+        %tmp.134 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_HOT %tmp.135 87 50 65 ];
+        %tmp.135 = getv %tmp.134 :FONT_NUMBER_HOT;
+        %tmp.136 = lgetv %headingText.9;
+        symbol [ headingText %tmp.136 87 67 78 ];
+        symbol [ Graphics %tmp.137 87 80 88 ];
+        %tmp.137 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.138 87 89 108 ];
+        %tmp.138 = getv %tmp.137 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.128 %tmp.129(%tmp.132, %tmp.133, %tmp.135, %tmp.136, %tmp.138);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 90 12 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_90_12_98_12_if_stmt:
+        symbol [ _speed %tmp.140 90 16 22 ];
+        %tmp.140 = getv ? :_speed;
+        %tmp.141 = null;
+        %tmp.142 = ne %tmp.140 %tmp.141;
+        bf %tmp.142 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_90_12_98_12_if_else_false;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_90_12_98_12_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_90_32_95_12_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 91 16 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_90_32_95_12_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_90_32_95_12_stop" ]
+        %knots.10 = local;
+        symbol [ knots %knots.10 91 20 25 ];
+        symbol [ _speed %tmp.144 91 28 34 ];
+        %tmp.144 = getv ? :_speed;
+        %tmp.145 = as %tmp.144 { (!Null) };
+        %tmp.146 = 1.94384;
+        %tmp.147 = mul %tmp.145 %tmp.146;
+        lputv %knots.10 %tmp.147;
+        symbol [ knots %knots.10 91 20 25 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 92 16 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_90_32_95_12_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_90_32_95_12_stop" ]
+        %speedValue.11 = local;
+        symbol [ speedValue %speedValue.11 92 20 30 ];
+        %tmp.148 = lgetv %knots.10;
+        symbol [ knots %tmp.148 92 33 38 ];
+        symbol [ format %tmp.149 92 39 45 ];
+        %tmp.149 = getv function %tmp.148 :format;
+        %tmp.150 = "%.1f";
+        %tmp.151 = invoke %tmp.148 %tmp.149(%tmp.150);
+        lputv %speedValue.11 %tmp.151;
+        symbol [ speedValue %speedValue.11 92 20 30 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 93 16 ]
+        %tmp.152 = lgetv %dc;
+        symbol [ dc %tmp.152 93 16 18 ];
+        symbol [ drawText %tmp.153 93 19 27 ];
+        %tmp.153 = getv function %tmp.152 :drawText;
+        %tmp.154 = lgetv %width.1;
+        symbol [ width %tmp.154 93 28 33 ];
+        %tmp.155 = 2;
+        %tmp.156 = div %tmp.154 %tmp.155;
+        %tmp.157 = lgetv %height.2;
+        symbol [ height %tmp.157 93 39 45 ];
         %tmp.158 = 2;
         %tmp.159 = div %tmp.157 %tmp.158;
-        %tmp.160 = lgetv %height.2;
-        symbol [ height %tmp.160 85 39 45 ];
-        %tmp.161 = 2;
-        %tmp.162 = div %tmp.160 %tmp.161;
-        %tmp.163 = 15;
-        %tmp.164 = add %tmp.162 %tmp.163;
-        symbol [ Graphics %tmp.165 85 56 64 ];
+        %tmp.160 = 10;
+        %tmp.161 = sub %tmp.159 %tmp.160;
+        symbol [ Graphics %tmp.162 93 56 64 ];
+        %tmp.162 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_HOT %tmp.163 93 65 80 ];
+        %tmp.163 = getv %tmp.162 :FONT_NUMBER_HOT;
+        %tmp.164 = lgetv %speedValue.11;
+        symbol [ speedValue %tmp.164 93 82 92 ];
+        symbol [ Graphics %tmp.165 93 94 102 ];
         %tmp.165 = getm $.Toybox.Graphics;
-        symbol [ FONT_NUMBER_HOT %tmp.166 85 65 80 ];
-        %tmp.166 = getv %tmp.165 :FONT_NUMBER_HOT;
-        %tmp.167 = "--";
-        symbol [ Graphics %tmp.168 85 88 96 ];
-        %tmp.168 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.169 85 97 116 ];
-        %tmp.169 = getv %tmp.168 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.155 %tmp.156(%tmp.159, %tmp.164, %tmp.166, %tmp.167, %tmp.169);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 86 16 ]
-        %tmp.170 = lgetv %dc;
-        symbol [ dc %tmp.170 86 16 18 ];
-        symbol [ drawText %tmp.171 86 19 27 ];
-        %tmp.171 = getv function %tmp.170 :drawText;
-        %tmp.172 = lgetv %width.1;
-        symbol [ width %tmp.172 86 28 33 ];
-        %tmp.173 = 2;
-        %tmp.174 = div %tmp.172 %tmp.173;
-        %tmp.175 = 40;
-        %tmp.176 = add %tmp.174 %tmp.175;
-        %tmp.177 = lgetv %height.2;
-        symbol [ height %tmp.177 86 44 50 ];
-        %tmp.178 = 2;
-        %tmp.179 = div %tmp.177 %tmp.178;
-        %tmp.180 = 50;
-        %tmp.181 = add %tmp.179 %tmp.180;
-        symbol [ Graphics %tmp.182 86 61 69 ];
-        %tmp.182 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.183 86 70 80 ];
-        %tmp.183 = getv %tmp.182 :FONT_XTINY;
-        %tmp.184 = "kts";
-        symbol [ Graphics %tmp.185 86 89 97 ];
-        %tmp.185 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_LEFT %tmp.186 86 98 115 ];
-        %tmp.186 = getv %tmp.185 :TEXT_JUSTIFY_LEFT;
-        invoke %tmp.170 %tmp.171(%tmp.176, %tmp.181, %tmp.183, %tmp.184, %tmp.186);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_84_19_87_12_stop:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_12_87_12_if_end:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 90 12 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_53_98_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_53_98_8_stop" ]
-        %latText.12 = local;
-        symbol [ latText %latText.12 90 16 23 ];
-        %tmp.187 = "Lat: ";
-        symbol [ _latitude %tmp.189 90 36 45 ];
-        %tmp.189 = getv ? :_latitude;
-        symbol [ format %tmp.190 90 46 52 ];
-        %tmp.190 = getv function %tmp.189 :format;
-        %tmp.191 = "%.4f";
-        %tmp.192 = invoke %tmp.189 %tmp.190(%tmp.191);
-        %tmp.193 = add %tmp.187 %tmp.192;
-        lputv %latText.12 %tmp.193;
-        symbol [ latText %latText.12 90 16 23 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 91 12 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_53_98_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_53_98_8_stop" ]
-        %lonText.13 = local;
-        symbol [ lonText %lonText.13 91 16 23 ];
-        %tmp.194 = "Lon: ";
-        symbol [ _longitude %tmp.196 91 36 46 ];
-        %tmp.196 = getv ? :_longitude;
-        symbol [ format %tmp.197 91 47 53 ];
-        %tmp.197 = getv function %tmp.196 :format;
-        %tmp.198 = "%.4f";
-        %tmp.199 = invoke %tmp.196 %tmp.197(%tmp.198);
-        %tmp.200 = add %tmp.194 %tmp.199;
-        lputv %lonText.13 %tmp.200;
-        symbol [ lonText %lonText.13 91 16 23 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 93 12 ]
-        %tmp.201 = lgetv %dc;
-        symbol [ dc %tmp.201 93 12 14 ];
-        symbol [ drawText %tmp.202 93 15 23 ];
-        %tmp.202 = getv function %tmp.201 :drawText;
-        %tmp.203 = lgetv %width.1;
-        symbol [ width %tmp.203 93 24 29 ];
-        %tmp.204 = 2;
-        %tmp.205 = div %tmp.203 %tmp.204;
-        %tmp.206 = lgetv %height.2;
-        symbol [ height %tmp.206 93 35 41 ];
-        %tmp.207 = 41;
-        %tmp.208 = sub %tmp.206 %tmp.207;
-        symbol [ Graphics %tmp.209 93 48 56 ];
-        %tmp.209 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.210 93 57 67 ];
-        %tmp.210 = getv %tmp.209 :FONT_XTINY;
-        %tmp.211 = lgetv %latText.12;
-        symbol [ latText %tmp.211 93 69 76 ];
-        symbol [ Graphics %tmp.212 93 78 86 ];
-        %tmp.212 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.213 93 87 106 ];
-        %tmp.213 = getv %tmp.212 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.201 %tmp.202(%tmp.205, %tmp.208, %tmp.210, %tmp.211, %tmp.213);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 94 12 ]
-        %tmp.214 = lgetv %dc;
-        symbol [ dc %tmp.214 94 12 14 ];
-        symbol [ drawText %tmp.215 94 15 23 ];
-        %tmp.215 = getv function %tmp.214 :drawText;
-        %tmp.216 = lgetv %width.1;
-        symbol [ width %tmp.216 94 24 29 ];
-        %tmp.217 = 2;
-        %tmp.218 = div %tmp.216 %tmp.217;
-        %tmp.219 = lgetv %height.2;
-        symbol [ height %tmp.219 94 35 41 ];
-        %tmp.220 = 26;
-        %tmp.221 = sub %tmp.219 %tmp.220;
-        symbol [ Graphics %tmp.222 94 48 56 ];
-        %tmp.222 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.223 94 57 67 ];
-        %tmp.223 = getv %tmp.222 :FONT_XTINY;
-        %tmp.224 = lgetv %lonText.13;
-        symbol [ lonText %tmp.224 94 69 76 ];
-        symbol [ Graphics %tmp.225 94 78 86 ];
-        %tmp.225 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.226 94 87 106 ];
-        %tmp.226 = getv %tmp.225 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.214 %tmp.215(%tmp.218, %tmp.221, %tmp.223, %tmp.224, %tmp.226);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 97 12 ]
-        %tmp.227 = lgetv %dc;
-        symbol [ dc %tmp.227 97 12 14 ];
-        symbol [ drawText %tmp.228 97 15 23 ];
-        %tmp.228 = getv function %tmp.227 :drawText;
-        %tmp.229 = lgetv %width.1;
-        symbol [ width %tmp.229 97 24 29 ];
-        %tmp.230 = 2;
-        %tmp.231 = div %tmp.229 %tmp.230;
-        %tmp.232 = lgetv %height.2;
-        symbol [ height %tmp.232 97 35 41 ];
-        %tmp.233 = 12;
-        %tmp.234 = sub %tmp.232 %tmp.233;
-        symbol [ Graphics %tmp.235 97 48 56 ];
-        %tmp.235 = getm $.Toybox.Graphics;
-        symbol [ FONT_XTINY %tmp.236 97 57 67 ];
-        %tmp.236 = getv %tmp.235 :FONT_XTINY;
-        %tmp.237 = "Nav Screen";
-        symbol [ Graphics %tmp.238 97 83 91 ];
-        %tmp.238 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.239 97 92 111 ];
-        %tmp.239 = getv %tmp.238 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.227 %tmp.228(%tmp.231, %tmp.234, %tmp.236, %tmp.237, %tmp.239);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_53_98_8_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_8_100_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_8_100_8_if_else_false:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_98_15_100_8_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 99 12 ]
-        %tmp.240 = lgetv %dc;
-        symbol [ dc %tmp.240 99 12 14 ];
-        symbol [ drawText %tmp.241 99 15 23 ];
-        %tmp.241 = getv function %tmp.240 :drawText;
-        %tmp.242 = lgetv %width.1;
-        symbol [ width %tmp.242 99 24 29 ];
-        %tmp.243 = 2;
-        %tmp.244 = div %tmp.242 %tmp.243;
-        %tmp.245 = lgetv %height.2;
-        symbol [ height %tmp.245 99 35 41 ];
-        %tmp.246 = 2;
-        %tmp.247 = div %tmp.245 %tmp.246;
-        symbol [ Graphics %tmp.248 99 47 55 ];
-        %tmp.248 = getm $.Toybox.Graphics;
-        symbol [ FONT_SMALL %tmp.249 99 56 66 ];
-        %tmp.249 = getv %tmp.248 :FONT_SMALL;
-        %tmp.250 = "Acquiring GPS...";
-        symbol [ Graphics %tmp.251 99 88 96 ];
-        %tmp.251 = getm $.Toybox.Graphics;
-        symbol [ TEXT_JUSTIFY_CENTER %tmp.252 99 97 116 ];
-        %tmp.252 = getv %tmp.251 :TEXT_JUSTIFY_CENTER;
-        invoke %tmp.240 %tmp.241(%tmp.244, %tmp.247, %tmp.249, %tmp.250, %tmp.252);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_98_15_100_8_stop:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_68_8_100_8_if_end:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_42_40_101_4_stop:
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.166 93 103 122 ];
+        %tmp.166 = getv %tmp.165 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.152 %tmp.153(%tmp.156, %tmp.161, %tmp.163, %tmp.164, %tmp.166);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 94 16 ]
+        %tmp.167 = lgetv %dc;
+        symbol [ dc %tmp.167 94 16 18 ];
+        symbol [ drawText %tmp.168 94 19 27 ];
+        %tmp.168 = getv function %tmp.167 :drawText;
+        %tmp.169 = 195;
+        %tmp.170 = 209;
+        symbol [ Graphics %tmp.171 94 38 46 ];
+        %tmp.171 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.172 94 47 57 ];
+        %tmp.172 = getv %tmp.171 :FONT_XTINY;
+        %tmp.173 = "kn";
+        symbol [ Graphics %tmp.174 94 65 73 ];
+        %tmp.174 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.175 94 74 91 ];
+        %tmp.175 = getv %tmp.174 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.167 %tmp.168(%tmp.169, %tmp.170, %tmp.172, %tmp.173, %tmp.175);
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_90_32_95_12_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_90_12_98_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_90_12_98_12_if_else_false:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_95_19_98_12_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 96 16 ]
+        %tmp.176 = lgetv %dc;
+        symbol [ dc %tmp.176 96 16 18 ];
+        symbol [ drawText %tmp.177 96 19 27 ];
+        %tmp.177 = getv function %tmp.176 :drawText;
+        %tmp.178 = lgetv %width.1;
+        symbol [ width %tmp.178 96 28 33 ];
+        %tmp.179 = 2;
+        %tmp.180 = div %tmp.178 %tmp.179;
+        %tmp.181 = lgetv %height.2;
+        symbol [ height %tmp.181 96 39 45 ];
+        %tmp.182 = 2;
+        %tmp.183 = div %tmp.181 %tmp.182;
+        %tmp.184 = 10;
+        %tmp.185 = sub %tmp.183 %tmp.184;
+        symbol [ Graphics %tmp.186 96 56 64 ];
+        %tmp.186 = getm $.Toybox.Graphics;
+        symbol [ FONT_NUMBER_HOT %tmp.187 96 65 80 ];
+        %tmp.187 = getv %tmp.186 :FONT_NUMBER_HOT;
+        %tmp.188 = "--";
+        symbol [ Graphics %tmp.189 96 88 96 ];
+        %tmp.189 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.190 96 97 116 ];
+        %tmp.190 = getv %tmp.189 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.176 %tmp.177(%tmp.180, %tmp.185, %tmp.187, %tmp.188, %tmp.190);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 97 16 ]
+        %tmp.191 = lgetv %dc;
+        symbol [ dc %tmp.191 97 16 18 ];
+        symbol [ drawText %tmp.192 97 19 27 ];
+        %tmp.192 = getv function %tmp.191 :drawText;
+        %tmp.193 = 195;
+        %tmp.194 = 209;
+        symbol [ Graphics %tmp.195 97 38 46 ];
+        %tmp.195 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.196 97 47 57 ];
+        %tmp.196 = getv %tmp.195 :FONT_XTINY;
+        %tmp.197 = "kn";
+        symbol [ Graphics %tmp.198 97 65 73 ];
+        %tmp.198 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_LEFT %tmp.199 97 74 91 ];
+        %tmp.199 = getv %tmp.198 :TEXT_JUSTIFY_LEFT;
+        invoke %tmp.191 %tmp.192(%tmp.193, %tmp.194, %tmp.196, %tmp.197, %tmp.199);
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_95_19_98_12_stop:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_90_12_98_12_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 101 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_stop" ]
+        %courseName.12 = local;
+        symbol [ courseName %courseName.12 101 16 26 ];
+        symbol [ Application %tmp.200 101 29 40 ];
+        %tmp.200 = getm $.Toybox.Application;
+        symbol [ Storage %tmp.201 101 41 48 ];
+        %tmp.201 = getv %tmp.200 :Storage;
+        symbol [ getValue %tmp.202 101 49 57 ];
+        %tmp.202 = getv function %tmp.201 :getValue;
+        %tmp.203 = "selectedCourseName";
+        %tmp.204 = invoke %tmp.201 %tmp.202(%tmp.203);
+        lputv %courseName.12 %tmp.204;
+        symbol [ courseName %courseName.12 101 16 26 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 102 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_stop" ]
+        %courseText.13 = local;
+        symbol [ courseText %courseText.13 102 16 26 ];
+        %tmp.205 = "No Course";
+        lputv %courseText.13 %tmp.205;
+        symbol [ courseText %courseText.13 102 16 26 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 103 12 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_12_109_12_if_stmt:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_16_103_60_begin:
+        %tmp.206 = lgetv %courseName.12;
+        symbol [ courseName %tmp.206 103 16 26 ];
+        %tmp.207 = null;
+        %tmp.208 = ne %tmp.206 %tmp.207;
+        bf %tmp.208 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_12_109_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_38_103_60_true:
+        %tmp.209 = lgetv %courseName.12;
+        symbol [ courseName %tmp.209 103 38 48 ];
+        %tmp.210 = as %tmp.209 { (!Null) };
+        symbol [ length %tmp.211 103 49 55 ];
+        %tmp.211 = getv function %tmp.210 :length;
+        %tmp.212 = invoke %tmp.210 %tmp.211();
+        %tmp.213 = 0;
+        %tmp.214 = gt %tmp.212 %tmp.213;
+        push %tmp.214;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_38_103_60_end:
+        %tmp.215 = phi [%tmp.208 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_16_103_60_begin] [%tmp.214 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_38_103_60_true] [%tmp.215 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_38_103_60_end];
+        bf %tmp.215 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_12_109_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_12_109_12_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_63_109_12_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 104 16 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_16_108_16_if_stmt:
+        %tmp.216 = lgetv %courseName.12;
+        symbol [ courseName %tmp.216 104 20 30 ];
+        %tmp.217 = as %tmp.216 { (!Null) };
+        symbol [ length %tmp.218 104 31 37 ];
+        %tmp.218 = getv function %tmp.217 :length;
+        %tmp.219 = invoke %tmp.217 %tmp.218();
+        %tmp.220 = 9;
+        %tmp.221 = gt %tmp.219 %tmp.220;
+        bf %tmp.221 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_16_108_16_if_else_false;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_16_108_16_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_45_106_16_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 105 20 ]
+        %tmp.222 = lgetv %courseName.12;
+        symbol [ courseName %tmp.222 105 33 43 ];
+        %tmp.223 = as %tmp.222 { (!Null) };
+        symbol [ substring %tmp.224 105 44 53 ];
+        %tmp.224 = getv function %tmp.223 :substring;
+        %tmp.225 = 0;
+        %tmp.226 = 9;
+        %tmp.227 = invoke %tmp.223 %tmp.224(%tmp.225, %tmp.226);
+        lputv %courseText.13 %tmp.227;
+        symbol [ courseText %courseText.13 105 20 30 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_45_106_16_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_16_108_16_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_16_108_16_if_else_false:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_106_23_108_16_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 107 20 ]
+        %tmp.228 = lgetv %courseName.12;
+        symbol [ courseName %tmp.228 107 33 43 ];
+        %tmp.229 = as %tmp.228 { (!Null) };
+        lputv %courseText.13 %tmp.229;
+        symbol [ courseText %courseText.13 107 20 30 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_106_23_108_16_stop:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_16_108_16_if_end:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_63_109_12_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_12_109_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_103_12_109_12_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 110 12 ]
+        %tmp.230 = lgetv %dc;
+        symbol [ dc %tmp.230 110 12 14 ];
+        symbol [ setColor %tmp.231 110 15 23 ];
+        %tmp.231 = getv function %tmp.230 :setColor;
+        symbol [ Graphics %tmp.232 110 24 32 ];
+        %tmp.232 = getm $.Toybox.Graphics;
+        symbol [ COLOR_DK_GRAY %tmp.233 110 33 46 ];
+        %tmp.233 = getv %tmp.232 :COLOR_DK_GRAY;
+        symbol [ Graphics %tmp.234 110 48 56 ];
+        %tmp.234 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.235 110 57 74 ];
+        %tmp.235 = getv %tmp.234 :COLOR_TRANSPARENT;
+        invoke %tmp.230 %tmp.231(%tmp.233, %tmp.235);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 111 12 ]
+        %tmp.236 = lgetv %dc;
+        symbol [ dc %tmp.236 111 12 14 ];
+        symbol [ drawText %tmp.237 111 15 23 ];
+        %tmp.237 = getv function %tmp.236 :drawText;
+        %tmp.238 = lgetv %width.1;
+        symbol [ width %tmp.238 111 24 29 ];
+        %tmp.239 = 2;
+        %tmp.240 = div %tmp.238 %tmp.239;
+        %tmp.241 = lgetv %height.2;
+        symbol [ height %tmp.241 111 35 41 ];
+        %tmp.242 = 2;
+        %tmp.243 = div %tmp.241 %tmp.242;
+        %tmp.244 = 75;
+        %tmp.245 = add %tmp.243 %tmp.244;
+        symbol [ Graphics %tmp.246 111 52 60 ];
+        %tmp.246 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.247 111 61 71 ];
+        %tmp.247 = getv %tmp.246 :FONT_XTINY;
+        %tmp.248 = lgetv %courseText.13;
+        symbol [ courseText %tmp.248 111 73 83 ];
+        symbol [ Graphics %tmp.249 111 85 93 ];
+        %tmp.249 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.250 111 94 113 ];
+        %tmp.250 = getv %tmp.249 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.236 %tmp.237(%tmp.240, %tmp.245, %tmp.247, %tmp.248, %tmp.250);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 112 12 ]
+        %tmp.251 = lgetv %dc;
+        symbol [ dc %tmp.251 112 12 14 ];
+        symbol [ setColor %tmp.252 112 15 23 ];
+        %tmp.252 = getv function %tmp.251 :setColor;
+        symbol [ Graphics %tmp.253 112 24 32 ];
+        %tmp.253 = getm $.Toybox.Graphics;
+        symbol [ COLOR_WHITE %tmp.254 112 33 44 ];
+        %tmp.254 = getv %tmp.253 :COLOR_WHITE;
+        symbol [ Graphics %tmp.255 112 46 54 ];
+        %tmp.255 = getm $.Toybox.Graphics;
+        symbol [ COLOR_TRANSPARENT %tmp.256 112 55 72 ];
+        %tmp.256 = getv %tmp.255 :COLOR_TRANSPARENT;
+        invoke %tmp.251 %tmp.252(%tmp.254, %tmp.256);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 115 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_stop" ]
+        %latText.14 = local;
+        symbol [ latText %latText.14 115 16 23 ];
+        %tmp.257 = "Lat: ";
+        symbol [ _latitude %tmp.259 115 36 45 ];
+        %tmp.259 = getv ? :_latitude;
+        symbol [ format %tmp.260 115 46 52 ];
+        %tmp.260 = getv function %tmp.259 :format;
+        %tmp.261 = "%.4f";
+        %tmp.262 = invoke %tmp.259 %tmp.260(%tmp.261);
+        %tmp.263 = add %tmp.257 %tmp.262;
+        lputv %latText.14 %tmp.263;
+        symbol [ latText %latText.14 115 16 23 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 116 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_stop" ]
+        %lonText.15 = local;
+        symbol [ lonText %lonText.15 116 16 23 ];
+        %tmp.264 = "Lon: ";
+        symbol [ _longitude %tmp.266 116 36 46 ];
+        %tmp.266 = getv ? :_longitude;
+        symbol [ format %tmp.267 116 47 53 ];
+        %tmp.267 = getv function %tmp.266 :format;
+        %tmp.268 = "%.4f";
+        %tmp.269 = invoke %tmp.266 %tmp.267(%tmp.268);
+        %tmp.270 = add %tmp.264 %tmp.269;
+        lputv %lonText.15 %tmp.270;
+        symbol [ lonText %lonText.15 116 16 23 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 118 12 ]
+        %tmp.271 = lgetv %dc;
+        symbol [ dc %tmp.271 118 12 14 ];
+        symbol [ drawText %tmp.272 118 15 23 ];
+        %tmp.272 = getv function %tmp.271 :drawText;
+        %tmp.273 = lgetv %width.1;
+        symbol [ width %tmp.273 118 24 29 ];
+        %tmp.274 = 2;
+        %tmp.275 = div %tmp.273 %tmp.274;
+        %tmp.276 = lgetv %height.2;
+        symbol [ height %tmp.276 118 35 41 ];
+        %tmp.277 = 41;
+        %tmp.278 = sub %tmp.276 %tmp.277;
+        symbol [ Graphics %tmp.279 118 48 56 ];
+        %tmp.279 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.280 118 57 67 ];
+        %tmp.280 = getv %tmp.279 :FONT_XTINY;
+        %tmp.281 = lgetv %latText.14;
+        symbol [ latText %tmp.281 118 69 76 ];
+        symbol [ Graphics %tmp.282 118 78 86 ];
+        %tmp.282 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.283 118 87 106 ];
+        %tmp.283 = getv %tmp.282 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.271 %tmp.272(%tmp.275, %tmp.278, %tmp.280, %tmp.281, %tmp.283);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 119 12 ]
+        %tmp.284 = lgetv %dc;
+        symbol [ dc %tmp.284 119 12 14 ];
+        symbol [ drawText %tmp.285 119 15 23 ];
+        %tmp.285 = getv function %tmp.284 :drawText;
+        %tmp.286 = lgetv %width.1;
+        symbol [ width %tmp.286 119 24 29 ];
+        %tmp.287 = 2;
+        %tmp.288 = div %tmp.286 %tmp.287;
+        %tmp.289 = lgetv %height.2;
+        symbol [ height %tmp.289 119 35 41 ];
+        %tmp.290 = 26;
+        %tmp.291 = sub %tmp.289 %tmp.290;
+        symbol [ Graphics %tmp.292 119 48 56 ];
+        %tmp.292 = getm $.Toybox.Graphics;
+        symbol [ FONT_XTINY %tmp.293 119 57 67 ];
+        %tmp.293 = getv %tmp.292 :FONT_XTINY;
+        %tmp.294 = lgetv %lonText.15;
+        symbol [ lonText %tmp.294 119 69 76 ];
+        symbol [ Graphics %tmp.295 119 78 86 ];
+        %tmp.295 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.296 119 87 106 ];
+        %tmp.296 = getv %tmp.295 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.284 %tmp.285(%tmp.288, %tmp.291, %tmp.293, %tmp.294, %tmp.296);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 122 12 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_122_12_124_12_if_stmt:
+        symbol [ _menuIcon %tmp.298 122 16 25 ];
+        %tmp.298 = getv ? :_menuIcon;
+        %tmp.299 = null;
+        %tmp.300 = ne %tmp.298 %tmp.299;
+        bf %tmp.300 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_122_12_124_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_122_12_124_12_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_122_35_124_12_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 123 16 ]
+        %tmp.301 = lgetv %dc;
+        symbol [ dc %tmp.301 123 16 18 ];
+        symbol [ drawBitmap %tmp.302 123 19 29 ];
+        %tmp.302 = getv function %tmp.301 :drawBitmap;
+        %tmp.303 = 10;
+        %tmp.304 = 120;
+        symbol [ _menuIcon %tmp.306 123 39 48 ];
+        %tmp.306 = getv ? :_menuIcon;
+        %tmp.307 = as %tmp.306 { (!Null) };
+        invoke %tmp.301 %tmp.302(%tmp.303, %tmp.304, %tmp.307);
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_122_35_124_12_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_122_12_124_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_122_12_124_12_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 125 12 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_125_12_127_12_if_stmt:
+        symbol [ _cogIcon %tmp.309 125 16 24 ];
+        %tmp.309 = getv ? :_cogIcon;
+        %tmp.310 = null;
+        %tmp.311 = ne %tmp.309 %tmp.310;
+        bf %tmp.311 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_125_12_127_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_125_12_127_12_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_125_34_127_12_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 126 16 ]
+        %tmp.312 = lgetv %dc;
+        symbol [ dc %tmp.312 126 16 18 ];
+        symbol [ drawBitmap %tmp.313 126 19 29 ];
+        %tmp.313 = getv function %tmp.312 :drawBitmap;
+        %tmp.314 = 35;
+        %tmp.315 = 190;
+        symbol [ _cogIcon %tmp.317 126 39 47 ];
+        %tmp.317 = getv ? :_cogIcon;
+        %tmp.318 = as %tmp.317 { (!Null) };
+        invoke %tmp.312 %tmp.313(%tmp.314, %tmp.315, %tmp.318);
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_125_34_127_12_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_125_12_127_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_125_12_127_12_if_end:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_53_128_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_8_130_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_8_130_8_if_else_false:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_128_15_130_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 129 12 ]
+        %tmp.319 = lgetv %dc;
+        symbol [ dc %tmp.319 129 12 14 ];
+        symbol [ drawText %tmp.320 129 15 23 ];
+        %tmp.320 = getv function %tmp.319 :drawText;
+        %tmp.321 = lgetv %width.1;
+        symbol [ width %tmp.321 129 24 29 ];
+        %tmp.322 = 2;
+        %tmp.323 = div %tmp.321 %tmp.322;
+        %tmp.324 = lgetv %height.2;
+        symbol [ height %tmp.324 129 35 41 ];
+        %tmp.325 = 2;
+        %tmp.326 = div %tmp.324 %tmp.325;
+        symbol [ Graphics %tmp.327 129 47 55 ];
+        %tmp.327 = getm $.Toybox.Graphics;
+        symbol [ FONT_SMALL %tmp.328 129 56 66 ];
+        %tmp.328 = getv %tmp.327 :FONT_SMALL;
+        %tmp.329 = "Acquiring GPS...";
+        symbol [ Graphics %tmp.330 129 88 96 ];
+        %tmp.330 = getm $.Toybox.Graphics;
+        symbol [ TEXT_JUSTIFY_CENTER %tmp.331 129 97 116 ];
+        %tmp.331 = getv %tmp.330 :TEXT_JUSTIFY_CENTER;
+        invoke %tmp.319 %tmp.320(%tmp.323, %tmp.326, %tmp.328, %tmp.329, %tmp.331);
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_128_15_130_8_stop:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_79_8_130_8_if_end:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_49_40_131_4_stop:
     }
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 104; @symbol_functiondef = [drawCompassRing,104,13,28]; @symbol_param<0> = [dc,104,29,31]; @symbol_param<0>_type<0> = [Dc,104,35,37]; @symbol_param<1> = [centerX,104,39,46]; @symbol_param<1>_type<0> = [Number,104,50,56]; @symbol_param<2> = [centerY,104,58,65]; @symbol_param<2>_type<0> = [Number,104,69,75]; @symbol_param<3> = [radius,104,77,83]; @symbol_param<3>_type<0> = [Number,104,87,93]; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 134; @symbol_functiondef = [drawCompassRing,134,13,28]; @symbol_param<0> = [dc,134,29,31]; @symbol_param<0>_type<0> = [Dc,134,35,37]; @symbol_param<1> = [centerX,134,39,46]; @symbol_param<1>_type<0> = [Number,134,50,56]; @symbol_param<2> = [centerY,134,58,65]; @symbol_param<2>_type<0> = [Number,134,69,75]; @symbol_param<3> = [radius,134,77,83]; @symbol_param<3>_type<0> = [Number,134,87,93]; ]
     function drawCompassRing(dc as Dc, centerX as Number, centerY as Number, radius as Number) as Void {
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_103_137_4_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 105 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_103_137_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_103_137_4_stop" ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_134_103_167_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 135 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_134_103_167_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_134_103_167_4_stop" ]
         %currentHeading.1 = local;
-        symbol [ currentHeading %currentHeading.1 105 12 26 ];
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_105_29_105_59_begin:
-        symbol [ _heading %tmp.2 105 29 37 ];
+        symbol [ currentHeading %currentHeading.1 135 12 26 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_135_29_135_59_begin:
+        symbol [ _heading %tmp.2 135 29 37 ];
         %tmp.2 = getv ? :_heading;
         %tmp.3 = null;
         %tmp.4 = ne %tmp.2 %tmp.3;
-        bf %tmp.4 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_105_29_105_59_false;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_105_29_105_59_true:
-        symbol [ _heading %tmp.6 105 48 56 ];
+        bf %tmp.4 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_135_29_135_59_false;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_135_29_135_59_true:
+        symbol [ _heading %tmp.6 135 48 56 ];
         %tmp.6 = getv ? :_heading;
         %tmp.7 = as %tmp.6 { (!Null) };
         push %tmp.7;
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_105_29_105_59_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_105_29_105_59_false:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_135_29_135_59_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_135_29_135_59_false:
         %tmp.8 = 0;
         push %tmp.8;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_105_29_105_59_end:
-        %tmp.9 = phi [%tmp.4 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_105_29_105_59_begin] [%tmp.7 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_105_29_105_59_true] [%tmp.8 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_105_29_105_59_false] [%tmp.9 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_105_29_105_59_end];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_135_29_135_59_end:
+        %tmp.9 = phi [%tmp.4 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_135_29_135_59_begin] [%tmp.7 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_135_29_135_59_true] [%tmp.8 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_135_29_135_59_false] [%tmp.9 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_135_29_135_59_end];
         lputv %currentHeading.1 %tmp.9;
-        symbol [ currentHeading %currentHeading.1 105 12 26 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 108 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_103_137_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_103_137_4_stop" ]
+        symbol [ currentHeading %currentHeading.1 135 12 26 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 138 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_134_103_167_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_134_103_167_4_stop" ]
         %cardinals.2 = local;
-        symbol [ cardinals %cardinals.2 108 12 21 ];
+        symbol [ cardinals %cardinals.2 138 12 21 ];
         %tmp.10 = newa 4;
         %tmp.11 = 0;
         %tmp.12 = dup %tmp.10;
@@ -710,428 +956,428 @@ D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_105_29_105_5
         %tmp.21 = dup %tmp.19;
         %tmp.22 = aputv %tmp.21 3 %tmp.20;
         lputv %cardinals.2 %tmp.22;
-        symbol [ cardinals %cardinals.2 108 12 21 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 109 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_103_137_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_103_137_4_stop" ]
+        symbol [ cardinals %cardinals.2 138 12 21 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 139 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_134_103_167_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_134_103_167_4_stop" ]
         %lineLength.3 = local;
-        symbol [ lineLength %lineLength.3 109 12 22 ];
-        %tmp.23 = 15;
+        symbol [ lineLength %lineLength.3 139 12 22 ];
+        %tmp.23 = 7.5;
         lputv %lineLength.3 %tmp.23;
-        symbol [ lineLength %lineLength.3 109 12 22 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 111 8 ]
-        for @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_8_132_8_for_test @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_8_132_8_for_incr @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_8_132_8_for_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_8_132_8_for_init:
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_8_132_8_for_begin" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_8_132_8_for_end" ]
+        symbol [ lineLength %lineLength.3 139 12 22 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 141 8 ]
+        for @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_8_162_8_for_test @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_8_162_8_for_incr @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_8_162_8_for_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_8_162_8_for_init:
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_8_162_8_for_begin" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_8_162_8_for_end" ]
         %i.4 = local;
-        symbol [ i %i.4 111 17 18 ];
+        symbol [ i %i.4 141 17 18 ];
         %tmp.24 = 0;
         lputv %i.4 %tmp.24;
-        symbol [ i %i.4 111 17 18 ];
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_8_132_8_for_test:
+        symbol [ i %i.4 141 17 18 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_8_162_8_for_test:
         %tmp.25 = lgetv %i.4;
-        symbol [ i %tmp.25 111 24 25 ];
+        symbol [ i %tmp.25 141 24 25 ];
         %tmp.26 = lgetv %cardinals.2;
-        symbol [ cardinals %tmp.26 111 28 37 ];
-        symbol [ size %tmp.27 111 38 42 ];
+        symbol [ cardinals %tmp.26 141 28 37 ];
+        symbol [ size %tmp.27 141 38 42 ];
         %tmp.27 = getv function %tmp.26 :size;
         %tmp.28 = invoke %tmp.26 %tmp.27();
         %tmp.29 = lt %tmp.25 %tmp.28;
-        bf %tmp.29 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_8_132_8_for_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_8_132_8_for_begin:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 114 12 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_stop" ]
+        bf %tmp.29 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_8_162_8_for_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_8_162_8_for_begin:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 144 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_stop" ]
         %angle.5 = local;
-        symbol [ angle %angle.5 114 16 21 ];
+        symbol [ angle %angle.5 144 16 21 ];
         %tmp.30 = lgetv %cardinals.2;
-        symbol [ cardinals %tmp.30 114 24 33 ];
+        symbol [ cardinals %tmp.30 144 24 33 ];
         %tmp.31 = lgetv %i.4;
-        symbol [ i %tmp.31 114 34 35 ];
+        symbol [ i %tmp.31 144 34 35 ];
         %tmp.32 = agetv %tmp.30 %tmp.31;
         %tmp.33 = lgetv %currentHeading.1;
-        symbol [ currentHeading %tmp.33 114 39 53 ];
+        symbol [ currentHeading %tmp.33 144 39 53 ];
         %tmp.34 = sub %tmp.32 %tmp.33;
         lputv %angle.5 %tmp.34;
-        symbol [ angle %angle.5 114 16 21 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 115 12 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_stop" ]
+        symbol [ angle %angle.5 144 16 21 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 145 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_stop" ]
         %radians.6 = local;
-        symbol [ radians %radians.6 115 16 23 ];
-        symbol [ Math %tmp.35 115 26 30 ];
+        symbol [ radians %radians.6 145 16 23 ];
+        symbol [ Math %tmp.35 145 26 30 ];
         %tmp.35 = getm $.Toybox.Math;
-        symbol [ toRadians %tmp.36 115 31 40 ];
+        symbol [ toRadians %tmp.36 145 31 40 ];
         %tmp.36 = getv function %tmp.35 :toRadians;
         %tmp.37 = lgetv %angle.5;
-        symbol [ angle %tmp.37 115 41 46 ];
+        symbol [ angle %tmp.37 145 41 46 ];
         %tmp.38 = invoke %tmp.35 %tmp.36(%tmp.37);
         lputv %radians.6 %tmp.38;
-        symbol [ radians %radians.6 115 16 23 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 118 12 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_stop" ]
+        symbol [ radians %radians.6 145 16 23 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 148 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_stop" ]
         %outerX.7 = local;
-        symbol [ outerX %outerX.7 118 16 22 ];
+        symbol [ outerX %outerX.7 148 16 22 ];
         %tmp.39 = lgetv %centerX;
-        symbol [ centerX %tmp.39 118 25 32 ];
+        symbol [ centerX %tmp.39 148 25 32 ];
         %tmp.40 = lgetv %radius;
-        symbol [ radius %tmp.40 118 35 41 ];
-        symbol [ Math %tmp.41 118 44 48 ];
+        symbol [ radius %tmp.40 148 35 41 ];
+        symbol [ Math %tmp.41 148 44 48 ];
         %tmp.41 = getm $.Toybox.Math;
-        symbol [ sin %tmp.42 118 49 52 ];
+        symbol [ sin %tmp.42 148 49 52 ];
         %tmp.42 = getv function %tmp.41 :sin;
         %tmp.43 = lgetv %radians.6;
-        symbol [ radians %tmp.43 118 53 60 ];
+        symbol [ radians %tmp.43 148 53 60 ];
         %tmp.44 = invoke %tmp.41 %tmp.42(%tmp.43);
         %tmp.45 = mul %tmp.40 %tmp.44;
         %tmp.46 = add %tmp.39 %tmp.45;
         lputv %outerX.7 %tmp.46;
-        symbol [ outerX %outerX.7 118 16 22 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 119 12 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_stop" ]
+        symbol [ outerX %outerX.7 148 16 22 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 149 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_stop" ]
         %outerY.8 = local;
-        symbol [ outerY %outerY.8 119 16 22 ];
+        symbol [ outerY %outerY.8 149 16 22 ];
         %tmp.47 = lgetv %centerY;
-        symbol [ centerY %tmp.47 119 25 32 ];
+        symbol [ centerY %tmp.47 149 25 32 ];
         %tmp.48 = lgetv %radius;
-        symbol [ radius %tmp.48 119 35 41 ];
-        symbol [ Math %tmp.49 119 44 48 ];
+        symbol [ radius %tmp.48 149 35 41 ];
+        symbol [ Math %tmp.49 149 44 48 ];
         %tmp.49 = getm $.Toybox.Math;
-        symbol [ cos %tmp.50 119 49 52 ];
+        symbol [ cos %tmp.50 149 49 52 ];
         %tmp.50 = getv function %tmp.49 :cos;
         %tmp.51 = lgetv %radians.6;
-        symbol [ radians %tmp.51 119 53 60 ];
+        symbol [ radians %tmp.51 149 53 60 ];
         %tmp.52 = invoke %tmp.49 %tmp.50(%tmp.51);
         %tmp.53 = mul %tmp.48 %tmp.52;
         %tmp.54 = sub %tmp.47 %tmp.53;
         lputv %outerY.8 %tmp.54;
-        symbol [ outerY %outerY.8 119 16 22 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 120 12 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_stop" ]
+        symbol [ outerY %outerY.8 149 16 22 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 150 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_stop" ]
         %innerX.9 = local;
-        symbol [ innerX %innerX.9 120 16 22 ];
+        symbol [ innerX %innerX.9 150 16 22 ];
         %tmp.55 = lgetv %centerX;
-        symbol [ centerX %tmp.55 120 25 32 ];
+        symbol [ centerX %tmp.55 150 25 32 ];
         %tmp.56 = lgetv %radius;
-        symbol [ radius %tmp.56 120 36 42 ];
+        symbol [ radius %tmp.56 150 36 42 ];
         %tmp.57 = lgetv %lineLength.3;
-        symbol [ lineLength %tmp.57 120 45 55 ];
+        symbol [ lineLength %tmp.57 150 45 55 ];
         %tmp.58 = sub %tmp.56 %tmp.57;
-        symbol [ Math %tmp.59 120 59 63 ];
+        symbol [ Math %tmp.59 150 59 63 ];
         %tmp.59 = getm $.Toybox.Math;
-        symbol [ sin %tmp.60 120 64 67 ];
+        symbol [ sin %tmp.60 150 64 67 ];
         %tmp.60 = getv function %tmp.59 :sin;
         %tmp.61 = lgetv %radians.6;
-        symbol [ radians %tmp.61 120 68 75 ];
+        symbol [ radians %tmp.61 150 68 75 ];
         %tmp.62 = invoke %tmp.59 %tmp.60(%tmp.61);
         %tmp.63 = mul %tmp.58 %tmp.62;
         %tmp.64 = add %tmp.55 %tmp.63;
         lputv %innerX.9 %tmp.64;
-        symbol [ innerX %innerX.9 120 16 22 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 121 12 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_stop" ]
+        symbol [ innerX %innerX.9 150 16 22 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 151 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_stop" ]
         %innerY.10 = local;
-        symbol [ innerY %innerY.10 121 16 22 ];
+        symbol [ innerY %innerY.10 151 16 22 ];
         %tmp.65 = lgetv %centerY;
-        symbol [ centerY %tmp.65 121 25 32 ];
+        symbol [ centerY %tmp.65 151 25 32 ];
         %tmp.66 = lgetv %radius;
-        symbol [ radius %tmp.66 121 36 42 ];
+        symbol [ radius %tmp.66 151 36 42 ];
         %tmp.67 = lgetv %lineLength.3;
-        symbol [ lineLength %tmp.67 121 45 55 ];
+        symbol [ lineLength %tmp.67 151 45 55 ];
         %tmp.68 = sub %tmp.66 %tmp.67;
-        symbol [ Math %tmp.69 121 59 63 ];
+        symbol [ Math %tmp.69 151 59 63 ];
         %tmp.69 = getm $.Toybox.Math;
-        symbol [ cos %tmp.70 121 64 67 ];
+        symbol [ cos %tmp.70 151 64 67 ];
         %tmp.70 = getv function %tmp.69 :cos;
         %tmp.71 = lgetv %radians.6;
-        symbol [ radians %tmp.71 121 68 75 ];
+        symbol [ radians %tmp.71 151 68 75 ];
         %tmp.72 = invoke %tmp.69 %tmp.70(%tmp.71);
         %tmp.73 = mul %tmp.68 %tmp.72;
         %tmp.74 = sub %tmp.65 %tmp.73;
         lputv %innerY.10 %tmp.74;
-        symbol [ innerY %innerY.10 121 16 22 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 124 12 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_124_12_128_12_if_stmt:
+        symbol [ innerY %innerY.10 151 16 22 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 154 12 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_154_12_158_12_if_stmt:
         %tmp.75 = lgetv %i.4;
-        symbol [ i %tmp.75 124 16 17 ];
+        symbol [ i %tmp.75 154 16 17 ];
         %tmp.76 = 0;
         %tmp.77 = eq %tmp.75 %tmp.76;
-        bf %tmp.77 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_124_12_128_12_if_else_false;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_124_12_128_12_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_124_24_126_12_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 125 16 ]
+        bf %tmp.77 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_154_12_158_12_if_else_false;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_154_12_158_12_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_154_24_156_12_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 155 16 ]
         %tmp.78 = lgetv %dc;
-        symbol [ dc %tmp.78 125 16 18 ];
-        symbol [ setColor %tmp.79 125 19 27 ];
+        symbol [ dc %tmp.78 155 16 18 ];
+        symbol [ setColor %tmp.79 155 19 27 ];
         %tmp.79 = getv function %tmp.78 :setColor;
-        symbol [ Graphics %tmp.80 125 28 36 ];
+        symbol [ Graphics %tmp.80 155 28 36 ];
         %tmp.80 = getm $.Toybox.Graphics;
-        symbol [ COLOR_RED %tmp.81 125 37 46 ];
+        symbol [ COLOR_RED %tmp.81 155 37 46 ];
         %tmp.81 = getv %tmp.80 :COLOR_RED;
-        symbol [ Graphics %tmp.82 125 48 56 ];
+        symbol [ Graphics %tmp.82 155 48 56 ];
         %tmp.82 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.83 125 57 74 ];
+        symbol [ COLOR_TRANSPARENT %tmp.83 155 57 74 ];
         %tmp.83 = getv %tmp.82 :COLOR_TRANSPARENT;
         invoke %tmp.78 %tmp.79(%tmp.81, %tmp.83);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_124_24_126_12_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_124_12_128_12_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_124_12_128_12_if_else_false:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_126_19_128_12_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 127 16 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_154_24_156_12_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_154_12_158_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_154_12_158_12_if_else_false:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_156_19_158_12_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 157 16 ]
         %tmp.84 = lgetv %dc;
-        symbol [ dc %tmp.84 127 16 18 ];
-        symbol [ setColor %tmp.85 127 19 27 ];
+        symbol [ dc %tmp.84 157 16 18 ];
+        symbol [ setColor %tmp.85 157 19 27 ];
         %tmp.85 = getv function %tmp.84 :setColor;
-        symbol [ Graphics %tmp.86 127 28 36 ];
+        symbol [ Graphics %tmp.86 157 28 36 ];
         %tmp.86 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.87 127 37 48 ];
-        %tmp.87 = getv %tmp.86 :COLOR_WHITE;
-        symbol [ Graphics %tmp.88 127 50 58 ];
+        symbol [ COLOR_BLUE %tmp.87 157 37 47 ];
+        %tmp.87 = getv %tmp.86 :COLOR_BLUE;
+        symbol [ Graphics %tmp.88 157 49 57 ];
         %tmp.88 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.89 127 59 76 ];
+        symbol [ COLOR_TRANSPARENT %tmp.89 157 58 75 ];
         %tmp.89 = getv %tmp.88 :COLOR_TRANSPARENT;
         invoke %tmp.84 %tmp.85(%tmp.87, %tmp.89);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_126_19_128_12_stop:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_124_12_128_12_if_end:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 130 12 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_156_19_158_12_stop:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_154_12_158_12_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 160 12 ]
         %tmp.90 = lgetv %dc;
-        symbol [ dc %tmp.90 130 12 14 ];
-        symbol [ setPenWidth %tmp.91 130 15 26 ];
+        symbol [ dc %tmp.90 160 12 14 ];
+        symbol [ setPenWidth %tmp.91 160 15 26 ];
         %tmp.91 = getv function %tmp.90 :setPenWidth;
         %tmp.92 = 3;
         invoke %tmp.90 %tmp.91(%tmp.92);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 131 12 ]
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 161 12 ]
         %tmp.93 = lgetv %dc;
-        symbol [ dc %tmp.93 131 12 14 ];
-        symbol [ drawLine %tmp.94 131 15 23 ];
+        symbol [ dc %tmp.93 161 12 14 ];
+        symbol [ drawLine %tmp.94 161 15 23 ];
         %tmp.94 = getv function %tmp.93 :drawLine;
         %tmp.95 = lgetv %outerX.7;
-        symbol [ outerX %tmp.95 131 24 30 ];
+        symbol [ outerX %tmp.95 161 24 30 ];
         %tmp.96 = lgetv %outerY.8;
-        symbol [ outerY %tmp.96 131 32 38 ];
+        symbol [ outerY %tmp.96 161 32 38 ];
         %tmp.97 = lgetv %innerX.9;
-        symbol [ innerX %tmp.97 131 40 46 ];
+        symbol [ innerX %tmp.97 161 40 46 ];
         %tmp.98 = lgetv %innerY.10;
-        symbol [ innerY %tmp.98 131 48 54 ];
+        symbol [ innerY %tmp.98 161 48 54 ];
         invoke %tmp.93 %tmp.94(%tmp.95, %tmp.96, %tmp.97, %tmp.98);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_51_132_8_stop:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_8_132_8_for_incr:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 111 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_51_162_8_stop:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_8_162_8_for_incr:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 141 ]
         %tmp.101 = lgetv %i.4;
-        symbol [ i %tmp.101 111 46 47 ];
+        symbol [ i %tmp.101 141 46 47 ];
         %tmp.102 = add %tmp.101 1;
         lputv %i.4 %tmp.102;
-        symbol [ i %i.4 111 46 47 ];
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_8_132_8_for_test;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_111_8_132_8_for_end:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 135 8 ]
+        symbol [ i %i.4 141 46 47 ];
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_8_162_8_for_test;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_141_8_162_8_for_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 165 8 ]
         %tmp.103 = lgetv %dc;
-        symbol [ dc %tmp.103 135 8 10 ];
-        symbol [ setColor %tmp.104 135 11 19 ];
+        symbol [ dc %tmp.103 165 8 10 ];
+        symbol [ setColor %tmp.104 165 11 19 ];
         %tmp.104 = getv function %tmp.103 :setColor;
-        symbol [ Graphics %tmp.105 135 20 28 ];
+        symbol [ Graphics %tmp.105 165 20 28 ];
         %tmp.105 = getm $.Toybox.Graphics;
-        symbol [ COLOR_WHITE %tmp.106 135 29 40 ];
+        symbol [ COLOR_WHITE %tmp.106 165 29 40 ];
         %tmp.106 = getv %tmp.105 :COLOR_WHITE;
-        symbol [ Graphics %tmp.107 135 42 50 ];
+        symbol [ Graphics %tmp.107 165 42 50 ];
         %tmp.107 = getm $.Toybox.Graphics;
-        symbol [ COLOR_TRANSPARENT %tmp.108 135 51 68 ];
+        symbol [ COLOR_TRANSPARENT %tmp.108 165 51 68 ];
         %tmp.108 = getv %tmp.107 :COLOR_TRANSPARENT;
         invoke %tmp.103 %tmp.104(%tmp.106, %tmp.108);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 136 8 ]
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 166 8 ]
         %tmp.109 = lgetv %dc;
-        symbol [ dc %tmp.109 136 8 10 ];
-        symbol [ setPenWidth %tmp.110 136 11 22 ];
+        symbol [ dc %tmp.109 166 8 10 ];
+        symbol [ setPenWidth %tmp.110 166 11 22 ];
         %tmp.110 = getv function %tmp.109 :setPenWidth;
         %tmp.111 = 1;
         invoke %tmp.109 %tmp.110(%tmp.111);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_104_103_137_4_stop:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_134_103_167_4_stop:
     }
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 142; @symbol_functiondef = [onHide,142,13,19]; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 172; @symbol_functiondef = [onHide,172,13,19]; ]
     function onHide() as Void {
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_142_30_150_4_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 143 8 ]
-        symbol [ Position %tmp.1 143 8 16 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_172_30_180_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 173 8 ]
+        symbol [ Position %tmp.1 173 8 16 ];
         %tmp.1 = getm $.Toybox.Position;
-        symbol [ enableLocationEvents %tmp.2 143 17 37 ];
+        symbol [ enableLocationEvents %tmp.2 173 17 37 ];
         %tmp.2 = getv function %tmp.1 :enableLocationEvents;
-        symbol [ Position %tmp.3 143 38 46 ];
+        symbol [ Position %tmp.3 173 38 46 ];
         %tmp.3 = getm $.Toybox.Position;
-        symbol [ LOCATION_DISABLE %tmp.4 143 47 63 ];
+        symbol [ LOCATION_DISABLE %tmp.4 173 47 63 ];
         %tmp.4 = getv %tmp.3 :LOCATION_DISABLE;
         %tmp.5 = self;
-        symbol [ method %tmp.6 143 65 71 ];
+        symbol [ method %tmp.6 173 65 71 ];
         %tmp.6 = getv function %tmp.5 :method;
         %tmp.8 = const :onPosition;
-        symbol [ onPosition %tmp.8 143 73 83 const ];
+        symbol [ onPosition %tmp.8 173 73 83 const ];
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.4, %tmp.9);
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 146 8 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_146_8_149_8_if_stmt:
-        symbol [ _timer %tmp.11 146 12 18 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 176 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_176_8_179_8_if_stmt:
+        symbol [ _timer %tmp.11 176 12 18 ];
         %tmp.11 = getv ? :_timer;
         %tmp.12 = null;
         %tmp.13 = ne %tmp.11 %tmp.12;
-        bf %tmp.13 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_146_8_149_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_146_8_149_8_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_146_28_149_8_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 147 12 ]
-        symbol [ _timer %tmp.15 147 12 18 ];
+        bf %tmp.13 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_176_8_179_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_176_8_179_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_176_28_179_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 177 12 ]
+        symbol [ _timer %tmp.15 177 12 18 ];
         %tmp.15 = getv ? :_timer;
         %tmp.16 = as %tmp.15 { (!Null) };
-        symbol [ stop %tmp.17 147 19 23 ];
+        symbol [ stop %tmp.17 177 19 23 ];
         %tmp.17 = getv function %tmp.16 :stop;
         invoke %tmp.16 %tmp.17();
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 148 12 ]
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 178 12 ]
         %tmp.18 = null;
-        symbol [ _timer ? 148 12 18 ];
+        symbol [ _timer ? 178 12 18 ];
         putv self :_timer %tmp.18;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_146_28_149_8_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_146_8_149_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_146_8_149_8_if_end:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_142_30_150_4_stop:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_176_28_179_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_176_8_179_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_176_8_179_8_if_end:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_172_30_180_4_stop:
     }
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 153; @symbol_functiondef = [updatePosition,153,13,27]; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 183; @symbol_functiondef = [updatePosition,183,13,27]; ]
     function updatePosition() as Void {
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_153_38_156_4_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 154 8 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_153_38_156_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_153_38_156_4_stop" ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_183_38_186_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 184 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_183_38_186_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_183_38_186_4_stop" ]
         %info.1 = local;
-        symbol [ info %info.1 154 12 16 ];
-        symbol [ Position %tmp.1 154 19 27 ];
+        symbol [ info %info.1 184 12 16 ];
+        symbol [ Position %tmp.1 184 19 27 ];
         %tmp.1 = getm $.Toybox.Position;
-        symbol [ getInfo %tmp.2 154 28 35 ];
+        symbol [ getInfo %tmp.2 184 28 35 ];
         %tmp.2 = getv function %tmp.1 :getInfo;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %info.1 %tmp.3;
-        symbol [ info %info.1 154 12 16 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 155 8 ]
+        symbol [ info %info.1 184 12 16 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 185 8 ]
         %tmp.4 = self;
-        symbol [ onPosition %tmp.5 155 8 18 ];
+        symbol [ onPosition %tmp.5 185 8 18 ];
         %tmp.5 = getv function %tmp.4 :onPosition;
         %tmp.6 = lgetv %info.1;
-        symbol [ info %tmp.6 155 19 23 ];
+        symbol [ info %tmp.6 185 19 23 ];
         invoke %tmp.4 %tmp.5(%tmp.6);
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_153_38_156_4_stop:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_183_38_186_4_stop:
     }
-    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 159; @symbol_functiondef = [onPosition,159,13,23]; @symbol_param<0> = [info,159,24,28]; @symbol_param<0>_type<0> = [Position,159,32,40]; @symbol_param<0>_type<1> = [Info,159,41,45]; ]
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 189; @symbol_functiondef = [onPosition,189,13,23]; @symbol_param<0> = [info,189,24,28]; @symbol_param<0>_type<0> = [Position,189,32,40]; @symbol_param<0>_type<1> = [Info,189,41,45]; ]
     function onPosition(info as Position.Info) as Void {
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_159_55_180_4_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 160 8 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_160_8_164_8_if_stmt:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_189_55_210_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 190 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_190_8_194_8_if_stmt:
         %tmp.1 = lgetv %info;
-        symbol [ info %tmp.1 160 12 16 ];
-        symbol [ position %tmp.2 160 17 25 ];
+        symbol [ info %tmp.1 190 12 16 ];
+        symbol [ position %tmp.2 190 17 25 ];
         %tmp.2 = getv %tmp.1 :position;
         %tmp.3 = null;
         %tmp.4 = ne %tmp.2 %tmp.3;
-        bf %tmp.4 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_160_8_164_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_160_8_164_8_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_160_35_164_8_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 161 12 ]
-        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_160_35_164_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_160_35_164_8_stop" ]
+        bf %tmp.4 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_190_8_194_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_190_8_194_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_190_35_194_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 191 12 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_190_35_194_8_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_190_35_194_8_stop" ]
         %position.1 = local;
-        symbol [ position %position.1 161 16 24 ];
+        symbol [ position %position.1 191 16 24 ];
         %tmp.5 = lgetv %info;
-        symbol [ info %tmp.5 161 27 31 ];
-        symbol [ position %tmp.6 161 32 40 ];
+        symbol [ info %tmp.5 191 27 31 ];
+        symbol [ position %tmp.6 191 32 40 ];
         %tmp.6 = getv %tmp.5 :position;
         lputv %position.1 %tmp.6;
-        symbol [ position %position.1 161 16 24 ];
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 162 12 ]
+        symbol [ position %position.1 191 16 24 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 192 12 ]
         %tmp.7 = lgetv %position.1;
-        symbol [ position %tmp.7 162 24 32 ];
-        symbol [ toDegrees %tmp.8 162 33 42 ];
+        symbol [ position %tmp.7 192 24 32 ];
+        symbol [ toDegrees %tmp.8 192 33 42 ];
         %tmp.8 = getv function %tmp.7 :toDegrees;
         %tmp.9 = invoke %tmp.7 %tmp.8();
         %tmp.10 = 0;
         %tmp.11 = agetv %tmp.9 %tmp.10;
-        symbol [ _latitude ? 162 12 21 ];
+        symbol [ _latitude ? 192 12 21 ];
         putv self :_latitude %tmp.11;
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 163 12 ]
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 193 12 ]
         %tmp.12 = lgetv %position.1;
-        symbol [ position %tmp.12 163 25 33 ];
-        symbol [ toDegrees %tmp.13 163 34 43 ];
+        symbol [ position %tmp.12 193 25 33 ];
+        symbol [ toDegrees %tmp.13 193 34 43 ];
         %tmp.13 = getv function %tmp.12 :toDegrees;
         %tmp.14 = invoke %tmp.12 %tmp.13();
         %tmp.15 = 1;
         %tmp.16 = agetv %tmp.14 %tmp.15;
-        symbol [ _longitude ? 163 12 22 ];
+        symbol [ _longitude ? 193 12 22 ];
         putv self :_longitude %tmp.16;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_160_35_164_8_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_160_8_164_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_160_8_164_8_if_end:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 167 8 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_167_8_172_8_if_stmt:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_190_35_194_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_190_8_194_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_190_8_194_8_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 197 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_197_8_202_8_if_stmt:
         %tmp.17 = lgetv %info;
-        symbol [ info %tmp.17 167 12 16 ];
-        symbol [ heading %tmp.18 167 17 24 ];
+        symbol [ info %tmp.17 197 12 16 ];
+        symbol [ heading %tmp.18 197 17 24 ];
         %tmp.18 = getv %tmp.17 :heading;
         %tmp.19 = null;
         %tmp.20 = ne %tmp.18 %tmp.19;
-        bf %tmp.20 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_167_8_172_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_167_8_172_8_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_167_34_172_8_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 168 12 ]
-        symbol [ Math %tmp.21 168 23 27 ];
+        bf %tmp.20 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_197_8_202_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_197_8_202_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_197_34_202_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 198 12 ]
+        symbol [ Math %tmp.21 198 23 27 ];
         %tmp.21 = getm $.Toybox.Math;
-        symbol [ toDegrees %tmp.22 168 28 37 ];
+        symbol [ toDegrees %tmp.22 198 28 37 ];
         %tmp.22 = getv function %tmp.21 :toDegrees;
         %tmp.23 = lgetv %info;
-        symbol [ info %tmp.23 168 38 42 ];
-        symbol [ heading %tmp.24 168 43 50 ];
+        symbol [ info %tmp.23 198 38 42 ];
+        symbol [ heading %tmp.24 198 43 50 ];
         %tmp.24 = getv %tmp.23 :heading;
         %tmp.25 = invoke %tmp.21 %tmp.22(%tmp.24);
-        symbol [ _heading ? 168 12 20 ];
+        symbol [ _heading ? 198 12 20 ];
         putv self :_heading %tmp.25;
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 169 12 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_169_12_171_12_if_stmt:
-        symbol [ _heading %tmp.27 169 16 24 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 199 12 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_199_12_201_12_if_stmt:
+        symbol [ _heading %tmp.27 199 16 24 ];
         %tmp.27 = getv ? :_heading;
         %tmp.28 = 0;
         %tmp.29 = lt %tmp.27 %tmp.28;
-        bf %tmp.29 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_169_12_171_12_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_169_12_171_12_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_169_30_171_12_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 170 16 ]
-        symbol [ _heading %tmp.30 170 16 24 ];
+        bf %tmp.29 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_199_12_201_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_199_12_201_12_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_199_30_201_12_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 200 16 ]
+        symbol [ _heading %tmp.30 200 16 24 ];
         %tmp.30 = getv self :_heading;
         %tmp.31 = 360;
         %tmp.32 = add %tmp.30 %tmp.31;
-        symbol [ _heading ? 170 16 24 ];
+        symbol [ _heading ? 200 16 24 ];
         putv self :_heading dup %tmp.32;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_169_30_171_12_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_169_12_171_12_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_169_12_171_12_if_end:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_167_34_172_8_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_167_8_172_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_167_8_172_8_if_end:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 175 8 ]
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_175_8_177_8_if_stmt:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_199_30_201_12_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_199_12_201_12_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_199_12_201_12_if_end:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_197_34_202_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_197_8_202_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_197_8_202_8_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 205 8 ]
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_205_8_207_8_if_stmt:
         %tmp.33 = lgetv %info;
-        symbol [ info %tmp.33 175 12 16 ];
-        symbol [ speed %tmp.34 175 17 22 ];
+        symbol [ info %tmp.33 205 12 16 ];
+        symbol [ speed %tmp.34 205 17 22 ];
         %tmp.34 = getv %tmp.33 :speed;
         %tmp.35 = null;
         %tmp.36 = ne %tmp.34 %tmp.35;
-        bf %tmp.36 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_175_8_177_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_175_8_177_8_if_true:
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_175_32_177_8_start:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 176 12 ]
+        bf %tmp.36 @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_205_8_207_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_205_8_207_8_if_true:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_205_32_207_8_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 206 12 ]
         %tmp.37 = lgetv %info;
-        symbol [ info %tmp.37 176 21 25 ];
-        symbol [ speed %tmp.38 176 26 31 ];
+        symbol [ info %tmp.37 206 21 25 ];
+        symbol [ speed %tmp.38 206 26 31 ];
         %tmp.38 = getv %tmp.37 :speed;
-        symbol [ _speed ? 176 12 18 ];
+        symbol [ _speed ? 206 12 18 ];
         putv self :_speed %tmp.38;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_175_32_177_8_stop:
-        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_175_8_177_8_if_end;
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_175_8_177_8_if_end:
-[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 179 8 ]
-        symbol [ WatchUi %tmp.39 179 8 15 ];
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_205_32_207_8_stop:
+        goto @D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_205_8_207_8_if_end;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_205_8_207_8_if_end:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc" 209 8 ]
+        symbol [ WatchUi %tmp.39 209 8 15 ];
         %tmp.39 = getm $.Toybox.WatchUi;
-        symbol [ requestUpdate %tmp.40 179 16 29 ];
+        symbol [ requestUpdate %tmp.40 209 16 29 ];
         %tmp.40 = getv function %tmp.39 :requestUpdate;
         invoke %tmp.39 %tmp.40();
-D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_159_55_180_4_stop:
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_YarSailorView_mc_189_55_210_4_stop:
     }
 }
 [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\YarSailorView.mc"; @line = 1; ]

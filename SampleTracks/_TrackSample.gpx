@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gpx version="1.0" creator="QGIS">
+<wpt lat="-31.999377854607" lon="115.780446781311">
+<name>PKD:  Parker DAY BOUY (S)</name>
+<cmt>10</cmt>
+<urlname>Digitized in QGIS</urlname>
+<ele>0</ele>
+</wpt>
+<wpt lat="-32.008086240108" lon="115.774119345664">
+<name>MOS: Mosman Bouy (P)</name>
+<cmt>11</cmt>
+<urlname>Digitized in QGIS</urlname>
+<ele>0</ele>
+</wpt>
+<wpt lat="-32.008345799833" lon="115.775709827479">
+<name>SUI: Suicide Bouy (P)</name>
+<cmt>9</cmt>
+<urlname>Digitized in QGIS</urlname>
+<ele>0</ele>
+</wpt>
+<wpt lat="-32.010965108852" lon="115.796931229495">
+<name>MIL: Miller (P)</name>
+<cmt>2</cmt>
+<urlname>Digitized in QGIS</urlname>
+<ele>0</ele>
+</wpt>
+<wpt lat="-32.000571970725" lon="115.814454706267">
+<name>ARM: Armstrong (P)</name>
+<cmt>5</cmt>
+<urlname>Digitized in QGIS</urlname>
+<ele>0</ele>
+</wpt>
+<wpt lat="-31.995832452129" lon="115.825945695646">
+<name>DLW: Dolphin West (S)</name>
+<cmt>3</cmt>
+<urlname>Digitized in QGIS</urlname>
+<ele>0</ele>
+</wpt>
+<wpt lat="-31.998900714627" lon="115.780301012328">
+<name>PKR: Parker Bouy (P)</name>
+<cmt>8</cmt>
+<urlname>Digitized in QGIS</urlname>
+<ele>0</ele>
+</wpt>
+<wpt lat="-32.002127375811" lon="115.775839848537">
+<name>SF1: Start Finish 1</name>
+<cmt>1</cmt>
+<urlname>Digitized in QGIS</urlname>
+<ele>0</ele>
+</wpt>
+<wpt lat="-32.012234078767" lon="115.799957671219">
+<name>BLA: Bricklanding A (S)</name>
+<cmt>4</cmt>
+<urlname>Digitized in QGIS</urlname>
+<ele>0</ele>
+</wpt>
+<wpt lat="-32.011347075046" lon="115.798604233408">
+<name>BLB: Bricklanding B (S)</name>
+<cmt>7</cmt>
+<urlname>Digitized in QGIS</urlname>
+<ele>0</ele>
+</wpt>
+<wpt lat="-32.004602726144" lon="115.805896485798">
+<name>DOM: Dome Bouy (P)</name>
+<cmt>6</cmt>
+<urlname>Digitized in QGIS</urlname>
+<ele>0</ele>
+</wpt>
+<wpt lat="-32.002127375811" lon="115.775839848537">
+<name>SF1: Start Finish 1</name>
+<cmt>12</cmt>
+<urlname>Digitized in QGIS</urlname>
+<ele>0</ele>
+</wpt>
+</gpx>

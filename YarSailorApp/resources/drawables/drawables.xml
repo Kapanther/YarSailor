@@ -1,3 +1,10 @@
 <drawables xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://developer.garmin.com/downloads/connect-iq/resources.xsd">
     <bitmap id="LauncherIcon" filename="launcher_icon.svg" dithering="none" />
+    <bitmap id="UpArrow" filename="up_arrow.svg" dithering="none" />
+    <bitmap id="DownArrow" filename="down_arrow.svg" dithering="none" />
+    <bitmap id="BackArrow" filename="back_arrow.svg" dithering="none" />
+    <bitmap id="CogIcon" filename="cog.svg" dithering="none" />
+    <bitmap id="MenuIcon" filename="menu.svg" dithering="none" />
+    <bitmap id="PortMarker" filename="port_marker.svg" dithering="none" />
+    <bitmap id="StarboardMarker" filename="starboard_marker.svg" dithering="none" />
 </drawables>

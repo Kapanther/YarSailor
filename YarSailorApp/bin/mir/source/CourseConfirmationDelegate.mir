@@ -1,0 +1,92 @@
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc"; @line = 1; @symbol_importdef<0> = [Toybox,1,7,13]; @symbol_importdef<1> = [WatchUi,1,14,21]; ]
+import Toybox.WatchUi;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc"; @line = 2; @symbol_importdef<0> = [Toybox,2,7,13]; @symbol_importdef<1> = [Lang,2,14,18]; ]
+import Toybox.Lang;
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc"; @line = 4; @symbol_classdef = [CourseConfirmationDelegate,4,6,32]; @symbol_extends<0> = [WatchUi,4,41,48]; @symbol_extends<1> = [BehaviorDelegate,4,49,65]; ]
+class CourseConfirmationDelegate extends WatchUi.BehaviorDelegate {
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc"; @line = 4; ]
+    <init> {
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc"; @line = 4; ]
+    static
+    <init> {
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc"; @line = 5; @position = 16; @symbol_vardef = [_view,5,16,21]; @symbol_type<0> = [CourseConfirmationView,5,25,47]; ]
+    private
+    var _view as CourseConfirmationView;
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc"; @line = 7; @symbol_functiondef = [initialize,7,13,23]; @symbol_param<0> = [view,7,24,28]; @symbol_param<0>_type<0> = [CourseConfirmationView,7,32,54]; ]
+    function initialize(view as CourseConfirmationView) as Void {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationDelegate_mc_7_56_10_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc" 8 8 ]
+        symbol [ BehaviorDelegate %tmp.2 8 8 24 ];
+        %tmp.2 = getv ? :BehaviorDelegate;
+        symbol [ initialize %tmp.3 8 25 35 ];
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc" 9 8 ]
+        %tmp.4 = lgetv %view;
+        symbol [ view %tmp.4 9 16 20 ];
+        symbol [ _view ? 9 8 13 ];
+        putv self :_view %tmp.4;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationDelegate_mc_7_56_10_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc"; @line = 12; @symbol_functiondef = [onSelect,12,13,21]; @symbol_return<0> = [Boolean,12,27,34]; ]
+    function onSelect() as Boolean {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationDelegate_mc_12_35_16_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc" 14 8 ]
+        symbol [ _view %tmp.2 14 8 13 ];
+        %tmp.2 = getv ? :_view;
+        symbol [ confirmCourse %tmp.3 14 14 27 ];
+        %tmp.3 = getv function %tmp.2 :confirmCourse;
+        invoke %tmp.2 %tmp.3();
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc" 15 8 ]
+        %tmp.4 = true;
+        ret %tmp.4;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationDelegate_mc_12_35_16_4_stop:
+    }
+    [ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc"; @line = 18; @symbol_functiondef = [onBack,18,13,19]; @symbol_return<0> = [Boolean,18,25,32]; ]
+    function onBack() as Boolean {
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationDelegate_mc_18_33_24_4_start:
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc" 20 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationDelegate_mc_18_33_24_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationDelegate_mc_18_33_24_4_stop" ]
+        %view.1 = local;
+        symbol [ view %view.1 20 12 16 ];
+        symbol [ CourseSelectionView %tmp.4 20 23 42 ];
+        %tmp.4 = getv ? :CourseSelectionView;
+        %tmp.1 = newc %tmp.4 ();
+        lputv %view.1 %tmp.1;
+        symbol [ view %view.1 20 12 16 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc" 21 8 ]
+        [ "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationDelegate_mc_18_33_24_4_start" "D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationDelegate_mc_18_33_24_4_stop" ]
+        %delegate.2 = local;
+        symbol [ delegate %delegate.2 21 12 20 ];
+        symbol [ CourseSelectionDelegate %tmp.8 21 27 50 ];
+        %tmp.8 = getv ? :CourseSelectionDelegate;
+        %tmp.9 = lgetv %view.1;
+        symbol [ view %tmp.9 21 51 55 ];
+        %tmp.5 = newc %tmp.8 (%tmp.9);
+        lputv %delegate.2 %tmp.5;
+        symbol [ delegate %delegate.2 21 12 20 ];
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc" 22 8 ]
+        symbol [ WatchUi %tmp.10 22 8 15 ];
+        %tmp.10 = getm $.Toybox.WatchUi;
+        symbol [ switchToView %tmp.11 22 16 28 ];
+        %tmp.11 = getv function %tmp.10 :switchToView;
+        %tmp.12 = lgetv %view.1;
+        symbol [ view %tmp.12 22 29 33 ];
+        %tmp.13 = lgetv %delegate.2;
+        symbol [ delegate %tmp.13 22 35 43 ];
+        symbol [ WatchUi %tmp.14 22 45 52 ];
+        %tmp.14 = getm $.Toybox.WatchUi;
+        symbol [ SLIDE_RIGHT %tmp.15 22 53 64 ];
+        %tmp.15 = getv %tmp.14 :SLIDE_RIGHT;
+        invoke %tmp.10 %tmp.11(%tmp.12, %tmp.13, %tmp.15);
+[ "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc" 23 8 ]
+        %tmp.16 = true;
+        ret %tmp.16;
+D_ceethreedee_Garmin_YarSailor_YarSailorApp_source_CourseConfirmationDelegate_mc_18_33_24_4_stop:
+    }
+}
+[ @file = "D:\ceethreedee\Garmin\YarSailor\YarSailorApp\source\CourseConfirmationDelegate.mc"; @line = 1; ]
+<init> {
+}

@@ -5,6 +5,7 @@ import Toybox.Position;
 import Toybox.System;
 import Toybox.Timer;
 import Toybox.Math;
+import Toybox.Attention;
 
 class RaceStartView extends WatchUi.View {
     private var _countdownSeconds as Number;
@@ -12,6 +13,7 @@ class RaceStartView extends WatchUi.View {
     private var _timer as Timer.Timer?;
     private var _heading as Float?;
     private var _speed as Float?;
+    private var _menuIcon as BitmapResource?;
     private const DEFAULT_COUNTDOWN = 300; // 5 minutes in seconds
 
     function initialize() {
@@ -21,9 +23,12 @@ class RaceStartView extends WatchUi.View {
         _timer = null;
         _heading = null;
         _speed = null;
+        _menuIcon = null;
     }
 
     function onLayout(dc as Dc) as Void {
+        // Load menu icon bitmap
+        _menuIcon = WatchUi.loadResource(Rez.Drawables.MenuIcon);
     }
 
     function onShow() as Void {
@@ -49,11 +54,12 @@ class RaceStartView extends WatchUi.View {
             clockTime.min.format("%02d")
         ]);
         
-        // Draw time at top
-        dc.drawText(width / 2, 5, Graphics.FONT_MEDIUM, timeString, Graphics.TEXT_JUSTIFY_CENTER);
-        
-        // Draw "Race Start" label
-        dc.drawText(width / 2, 35, Graphics.FONT_SMALL, "Race Start", Graphics.TEXT_JUSTIFY_CENTER);
+        // Draw "Header and time at top
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(width / 2, 10, Graphics.FONT_TINY, "Race Start", Graphics.TEXT_JUSTIFY_CENTER);
+        dc.setColor(Graphics.COLOR_BLUE, Graphics.COLOR_TRANSPARENT);
+        dc.drawText(width / 2, 35, Graphics.FONT_TINY, timeString, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         
         // Draw countdown timer (top half)
         var minutes = _countdownSeconds / 60;
@@ -62,7 +68,7 @@ class RaceStartView extends WatchUi.View {
             minutes.format("%02d"),
             seconds.format("%02d")
         ]);
-        dc.drawText(width / 2, 70, Graphics.FONT_NUMBER_HOT, timerString, Graphics.TEXT_JUSTIFY_CENTER);
+        dc.drawText(width / 2, 75, Graphics.FONT_NUMBER_HOT, timerString, Graphics.TEXT_JUSTIFY_CENTER);
         
         // Show timer status only when paused
         if (!_timerRunning) {
@@ -70,11 +76,14 @@ class RaceStartView extends WatchUi.View {
         }
         
         // Draw button glyphs
-        dc.drawText(10, 139, Graphics.FONT_SMALL, "≡", Graphics.TEXT_JUSTIFY_LEFT); // Menu symbol - Middle left
+        if (_menuIcon != null) {
+            dc.drawBitmap(10, 120, _menuIcon); // Menu icon - Middle left
+        }
+        dc.setColor(Graphics.COLOR_DK_GREEN, Graphics.COLOR_TRANSPARENT);
         dc.drawText(42, 196, Graphics.FONT_SMALL, "-1", Graphics.TEXT_JUSTIFY_LEFT); // Bottom left
-        dc.drawText(251, 71, Graphics.FONT_SMALL, "Go", Graphics.TEXT_JUSTIFY_RIGHT); // Top right
+        dc.drawText(251, 59, Graphics.FONT_XTINY, "Reset/Go", Graphics.TEXT_JUSTIFY_RIGHT); // Top right
         dc.drawText(246, 196, Graphics.FONT_SMALL, "+1", Graphics.TEXT_JUSTIFY_RIGHT); // Bottom right
-        
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
         // Draw heading and speed at bottom
         var headingText = "---°";
         if (_heading != null) {
@@ -84,11 +93,17 @@ class RaceStartView extends WatchUi.View {
         var speedText = "-- kts";
         if (_speed != null) {
             var knots = _speed * 1.94384;
-            speedText = knots.format("%.1f") + " kts";
+            speedText = knots.format("%.1f") + " kn";
         }
         
-        dc.drawText(89, 229, Graphics.FONT_SMALL, headingText, Graphics.TEXT_JUSTIFY_CENTER);
-        dc.drawText(186, 229, Graphics.FONT_SMALL, speedText, Graphics.TEXT_JUSTIFY_CENTER);
+        // Draw separator line between heading and speed
+        dc.setColor(Graphics.COLOR_DK_GRAY, Graphics.COLOR_TRANSPARENT);
+        dc.setPenWidth(1);
+        dc.drawLine(130, 236, 130, 255);
+        dc.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
+        
+        dc.drawText(125, 229, Graphics.FONT_SMALL, headingText, Graphics.TEXT_JUSTIFY_RIGHT);
+        dc.drawText(135, 229, Graphics.FONT_SMALL, speedText, Graphics.TEXT_JUSTIFY_LEFT);
     }
 
     function onHide() as Void {
@@ -161,11 +176,29 @@ class RaceStartView extends WatchUi.View {
     function tickTimer() as Void {
         if (_timerRunning && _countdownSeconds > 0) {
             _countdownSeconds -= 1;
+            
+            // Beep on every minute
+            if (_countdownSeconds > 10 && _countdownSeconds % 60 == 0) {
+                if (Attention has :playTone) {
+                    Attention.playTone(Attention.TONE_LOUD_BEEP);
+                }
+            }
+            
+            // Beep every second for last 10 seconds
+            if (_countdownSeconds > 0 && _countdownSeconds <= 10) {
+                if (Attention has :playTone) {
+                    Attention.playTone(Attention.TONE_LOUD_BEEP);
+                }
+            }
+            
             WatchUi.requestUpdate();
             
-            // Stop timer when it reaches zero
+            // Stop timer and play GO tone when it reaches zero
             if (_countdownSeconds == 0) {
                 _timerRunning = false;
+                if (Attention has :playTone) {
+                    Attention.playTone(Attention.TONE_ALERT_HI);
+                }
             }
         }
     }
